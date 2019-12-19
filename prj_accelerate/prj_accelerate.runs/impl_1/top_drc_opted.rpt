@@ -1,0 +1,525 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.1 (win64) Build 2188600 Wed Apr  4 18:40:38 MDT 2018
+| Date         : Mon Aug 26 16:10:17 2019
+| Host         : VT2OB6D7ZB52FZ0 running 64-bit major release  (build 9200)
+| Command      : report_drc -file top_drc_opted.rpt -pb top_drc_opted.pb -rpx top_drc_opted.rpx
+| Design       : top
+| Device       : xc7z020clg400-1
+| Speed File   : -1
+| Design State : Synthesized
+------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 95
++-----------+----------+-------------------------------------------------------------------+------------+
+| Rule      | Severity | Description                                                       | Violations |
++-----------+----------+-------------------------------------------------------------------+------------+
+| DPIP-1    | Warning  | Input pipelining                                                  | 26         |
+| DPOP-1    | Warning  | PREG Output pipelining                                            | 25         |
+| DPOP-2    | Warning  | MREG Output pipelining                                            | 31         |
+| DPREG-4   | Warning  | DSP48E1_PregDynOpmodeZmuxP:                                       | 2          |
+| PLCK-12   | Warning  | Clock Placer Checks                                               | 1          |
+| AVAL-4    | Advisory | enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND | 1          |
+| REQP-165  | Advisory | writefirst                                                        | 2          |
+| REQP-181  | Advisory | writefirst                                                        | 6          |
+| REQP-1725 | Advisory | DSP_Abus_sign_bit_alert                                           | 1          |
++-----------+----------+-------------------------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+DPIP-1#1 Warning
+Input pipelining  
+DSP design_1_wrapper_i/design_1_i/hls_img_get_grads/img_get_grads_0/inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_276/img_get_grads_maclbW_U18/img_get_grads_maclbW_DSP48_0_U/p input design_1_wrapper_i/design_1_i/hls_img_get_grads/img_get_grads_0/inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_276/img_get_grads_maclbW_U18/img_get_grads_maclbW_DSP48_0_U/p/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#2 Warning
+Input pipelining  
+DSP design_1_wrapper_i/design_1_i/hls_img_get_grads/img_get_grads_0/inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_276/img_get_grads_mulibs_U15/img_get_grads_mulibs_MulnS_0_U/p_reg__0 input design_1_wrapper_i/design_1_i/hls_img_get_grads/img_get_grads_0/inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_276/img_get_grads_mulibs_U15/img_get_grads_mulibs_MulnS_0_U/p_reg__0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#3 Warning
+Input pipelining  
+DSP design_1_wrapper_i/design_1_i/hls_img_get_grads/img_get_grads_0/inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_276/img_get_grads_mulibs_U15/img_get_grads_mulibs_MulnS_0_U/tmp_product input design_1_wrapper_i/design_1_i/hls_img_get_grads/img_get_grads_0/inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_276/img_get_grads_mulibs_U15/img_get_grads_mulibs_MulnS_0_U/tmp_product/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#4 Warning
+Input pipelining  
+DSP design_1_wrapper_i/design_1_i/hls_img_get_grads/img_get_grads_0/inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_276/img_get_grads_mulibs_U15/img_get_grads_mulibs_MulnS_0_U/tmp_product input design_1_wrapper_i/design_1_i/hls_img_get_grads/img_get_grads_0/inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_276/img_get_grads_mulibs_U15/img_get_grads_mulibs_MulnS_0_U/tmp_product/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#5 Warning
+Input pipelining  
+DSP design_1_wrapper_i/design_1_i/hls_img_get_grads/img_get_grads_0/inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_276/img_get_grads_mulkbM_U17/img_get_grads_mulkbM_MulnS_2_U/p_reg input design_1_wrapper_i/design_1_i/hls_img_get_grads/img_get_grads_0/inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_276/img_get_grads_mulkbM_U17/img_get_grads_mulkbM_MulnS_2_U/p_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#6 Warning
+Input pipelining  
+DSP design_1_wrapper_i/design_1_i/hls_img_get_grads/img_get_grads_0/inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_276/img_get_grads_mulkbM_U17/img_get_grads_mulkbM_MulnS_2_U/p_reg__1 input design_1_wrapper_i/design_1_i/hls_img_get_grads/img_get_grads_0/inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_276/img_get_grads_mulkbM_U17/img_get_grads_mulkbM_MulnS_2_U/p_reg__1/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#7 Warning
+Input pipelining  
+DSP design_1_wrapper_i/design_1_i/hls_img_get_grads/img_get_grads_0/inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_276/img_get_grads_mulkbM_U17/img_get_grads_mulkbM_MulnS_2_U/tmp_product input design_1_wrapper_i/design_1_i/hls_img_get_grads/img_get_grads_0/inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_276/img_get_grads_mulkbM_U17/img_get_grads_mulkbM_MulnS_2_U/tmp_product/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#8 Warning
+Input pipelining  
+DSP design_1_wrapper_i/design_1_i/hls_img_get_grads/img_get_grads_0/inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_276/img_get_grads_mulmb6_U19/img_get_grads_mulmb6_DSP48_1_U/in00 input design_1_wrapper_i/design_1_i/hls_img_get_grads/img_get_grads_0/inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_276/img_get_grads_mulmb6_U19/img_get_grads_mulmb6_DSP48_1_U/in00/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#9 Warning
+Input pipelining  
+DSP design_1_wrapper_i/design_1_i/hls_img_get_grads/img_get_grads_0/inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_276/img_get_grads_mulmb6_U19/img_get_grads_mulmb6_DSP48_1_U/in00 input design_1_wrapper_i/design_1_i/hls_img_get_grads/img_get_grads_0/inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_276/img_get_grads_mulmb6_U19/img_get_grads_mulmb6_DSP48_1_U/in00/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#10 Warning
+Input pipelining  
+DSP design_1_wrapper_i/design_1_i/hls_img_get_grads/img_get_grads_0/inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_276/img_get_grads_mulmb6_U19/img_get_grads_mulmb6_DSP48_1_U/in00 input design_1_wrapper_i/design_1_i/hls_img_get_grads/img_get_grads_0/inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_276/img_get_grads_mulmb6_U19/img_get_grads_mulmb6_DSP48_1_U/in00/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#11 Warning
+Input pipelining  
+DSP design_1_wrapper_i/design_1_i/hls_img_get_grads/img_get_grads_0/inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_276/p_Val2_6_fu_426_p2 input design_1_wrapper_i/design_1_i/hls_img_get_grads/img_get_grads_0/inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_276/p_Val2_6_fu_426_p2/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#12 Warning
+Input pipelining  
+DSP design_1_wrapper_i/design_1_i/hls_img_get_grads/img_get_grads_0/inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_295/img_get_grads_maclbW_U18/img_get_grads_maclbW_DSP48_0_U/p input design_1_wrapper_i/design_1_i/hls_img_get_grads/img_get_grads_0/inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_295/img_get_grads_maclbW_U18/img_get_grads_maclbW_DSP48_0_U/p/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#13 Warning
+Input pipelining  
+DSP design_1_wrapper_i/design_1_i/hls_img_get_grads/img_get_grads_0/inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_295/img_get_grads_mulibs_U15/img_get_grads_mulibs_MulnS_0_U/p_reg__0 input design_1_wrapper_i/design_1_i/hls_img_get_grads/img_get_grads_0/inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_295/img_get_grads_mulibs_U15/img_get_grads_mulibs_MulnS_0_U/p_reg__0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#14 Warning
+Input pipelining  
+DSP design_1_wrapper_i/design_1_i/hls_img_get_grads/img_get_grads_0/inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_295/img_get_grads_mulibs_U15/img_get_grads_mulibs_MulnS_0_U/tmp_product input design_1_wrapper_i/design_1_i/hls_img_get_grads/img_get_grads_0/inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_295/img_get_grads_mulibs_U15/img_get_grads_mulibs_MulnS_0_U/tmp_product/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#15 Warning
+Input pipelining  
+DSP design_1_wrapper_i/design_1_i/hls_img_get_grads/img_get_grads_0/inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_295/img_get_grads_mulibs_U15/img_get_grads_mulibs_MulnS_0_U/tmp_product input design_1_wrapper_i/design_1_i/hls_img_get_grads/img_get_grads_0/inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_295/img_get_grads_mulibs_U15/img_get_grads_mulibs_MulnS_0_U/tmp_product/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#16 Warning
+Input pipelining  
+DSP design_1_wrapper_i/design_1_i/hls_img_get_grads/img_get_grads_0/inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_295/img_get_grads_mulkbM_U17/img_get_grads_mulkbM_MulnS_2_U/p_reg input design_1_wrapper_i/design_1_i/hls_img_get_grads/img_get_grads_0/inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_295/img_get_grads_mulkbM_U17/img_get_grads_mulkbM_MulnS_2_U/p_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#17 Warning
+Input pipelining  
+DSP design_1_wrapper_i/design_1_i/hls_img_get_grads/img_get_grads_0/inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_295/img_get_grads_mulkbM_U17/img_get_grads_mulkbM_MulnS_2_U/p_reg__1 input design_1_wrapper_i/design_1_i/hls_img_get_grads/img_get_grads_0/inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_295/img_get_grads_mulkbM_U17/img_get_grads_mulkbM_MulnS_2_U/p_reg__1/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#18 Warning
+Input pipelining  
+DSP design_1_wrapper_i/design_1_i/hls_img_get_grads/img_get_grads_0/inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_295/img_get_grads_mulkbM_U17/img_get_grads_mulkbM_MulnS_2_U/tmp_product input design_1_wrapper_i/design_1_i/hls_img_get_grads/img_get_grads_0/inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_295/img_get_grads_mulkbM_U17/img_get_grads_mulkbM_MulnS_2_U/tmp_product/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#19 Warning
+Input pipelining  
+DSP design_1_wrapper_i/design_1_i/hls_img_get_grads/img_get_grads_0/inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_295/img_get_grads_mulmb6_U19/img_get_grads_mulmb6_DSP48_1_U/in00 input design_1_wrapper_i/design_1_i/hls_img_get_grads/img_get_grads_0/inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_295/img_get_grads_mulmb6_U19/img_get_grads_mulmb6_DSP48_1_U/in00/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#20 Warning
+Input pipelining  
+DSP design_1_wrapper_i/design_1_i/hls_img_get_grads/img_get_grads_0/inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_295/img_get_grads_mulmb6_U19/img_get_grads_mulmb6_DSP48_1_U/in00 input design_1_wrapper_i/design_1_i/hls_img_get_grads/img_get_grads_0/inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_295/img_get_grads_mulmb6_U19/img_get_grads_mulmb6_DSP48_1_U/in00/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#21 Warning
+Input pipelining  
+DSP design_1_wrapper_i/design_1_i/hls_img_get_grads/img_get_grads_0/inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_295/img_get_grads_mulmb6_U19/img_get_grads_mulmb6_DSP48_1_U/in00 input design_1_wrapper_i/design_1_i/hls_img_get_grads/img_get_grads_0/inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_295/img_get_grads_mulmb6_U19/img_get_grads_mulmb6_DSP48_1_U/in00/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#22 Warning
+Input pipelining  
+DSP design_1_wrapper_i/design_1_i/hls_img_get_grads/img_get_grads_0/inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_295/p_Val2_6_fu_426_p2 input design_1_wrapper_i/design_1_i/hls_img_get_grads/img_get_grads_0/inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_295/p_Val2_6_fu_426_p2/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#23 Warning
+Input pipelining  
+DSP design_1_wrapper_i/design_1_i/hls_img_get_grads/img_get_grads_0/inst/get_grads_opr_U0/img_get_grads_fadqcK_U33/img_get_grads_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/DSP input design_1_wrapper_i/design_1_i/hls_img_get_grads/img_get_grads_0/inst/get_grads_opr_U0/img_get_grads_fadqcK_U33/img_get_grads_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/DSP/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#24 Warning
+Input pipelining  
+DSP design_1_wrapper_i/design_1_i/hls_img_get_grads/img_get_grads_0/inst/get_grads_opr_U0/img_get_grads_fadqcK_U33/img_get_grads_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/DSP input design_1_wrapper_i/design_1_i/hls_img_get_grads/img_get_grads_0/inst/get_grads_opr_U0/img_get_grads_fadqcK_U33/img_get_grads_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/DSP/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#25 Warning
+Input pipelining  
+DSP design_1_wrapper_i/design_1_i/hls_img_get_grads/img_get_grads_0/inst/get_grads_opr_U0/img_get_grads_fadqcK_U33/img_get_grads_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/DSP input design_1_wrapper_i/design_1_i/hls_img_get_grads/img_get_grads_0/inst/get_grads_opr_U0/img_get_grads_fadqcK_U33/img_get_grads_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/DSP/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#26 Warning
+Input pipelining  
+DSP design_1_wrapper_i/design_1_i/hls_img_get_grads/img_get_grads_0/inst/get_grads_opr_U0/img_get_grads_fadqcK_U33/img_get_grads_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.SHIFT_RND/DSP input design_1_wrapper_i/design_1_i/hls_img_get_grads/img_get_grads_0/inst/get_grads_opr_U0/img_get_grads_fadqcK_U33/img_get_grads_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.SHIFT_RND/DSP/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPOP-1#1 Warning
+PREG Output pipelining  
+DSP design_1_wrapper_i/design_1_i/hls_img_get_grads/img_get_grads_0/inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_276/img_get_grads_maclbW_U18/img_get_grads_maclbW_DSP48_0_U/p output design_1_wrapper_i/design_1_i/hls_img_get_grads/img_get_grads_0/inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_276/img_get_grads_maclbW_U18/img_get_grads_maclbW_DSP48_0_U/p/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#2 Warning
+PREG Output pipelining  
+DSP design_1_wrapper_i/design_1_i/hls_img_get_grads/img_get_grads_0/inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_276/img_get_grads_mulibs_U15/img_get_grads_mulibs_MulnS_0_U/tmp_product output design_1_wrapper_i/design_1_i/hls_img_get_grads/img_get_grads_0/inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_276/img_get_grads_mulibs_U15/img_get_grads_mulibs_MulnS_0_U/tmp_product/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#3 Warning
+PREG Output pipelining  
+DSP design_1_wrapper_i/design_1_i/hls_img_get_grads/img_get_grads_0/inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_276/img_get_grads_muljbC_U16/img_get_grads_muljbC_MulnS_1_U/buff0_reg output design_1_wrapper_i/design_1_i/hls_img_get_grads/img_get_grads_0/inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_276/img_get_grads_muljbC_U16/img_get_grads_muljbC_MulnS_1_U/buff0_reg/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#4 Warning
+PREG Output pipelining  
+DSP design_1_wrapper_i/design_1_i/hls_img_get_grads/img_get_grads_0/inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_276/img_get_grads_muljbC_U16/img_get_grads_muljbC_MulnS_1_U/tmp_product output design_1_wrapper_i/design_1_i/hls_img_get_grads/img_get_grads_0/inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_276/img_get_grads_muljbC_U16/img_get_grads_muljbC_MulnS_1_U/tmp_product/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#5 Warning
+PREG Output pipelining  
+DSP design_1_wrapper_i/design_1_i/hls_img_get_grads/img_get_grads_0/inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_276/img_get_grads_mulkbM_U17/img_get_grads_mulkbM_MulnS_2_U/p_reg output design_1_wrapper_i/design_1_i/hls_img_get_grads/img_get_grads_0/inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_276/img_get_grads_mulkbM_U17/img_get_grads_mulkbM_MulnS_2_U/p_reg/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#6 Warning
+PREG Output pipelining  
+DSP design_1_wrapper_i/design_1_i/hls_img_get_grads/img_get_grads_0/inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_276/img_get_grads_mulkbM_U17/img_get_grads_mulkbM_MulnS_2_U/tmp_product output design_1_wrapper_i/design_1_i/hls_img_get_grads/img_get_grads_0/inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_276/img_get_grads_mulkbM_U17/img_get_grads_mulkbM_MulnS_2_U/tmp_product/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#7 Warning
+PREG Output pipelining  
+DSP design_1_wrapper_i/design_1_i/hls_img_get_grads/img_get_grads_0/inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_276/img_get_grads_mulmb6_U19/img_get_grads_mulmb6_DSP48_1_U/in00 output design_1_wrapper_i/design_1_i/hls_img_get_grads/img_get_grads_0/inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_276/img_get_grads_mulmb6_U19/img_get_grads_mulmb6_DSP48_1_U/in00/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#8 Warning
+PREG Output pipelining  
+DSP design_1_wrapper_i/design_1_i/hls_img_get_grads/img_get_grads_0/inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_276/p_Val2_1_fu_456_p2 output design_1_wrapper_i/design_1_i/hls_img_get_grads/img_get_grads_0/inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_276/p_Val2_1_fu_456_p2/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#9 Warning
+PREG Output pipelining  
+DSP design_1_wrapper_i/design_1_i/hls_img_get_grads/img_get_grads_0/inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_276/p_Val2_61_fu_1094_p2 output design_1_wrapper_i/design_1_i/hls_img_get_grads/img_get_grads_0/inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_276/p_Val2_61_fu_1094_p2/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#10 Warning
+PREG Output pipelining  
+DSP design_1_wrapper_i/design_1_i/hls_img_get_grads/img_get_grads_0/inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_276/p_Val2_6_fu_426_p2 output design_1_wrapper_i/design_1_i/hls_img_get_grads/img_get_grads_0/inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_276/p_Val2_6_fu_426_p2/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#11 Warning
+PREG Output pipelining  
+DSP design_1_wrapper_i/design_1_i/hls_img_get_grads/img_get_grads_0/inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_276/r_V_fu_827_p2 output design_1_wrapper_i/design_1_i/hls_img_get_grads/img_get_grads_0/inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_276/r_V_fu_827_p2/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#12 Warning
+PREG Output pipelining  
+DSP design_1_wrapper_i/design_1_i/hls_img_get_grads/img_get_grads_0/inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_295/img_get_grads_maclbW_U18/img_get_grads_maclbW_DSP48_0_U/p output design_1_wrapper_i/design_1_i/hls_img_get_grads/img_get_grads_0/inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_295/img_get_grads_maclbW_U18/img_get_grads_maclbW_DSP48_0_U/p/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#13 Warning
+PREG Output pipelining  
+DSP design_1_wrapper_i/design_1_i/hls_img_get_grads/img_get_grads_0/inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_295/img_get_grads_mulibs_U15/img_get_grads_mulibs_MulnS_0_U/tmp_product output design_1_wrapper_i/design_1_i/hls_img_get_grads/img_get_grads_0/inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_295/img_get_grads_mulibs_U15/img_get_grads_mulibs_MulnS_0_U/tmp_product/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#14 Warning
+PREG Output pipelining  
+DSP design_1_wrapper_i/design_1_i/hls_img_get_grads/img_get_grads_0/inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_295/img_get_grads_muljbC_U16/img_get_grads_muljbC_MulnS_1_U/buff0_reg output design_1_wrapper_i/design_1_i/hls_img_get_grads/img_get_grads_0/inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_295/img_get_grads_muljbC_U16/img_get_grads_muljbC_MulnS_1_U/buff0_reg/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#15 Warning
+PREG Output pipelining  
+DSP design_1_wrapper_i/design_1_i/hls_img_get_grads/img_get_grads_0/inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_295/img_get_grads_muljbC_U16/img_get_grads_muljbC_MulnS_1_U/tmp_product output design_1_wrapper_i/design_1_i/hls_img_get_grads/img_get_grads_0/inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_295/img_get_grads_muljbC_U16/img_get_grads_muljbC_MulnS_1_U/tmp_product/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#16 Warning
+PREG Output pipelining  
+DSP design_1_wrapper_i/design_1_i/hls_img_get_grads/img_get_grads_0/inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_295/img_get_grads_mulkbM_U17/img_get_grads_mulkbM_MulnS_2_U/p_reg output design_1_wrapper_i/design_1_i/hls_img_get_grads/img_get_grads_0/inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_295/img_get_grads_mulkbM_U17/img_get_grads_mulkbM_MulnS_2_U/p_reg/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#17 Warning
+PREG Output pipelining  
+DSP design_1_wrapper_i/design_1_i/hls_img_get_grads/img_get_grads_0/inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_295/img_get_grads_mulkbM_U17/img_get_grads_mulkbM_MulnS_2_U/tmp_product output design_1_wrapper_i/design_1_i/hls_img_get_grads/img_get_grads_0/inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_295/img_get_grads_mulkbM_U17/img_get_grads_mulkbM_MulnS_2_U/tmp_product/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#18 Warning
+PREG Output pipelining  
+DSP design_1_wrapper_i/design_1_i/hls_img_get_grads/img_get_grads_0/inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_295/img_get_grads_mulmb6_U19/img_get_grads_mulmb6_DSP48_1_U/in00 output design_1_wrapper_i/design_1_i/hls_img_get_grads/img_get_grads_0/inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_295/img_get_grads_mulmb6_U19/img_get_grads_mulmb6_DSP48_1_U/in00/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#19 Warning
+PREG Output pipelining  
+DSP design_1_wrapper_i/design_1_i/hls_img_get_grads/img_get_grads_0/inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_295/p_Val2_1_fu_456_p2 output design_1_wrapper_i/design_1_i/hls_img_get_grads/img_get_grads_0/inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_295/p_Val2_1_fu_456_p2/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#20 Warning
+PREG Output pipelining  
+DSP design_1_wrapper_i/design_1_i/hls_img_get_grads/img_get_grads_0/inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_295/p_Val2_61_fu_1094_p2 output design_1_wrapper_i/design_1_i/hls_img_get_grads/img_get_grads_0/inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_295/p_Val2_61_fu_1094_p2/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#21 Warning
+PREG Output pipelining  
+DSP design_1_wrapper_i/design_1_i/hls_img_get_grads/img_get_grads_0/inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_295/p_Val2_6_fu_426_p2 output design_1_wrapper_i/design_1_i/hls_img_get_grads/img_get_grads_0/inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_295/p_Val2_6_fu_426_p2/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#22 Warning
+PREG Output pipelining  
+DSP design_1_wrapper_i/design_1_i/hls_img_get_grads/img_get_grads_0/inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_295/r_V_fu_827_p2 output design_1_wrapper_i/design_1_i/hls_img_get_grads/img_get_grads_0/inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_295/r_V_fu_827_p2/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#23 Warning
+PREG Output pipelining  
+DSP design_1_wrapper_i/design_1_i/hls_img_get_grads/img_get_grads_0/inst/get_grads_opr_U0/img_get_grads_fadqcK_U33/img_get_grads_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.SHIFT_RND/DSP output design_1_wrapper_i/design_1_i/hls_img_get_grads/img_get_grads_0/inst/get_grads_opr_U0/img_get_grads_fadqcK_U33/img_get_grads_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.SHIFT_RND/DSP/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#24 Warning
+PREG Output pipelining  
+DSP isp_model_axis_i/gaus_sharp_axis_i/data_factor_reg output isp_model_axis_i/gaus_sharp_axis_i/data_factor_reg/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#25 Warning
+PREG Output pipelining  
+DSP isp_model_axis_i/gaus_sharp_axis_i/data_tmp20 output isp_model_axis_i/gaus_sharp_axis_i/data_tmp20/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-2#1 Warning
+MREG Output pipelining  
+DSP design_1_wrapper_i/design_1_i/hls_img_get_grads/img_get_grads_0/inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_276/img_get_grads_maclbW_U18/img_get_grads_maclbW_DSP48_0_U/p multiplier stage design_1_wrapper_i/design_1_i/hls_img_get_grads/img_get_grads_0/inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_276/img_get_grads_maclbW_U18/img_get_grads_maclbW_DSP48_0_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#2 Warning
+MREG Output pipelining  
+DSP design_1_wrapper_i/design_1_i/hls_img_get_grads/img_get_grads_0/inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_276/img_get_grads_mulibs_U15/img_get_grads_mulibs_MulnS_0_U/p_reg__0 multiplier stage design_1_wrapper_i/design_1_i/hls_img_get_grads/img_get_grads_0/inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_276/img_get_grads_mulibs_U15/img_get_grads_mulibs_MulnS_0_U/p_reg__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#3 Warning
+MREG Output pipelining  
+DSP design_1_wrapper_i/design_1_i/hls_img_get_grads/img_get_grads_0/inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_276/img_get_grads_mulibs_U15/img_get_grads_mulibs_MulnS_0_U/tmp_product multiplier stage design_1_wrapper_i/design_1_i/hls_img_get_grads/img_get_grads_0/inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_276/img_get_grads_mulibs_U15/img_get_grads_mulibs_MulnS_0_U/tmp_product/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#4 Warning
+MREG Output pipelining  
+DSP design_1_wrapper_i/design_1_i/hls_img_get_grads/img_get_grads_0/inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_276/img_get_grads_muljbC_U16/img_get_grads_muljbC_MulnS_1_U/buff0_reg__1 multiplier stage design_1_wrapper_i/design_1_i/hls_img_get_grads/img_get_grads_0/inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_276/img_get_grads_muljbC_U16/img_get_grads_muljbC_MulnS_1_U/buff0_reg__1/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#5 Warning
+MREG Output pipelining  
+DSP design_1_wrapper_i/design_1_i/hls_img_get_grads/img_get_grads_0/inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_276/img_get_grads_muljbC_U16/img_get_grads_muljbC_MulnS_1_U/tmp_product multiplier stage design_1_wrapper_i/design_1_i/hls_img_get_grads/img_get_grads_0/inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_276/img_get_grads_muljbC_U16/img_get_grads_muljbC_MulnS_1_U/tmp_product/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#6 Warning
+MREG Output pipelining  
+DSP design_1_wrapper_i/design_1_i/hls_img_get_grads/img_get_grads_0/inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_276/img_get_grads_mulkbM_U17/img_get_grads_mulkbM_MulnS_2_U/p_reg__1 multiplier stage design_1_wrapper_i/design_1_i/hls_img_get_grads/img_get_grads_0/inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_276/img_get_grads_mulkbM_U17/img_get_grads_mulkbM_MulnS_2_U/p_reg__1/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#7 Warning
+MREG Output pipelining  
+DSP design_1_wrapper_i/design_1_i/hls_img_get_grads/img_get_grads_0/inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_276/img_get_grads_mulkbM_U17/img_get_grads_mulkbM_MulnS_2_U/tmp_product multiplier stage design_1_wrapper_i/design_1_i/hls_img_get_grads/img_get_grads_0/inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_276/img_get_grads_mulkbM_U17/img_get_grads_mulkbM_MulnS_2_U/tmp_product/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#8 Warning
+MREG Output pipelining  
+DSP design_1_wrapper_i/design_1_i/hls_img_get_grads/img_get_grads_0/inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_276/img_get_grads_mulmb6_U19/img_get_grads_mulmb6_DSP48_1_U/in00 multiplier stage design_1_wrapper_i/design_1_i/hls_img_get_grads/img_get_grads_0/inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_276/img_get_grads_mulmb6_U19/img_get_grads_mulmb6_DSP48_1_U/in00/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#9 Warning
+MREG Output pipelining  
+DSP design_1_wrapper_i/design_1_i/hls_img_get_grads/img_get_grads_0/inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_276/p_Val2_1_fu_456_p2 multiplier stage design_1_wrapper_i/design_1_i/hls_img_get_grads/img_get_grads_0/inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_276/p_Val2_1_fu_456_p2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#10 Warning
+MREG Output pipelining  
+DSP design_1_wrapper_i/design_1_i/hls_img_get_grads/img_get_grads_0/inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_276/p_Val2_1_reg_1571_reg__0 multiplier stage design_1_wrapper_i/design_1_i/hls_img_get_grads/img_get_grads_0/inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_276/p_Val2_1_reg_1571_reg__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#11 Warning
+MREG Output pipelining  
+DSP design_1_wrapper_i/design_1_i/hls_img_get_grads/img_get_grads_0/inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_276/p_Val2_61_fu_1094_p2 multiplier stage design_1_wrapper_i/design_1_i/hls_img_get_grads/img_get_grads_0/inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_276/p_Val2_61_fu_1094_p2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#12 Warning
+MREG Output pipelining  
+DSP design_1_wrapper_i/design_1_i/hls_img_get_grads/img_get_grads_0/inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_276/p_Val2_61_fu_1094_p2__0 multiplier stage design_1_wrapper_i/design_1_i/hls_img_get_grads/img_get_grads_0/inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_276/p_Val2_61_fu_1094_p2__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#13 Warning
+MREG Output pipelining  
+DSP design_1_wrapper_i/design_1_i/hls_img_get_grads/img_get_grads_0/inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_276/p_Val2_6_fu_426_p2 multiplier stage design_1_wrapper_i/design_1_i/hls_img_get_grads/img_get_grads_0/inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_276/p_Val2_6_fu_426_p2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#14 Warning
+MREG Output pipelining  
+DSP design_1_wrapper_i/design_1_i/hls_img_get_grads/img_get_grads_0/inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_276/r_V_fu_827_p2 multiplier stage design_1_wrapper_i/design_1_i/hls_img_get_grads/img_get_grads_0/inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_276/r_V_fu_827_p2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#15 Warning
+MREG Output pipelining  
+DSP design_1_wrapper_i/design_1_i/hls_img_get_grads/img_get_grads_0/inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_276/r_V_fu_827_p2__0 multiplier stage design_1_wrapper_i/design_1_i/hls_img_get_grads/img_get_grads_0/inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_276/r_V_fu_827_p2__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#16 Warning
+MREG Output pipelining  
+DSP design_1_wrapper_i/design_1_i/hls_img_get_grads/img_get_grads_0/inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_295/img_get_grads_maclbW_U18/img_get_grads_maclbW_DSP48_0_U/p multiplier stage design_1_wrapper_i/design_1_i/hls_img_get_grads/img_get_grads_0/inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_295/img_get_grads_maclbW_U18/img_get_grads_maclbW_DSP48_0_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#17 Warning
+MREG Output pipelining  
+DSP design_1_wrapper_i/design_1_i/hls_img_get_grads/img_get_grads_0/inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_295/img_get_grads_mulibs_U15/img_get_grads_mulibs_MulnS_0_U/p_reg__0 multiplier stage design_1_wrapper_i/design_1_i/hls_img_get_grads/img_get_grads_0/inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_295/img_get_grads_mulibs_U15/img_get_grads_mulibs_MulnS_0_U/p_reg__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#18 Warning
+MREG Output pipelining  
+DSP design_1_wrapper_i/design_1_i/hls_img_get_grads/img_get_grads_0/inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_295/img_get_grads_mulibs_U15/img_get_grads_mulibs_MulnS_0_U/tmp_product multiplier stage design_1_wrapper_i/design_1_i/hls_img_get_grads/img_get_grads_0/inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_295/img_get_grads_mulibs_U15/img_get_grads_mulibs_MulnS_0_U/tmp_product/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#19 Warning
+MREG Output pipelining  
+DSP design_1_wrapper_i/design_1_i/hls_img_get_grads/img_get_grads_0/inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_295/img_get_grads_muljbC_U16/img_get_grads_muljbC_MulnS_1_U/buff0_reg__1 multiplier stage design_1_wrapper_i/design_1_i/hls_img_get_grads/img_get_grads_0/inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_295/img_get_grads_muljbC_U16/img_get_grads_muljbC_MulnS_1_U/buff0_reg__1/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#20 Warning
+MREG Output pipelining  
+DSP design_1_wrapper_i/design_1_i/hls_img_get_grads/img_get_grads_0/inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_295/img_get_grads_muljbC_U16/img_get_grads_muljbC_MulnS_1_U/tmp_product multiplier stage design_1_wrapper_i/design_1_i/hls_img_get_grads/img_get_grads_0/inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_295/img_get_grads_muljbC_U16/img_get_grads_muljbC_MulnS_1_U/tmp_product/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#21 Warning
+MREG Output pipelining  
+DSP design_1_wrapper_i/design_1_i/hls_img_get_grads/img_get_grads_0/inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_295/img_get_grads_mulkbM_U17/img_get_grads_mulkbM_MulnS_2_U/p_reg__1 multiplier stage design_1_wrapper_i/design_1_i/hls_img_get_grads/img_get_grads_0/inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_295/img_get_grads_mulkbM_U17/img_get_grads_mulkbM_MulnS_2_U/p_reg__1/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#22 Warning
+MREG Output pipelining  
+DSP design_1_wrapper_i/design_1_i/hls_img_get_grads/img_get_grads_0/inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_295/img_get_grads_mulkbM_U17/img_get_grads_mulkbM_MulnS_2_U/tmp_product multiplier stage design_1_wrapper_i/design_1_i/hls_img_get_grads/img_get_grads_0/inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_295/img_get_grads_mulkbM_U17/img_get_grads_mulkbM_MulnS_2_U/tmp_product/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#23 Warning
+MREG Output pipelining  
+DSP design_1_wrapper_i/design_1_i/hls_img_get_grads/img_get_grads_0/inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_295/img_get_grads_mulmb6_U19/img_get_grads_mulmb6_DSP48_1_U/in00 multiplier stage design_1_wrapper_i/design_1_i/hls_img_get_grads/img_get_grads_0/inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_295/img_get_grads_mulmb6_U19/img_get_grads_mulmb6_DSP48_1_U/in00/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#24 Warning
+MREG Output pipelining  
+DSP design_1_wrapper_i/design_1_i/hls_img_get_grads/img_get_grads_0/inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_295/p_Val2_1_fu_456_p2 multiplier stage design_1_wrapper_i/design_1_i/hls_img_get_grads/img_get_grads_0/inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_295/p_Val2_1_fu_456_p2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#25 Warning
+MREG Output pipelining  
+DSP design_1_wrapper_i/design_1_i/hls_img_get_grads/img_get_grads_0/inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_295/p_Val2_1_reg_1571_reg__0 multiplier stage design_1_wrapper_i/design_1_i/hls_img_get_grads/img_get_grads_0/inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_295/p_Val2_1_reg_1571_reg__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#26 Warning
+MREG Output pipelining  
+DSP design_1_wrapper_i/design_1_i/hls_img_get_grads/img_get_grads_0/inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_295/p_Val2_61_fu_1094_p2 multiplier stage design_1_wrapper_i/design_1_i/hls_img_get_grads/img_get_grads_0/inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_295/p_Val2_61_fu_1094_p2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#27 Warning
+MREG Output pipelining  
+DSP design_1_wrapper_i/design_1_i/hls_img_get_grads/img_get_grads_0/inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_295/p_Val2_61_fu_1094_p2__0 multiplier stage design_1_wrapper_i/design_1_i/hls_img_get_grads/img_get_grads_0/inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_295/p_Val2_61_fu_1094_p2__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#28 Warning
+MREG Output pipelining  
+DSP design_1_wrapper_i/design_1_i/hls_img_get_grads/img_get_grads_0/inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_295/p_Val2_6_fu_426_p2 multiplier stage design_1_wrapper_i/design_1_i/hls_img_get_grads/img_get_grads_0/inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_295/p_Val2_6_fu_426_p2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#29 Warning
+MREG Output pipelining  
+DSP design_1_wrapper_i/design_1_i/hls_img_get_grads/img_get_grads_0/inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_295/r_V_fu_827_p2 multiplier stage design_1_wrapper_i/design_1_i/hls_img_get_grads/img_get_grads_0/inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_295/r_V_fu_827_p2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#30 Warning
+MREG Output pipelining  
+DSP design_1_wrapper_i/design_1_i/hls_img_get_grads/img_get_grads_0/inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_295/r_V_fu_827_p2__0 multiplier stage design_1_wrapper_i/design_1_i/hls_img_get_grads/img_get_grads_0/inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_295/r_V_fu_827_p2__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#31 Warning
+MREG Output pipelining  
+DSP design_1_wrapper_i/design_1_i/hls_img_get_grads/img_get_grads_0/inst/get_grads_opr_U0/img_get_grads_fadqcK_U33/img_get_grads_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.SHIFT_RND/DSP multiplier stage design_1_wrapper_i/design_1_i/hls_img_get_grads/img_get_grads_0/inst/get_grads_opr_U0/img_get_grads_fadqcK_U33/img_get_grads_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.SHIFT_RND/DSP/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPREG-4#1 Warning
+DSP48E1_PregDynOpmodeZmuxP:  
+The DSP48E1 cell design_1_wrapper_i/design_1_i/hls_img_get_grads/img_get_grads_0/inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_276/img_get_grads_mulmb6_U19/img_get_grads_mulmb6_DSP48_1_U/in00 with the given dynamic OPMODE[6:0] connections may lead to an unregistered asynchronous feedback path without the PREG attribute enabled. Please refer to the user guide and if one of the internal P feedback opmodes is possible for this design the PREG attribute must be set to 1, currently set to 0
+Related violations: <none>
+
+DPREG-4#2 Warning
+DSP48E1_PregDynOpmodeZmuxP:  
+The DSP48E1 cell design_1_wrapper_i/design_1_i/hls_img_get_grads/img_get_grads_0/inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_295/img_get_grads_mulmb6_U19/img_get_grads_mulmb6_DSP48_1_U/in00 with the given dynamic OPMODE[6:0] connections may lead to an unregistered asynchronous feedback path without the PREG attribute enabled. Please refer to the user guide and if one of the internal P feedback opmodes is possible for this design the PREG attribute must be set to 1, currently set to 0
+Related violations: <none>
+
+PLCK-12#1 Warning
+Clock Placer Checks  
+Poor placement for routing between an IO pin and BUFG. 
+Resolution: Poor placement of an IO pin and a BUFG has resulted in the router using a non-dedicated path between the two.  There are several things that could trigger this DRC, each of which can cause unpredictable clock insertion delays that result in poor timing.  This DRC could be caused by any of the following: (a) a clock port was placed on a pin that is not a CCIO-pin (b)the BUFG has not been placed in the same half of the device or SLR as the CCIO-pin (c) a single ended clock has been placed on the N-Side of a differential pair CCIO-pin.
+ This is normally an ERROR but the CLOCK_DEDICATED_ROUTE constraint is set to FALSE allowing your design to continue. The use of this override is highly discouraged as it may lead to very poor timing results. It is recommended that this error condition be corrected in the design.
+
+	CMOS_PIXCLK_IBUF_inst (IBUF.O) is locked to G20
+	CMOS_PIXCLK_IBUF_BUFG_inst (BUFG.I) cannot be placed
+
+Related violations: <none>
+
+AVAL-4#1 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+design_1_wrapper_i/design_1_i/hls_img_get_grads/img_get_grads_0/inst/get_grads_opr_U0/img_get_grads_fadqcK_U33/img_get_grads_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.SHIFT_RND/DSP: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+REQP-165#1 Advisory
+writefirst  
+Synchronous clocking is detected for BRAM (design_1_wrapper_i/design_1_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_1) in SDP mode with WRITE_FIRST write-mode. This is the preferred mode for best power characteristics, however it may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-165#2 Advisory
+writefirst  
+Synchronous clocking is detected for BRAM (design_1_wrapper_i/design_1_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_1) in SDP mode with WRITE_FIRST write-mode. This is the preferred mode for best power characteristics, however it may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-181#1 Advisory
+writefirst  
+Synchronous clocking is detected for BRAM (design_1_wrapper_i/design_1_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0) in SDP mode with WRITE_FIRST write-mode. This is the preferred mode for best power characteristics, however it may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-181#2 Advisory
+writefirst  
+Synchronous clocking is detected for BRAM (design_1_wrapper_i/design_1_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0) in SDP mode with WRITE_FIRST write-mode. This is the preferred mode for best power characteristics, however it may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-181#3 Advisory
+writefirst  
+Synchronous clocking is detected for BRAM (design_1_wrapper_i/design_1_i/axi_vdma_imgCapture0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg) in SDP mode with WRITE_FIRST write-mode. This is the preferred mode for best power characteristics, however it may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-181#4 Advisory
+writefirst  
+Synchronous clocking is detected for BRAM (design_1_wrapper_i/design_1_i/axi_vdma_imgCapture1/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg) in SDP mode with WRITE_FIRST write-mode. This is the preferred mode for best power characteristics, however it may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-181#5 Advisory
+writefirst  
+Synchronous clocking is detected for BRAM (design_1_wrapper_i/design_1_i/axi_vdma_imgCapture2/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg) in SDP mode with WRITE_FIRST write-mode. This is the preferred mode for best power characteristics, however it may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-181#6 Advisory
+writefirst  
+Synchronous clocking is detected for BRAM (design_1_wrapper_i/design_1_i/axi_vdma_videoStream/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg) in SDP mode with WRITE_FIRST write-mode. This is the preferred mode for best power characteristics, however it may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-1725#1 Advisory
+DSP_Abus_sign_bit_alert  
+design_1_wrapper_i/design_1_i/hls_img_get_grads/img_get_grads_0/inst/get_grads_opr_U0/img_get_grads_fadqcK_U33/img_get_grads_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/DSP: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+

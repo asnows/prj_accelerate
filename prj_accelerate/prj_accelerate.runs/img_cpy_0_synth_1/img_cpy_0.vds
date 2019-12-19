@@ -1,0 +1,807 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Sat Aug  3 08:43:09 2019
+# Process ID: 10224
+# Current directory: E:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.runs/img_cpy_0_synth_1
+# Command line: vivado.exe -log img_cpy_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source img_cpy_0.tcl
+# Log file: E:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.runs/img_cpy_0_synth_1/img_cpy_0.vds
+# Journal file: E:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.runs/img_cpy_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source img_cpy_0.tcl -notrace
+Command: synth_design -top img_cpy_0 -part xc7z020clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 1628 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 458.910 ; gain = 104.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'img_cpy_0' [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/ip/img_cpy_0/synth/img_cpy_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'img_cpy' [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/ip/img_cpy_0/hdl/verilog/img_cpy.v:12]
+INFO: [Synth 8-6157] synthesizing module 'Block_proc' [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/ip/img_cpy_0/hdl/verilog/Block_proc.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 1'b1 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/ip/img_cpy_0/hdl/verilog/Block_proc.v:49]
+INFO: [Synth 8-6155] done synthesizing module 'Block_proc' (1#1) [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/ip/img_cpy_0/hdl/verilog/Block_proc.v:10]
+INFO: [Synth 8-6157] synthesizing module 'AXIvideo2Mat' [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/ip/img_cpy_0/hdl/verilog/AXIvideo2Mat.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 8'b00000001 
+	Parameter ap_ST_fsm_state2 bound to: 8'b00000010 
+	Parameter ap_ST_fsm_state3 bound to: 8'b00000100 
+	Parameter ap_ST_fsm_state4 bound to: 8'b00001000 
+	Parameter ap_ST_fsm_pp1_stage0 bound to: 8'b00010000 
+	Parameter ap_ST_fsm_state7 bound to: 8'b00100000 
+	Parameter ap_ST_fsm_state8 bound to: 8'b01000000 
+	Parameter ap_ST_fsm_state9 bound to: 8'b10000000 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/ip/img_cpy_0/hdl/verilog/AXIvideo2Mat.v:104]
+INFO: [Synth 8-6155] done synthesizing module 'AXIvideo2Mat' (2#1) [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/ip/img_cpy_0/hdl/verilog/AXIvideo2Mat.v:10]
+INFO: [Synth 8-6157] synthesizing module 'img_cpy_opr' [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/ip/img_cpy_0/hdl/verilog/img_cpy_opr.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 3'b001 
+	Parameter ap_ST_fsm_state2 bound to: 3'b010 
+	Parameter ap_ST_fsm_state3 bound to: 3'b100 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/ip/img_cpy_0/hdl/verilog/img_cpy_opr.v:73]
+INFO: [Synth 8-6155] done synthesizing module 'img_cpy_opr' (3#1) [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/ip/img_cpy_0/hdl/verilog/img_cpy_opr.v:10]
+INFO: [Synth 8-6157] synthesizing module 'Mat2AXIvideo' [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/ip/img_cpy_0/hdl/verilog/Mat2AXIvideo.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 4'b0001 
+	Parameter ap_ST_fsm_state2 bound to: 4'b0010 
+	Parameter ap_ST_fsm_pp0_stage0 bound to: 4'b0100 
+	Parameter ap_ST_fsm_state5 bound to: 4'b1000 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/ip/img_cpy_0/hdl/verilog/Mat2AXIvideo.v:64]
+INFO: [Synth 8-6155] done synthesizing module 'Mat2AXIvideo' (4#1) [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/ip/img_cpy_0/hdl/verilog/Mat2AXIvideo.v:10]
+INFO: [Synth 8-6157] synthesizing module 'fifo_w10_d2_A' [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/ip/img_cpy_0/hdl/verilog/fifo_w10_d2_A.v:45]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 10 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'fifo_w10_d2_A_shiftReg' [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/ip/img_cpy_0/hdl/verilog/fifo_w10_d2_A.v:11]
+	Parameter DATA_WIDTH bound to: 10 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'fifo_w10_d2_A_shiftReg' (5#1) [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/ip/img_cpy_0/hdl/verilog/fifo_w10_d2_A.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_w10_d2_A' (6#1) [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/ip/img_cpy_0/hdl/verilog/fifo_w10_d2_A.v:45]
+INFO: [Synth 8-6157] synthesizing module 'fifo_w11_d2_A' [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/ip/img_cpy_0/hdl/verilog/fifo_w11_d2_A.v:45]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 11 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'fifo_w11_d2_A_shiftReg' [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/ip/img_cpy_0/hdl/verilog/fifo_w11_d2_A.v:11]
+	Parameter DATA_WIDTH bound to: 11 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'fifo_w11_d2_A_shiftReg' (7#1) [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/ip/img_cpy_0/hdl/verilog/fifo_w11_d2_A.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_w11_d2_A' (8#1) [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/ip/img_cpy_0/hdl/verilog/fifo_w11_d2_A.v:45]
+INFO: [Synth 8-6157] synthesizing module 'fifo_w8_d2_A' [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/ip/img_cpy_0/hdl/verilog/fifo_w8_d2_A.v:45]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'fifo_w8_d2_A_shiftReg' [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/ip/img_cpy_0/hdl/verilog/fifo_w8_d2_A.v:11]
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'fifo_w8_d2_A_shiftReg' (9#1) [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/ip/img_cpy_0/hdl/verilog/fifo_w8_d2_A.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_w8_d2_A' (10#1) [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/ip/img_cpy_0/hdl/verilog/fifo_w8_d2_A.v:45]
+INFO: [Synth 8-6157] synthesizing module 'start_for_img_cpybkb' [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/ip/img_cpy_0/hdl/verilog/start_for_img_cpybkb.v:45]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'start_for_img_cpybkb_shiftReg' [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/ip/img_cpy_0/hdl/verilog/start_for_img_cpybkb.v:11]
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'start_for_img_cpybkb_shiftReg' (11#1) [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/ip/img_cpy_0/hdl/verilog/start_for_img_cpybkb.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'start_for_img_cpybkb' (12#1) [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/ip/img_cpy_0/hdl/verilog/start_for_img_cpybkb.v:45]
+INFO: [Synth 8-6157] synthesizing module 'start_for_Mat2AXIcud' [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/ip/img_cpy_0/hdl/verilog/start_for_Mat2AXIcud.v:45]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'start_for_Mat2AXIcud_shiftReg' [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/ip/img_cpy_0/hdl/verilog/start_for_Mat2AXIcud.v:11]
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'start_for_Mat2AXIcud_shiftReg' (13#1) [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/ip/img_cpy_0/hdl/verilog/start_for_Mat2AXIcud.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'start_for_Mat2AXIcud' (14#1) [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/ip/img_cpy_0/hdl/verilog/start_for_Mat2AXIcud.v:45]
+INFO: [Synth 8-6155] done synthesizing module 'img_cpy' (15#1) [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/ip/img_cpy_0/hdl/verilog/img_cpy.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'img_cpy_0' (16#1) [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/ip/img_cpy_0/synth/img_cpy_0.v:57]
+WARNING: [Synth 8-3331] design AXIvideo2Mat has unconnected port video_in_TKEEP[7]
+WARNING: [Synth 8-3331] design AXIvideo2Mat has unconnected port video_in_TKEEP[6]
+WARNING: [Synth 8-3331] design AXIvideo2Mat has unconnected port video_in_TKEEP[5]
+WARNING: [Synth 8-3331] design AXIvideo2Mat has unconnected port video_in_TKEEP[4]
+WARNING: [Synth 8-3331] design AXIvideo2Mat has unconnected port video_in_TKEEP[3]
+WARNING: [Synth 8-3331] design AXIvideo2Mat has unconnected port video_in_TKEEP[2]
+WARNING: [Synth 8-3331] design AXIvideo2Mat has unconnected port video_in_TKEEP[1]
+WARNING: [Synth 8-3331] design AXIvideo2Mat has unconnected port video_in_TKEEP[0]
+WARNING: [Synth 8-3331] design AXIvideo2Mat has unconnected port video_in_TSTRB[7]
+WARNING: [Synth 8-3331] design AXIvideo2Mat has unconnected port video_in_TSTRB[6]
+WARNING: [Synth 8-3331] design AXIvideo2Mat has unconnected port video_in_TSTRB[5]
+WARNING: [Synth 8-3331] design AXIvideo2Mat has unconnected port video_in_TSTRB[4]
+WARNING: [Synth 8-3331] design AXIvideo2Mat has unconnected port video_in_TSTRB[3]
+WARNING: [Synth 8-3331] design AXIvideo2Mat has unconnected port video_in_TSTRB[2]
+WARNING: [Synth 8-3331] design AXIvideo2Mat has unconnected port video_in_TSTRB[1]
+WARNING: [Synth 8-3331] design AXIvideo2Mat has unconnected port video_in_TSTRB[0]
+WARNING: [Synth 8-3331] design AXIvideo2Mat has unconnected port video_in_TID[0]
+WARNING: [Synth 8-3331] design AXIvideo2Mat has unconnected port video_in_TDEST[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 514.309 ; gain = 159.398
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 514.309 ; gain = 159.398
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 514.309 ; gain = 159.398
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/ip/img_cpy_0/constraints/img_cpy_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/ip/img_cpy_0/constraints/img_cpy_ooc.xdc] for cell 'inst'
+Parsing XDC File [E:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.runs/img_cpy_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [E:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.runs/img_cpy_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.157 . Memory (MB): peak = 892.203 ; gain = 1.578
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 892.203 ; gain = 537.293
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 892.203 ; gain = 537.293
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for inst. (constraint file  E:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.runs/img_cpy_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 892.203 ; gain = 537.293
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-5546] ROM "exitcond1_fu_166_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond_fu_178_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "axi_last_V_fu_190_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "internal_empty_n" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "internal_empty_n" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "internal_empty_n" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "internal_empty_n" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "internal_empty_n" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:22 ; elapsed = 00:00:26 . Memory (MB): peak = 892.203 ; gain = 537.293
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input     12 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 8     
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	               64 Bit    Registers := 5     
+	               32 Bit    Registers := 4     
+	               12 Bit    Registers := 4     
+	               11 Bit    Registers := 4     
+	               10 Bit    Registers := 5     
+	                9 Bit    Registers := 2     
+	                8 Bit    Registers := 6     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 8     
+	                1 Bit    Registers := 44    
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 6     
+	   2 Input     11 Bit        Muxes := 2     
+	   2 Input     10 Bit        Muxes := 2     
+	   3 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 3     
+	   3 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	   3 Input      4 Bit        Muxes := 1     
+	   3 Input      3 Bit        Muxes := 1     
+	   6 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 70    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module Block_proc 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+Module AXIvideo2Mat 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               64 Bit    Registers := 5     
+	               32 Bit    Registers := 4     
+	                8 Bit    Registers := 2     
+	                1 Bit    Registers := 13    
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 6     
+	   3 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   3 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	   3 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 20    
+Module img_cpy_opr 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     12 Bit       Adders := 1     
++---Registers : 
+	               12 Bit    Registers := 4     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   6 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+Module Mat2AXIvideo 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               10 Bit    Registers := 1     
+	                9 Bit    Registers := 2     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   3 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 11    
+Module fifo_w10_d2_A_shiftReg 
+Detailed RTL Component Info : 
++---Registers : 
+	               10 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     10 Bit        Muxes := 1     
+Module fifo_w10_d2_A 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 4     
+Module fifo_w11_d2_A_shiftReg 
+Detailed RTL Component Info : 
++---Registers : 
+	               11 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     11 Bit        Muxes := 1     
+Module fifo_w11_d2_A 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 4     
+Module fifo_w8_d2_A_shiftReg 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module fifo_w8_d2_A 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 4     
+Module start_for_img_cpybkb_shiftReg 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module start_for_img_cpybkb 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 4     
+Module start_for_Mat2AXIcud_shiftReg 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module start_for_Mat2AXIcud 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5546] ROM "Mat2AXIvideo_U0/exitcond_fu_178_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Mat2AXIvideo_U0/exitcond1_fu_166_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Mat2AXIvideo_U0/axi_last_V_fu_190_p2" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-3331] design img_cpy has unconnected port video_in_TKEEP[7]
+WARNING: [Synth 8-3331] design img_cpy has unconnected port video_in_TKEEP[6]
+WARNING: [Synth 8-3331] design img_cpy has unconnected port video_in_TKEEP[5]
+WARNING: [Synth 8-3331] design img_cpy has unconnected port video_in_TKEEP[4]
+WARNING: [Synth 8-3331] design img_cpy has unconnected port video_in_TKEEP[3]
+WARNING: [Synth 8-3331] design img_cpy has unconnected port video_in_TKEEP[2]
+WARNING: [Synth 8-3331] design img_cpy has unconnected port video_in_TKEEP[1]
+WARNING: [Synth 8-3331] design img_cpy has unconnected port video_in_TKEEP[0]
+WARNING: [Synth 8-3331] design img_cpy has unconnected port video_in_TSTRB[7]
+WARNING: [Synth 8-3331] design img_cpy has unconnected port video_in_TSTRB[6]
+WARNING: [Synth 8-3331] design img_cpy has unconnected port video_in_TSTRB[5]
+WARNING: [Synth 8-3331] design img_cpy has unconnected port video_in_TSTRB[4]
+WARNING: [Synth 8-3331] design img_cpy has unconnected port video_in_TSTRB[3]
+WARNING: [Synth 8-3331] design img_cpy has unconnected port video_in_TSTRB[2]
+WARNING: [Synth 8-3331] design img_cpy has unconnected port video_in_TSTRB[1]
+WARNING: [Synth 8-3331] design img_cpy has unconnected port video_in_TSTRB[0]
+WARNING: [Synth 8-3331] design img_cpy has unconnected port video_in_TID[0]
+WARNING: [Synth 8-3331] design img_cpy has unconnected port video_in_TDEST[0]
+INFO: [Synth 8-3886] merging instance 'inst/srcImg_rows_V_c_U/U_fifo_w10_d2_A_ram/SRL_SIG_reg[0][0]' (FDE) to 'inst/srcImg_rows_V_c_U/U_fifo_w10_d2_A_ram/SRL_SIG_reg[0][1]'
+INFO: [Synth 8-3886] merging instance 'inst/srcImg_rows_V_c_U/U_fifo_w10_d2_A_ram/SRL_SIG_reg[1][1]' (FDE) to 'inst/srcImg_rows_V_c_U/U_fifo_w10_d2_A_ram/SRL_SIG_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'inst/srcImg_rows_V_c_U/U_fifo_w10_d2_A_ram/SRL_SIG_reg[0][1]' (FDE) to 'inst/srcImg_rows_V_c_U/U_fifo_w10_d2_A_ram/SRL_SIG_reg[0][2]'
+INFO: [Synth 8-3886] merging instance 'inst/srcImg_rows_V_c_U/U_fifo_w10_d2_A_ram/SRL_SIG_reg[1][2]' (FDE) to 'inst/srcImg_rows_V_c_U/U_fifo_w10_d2_A_ram/SRL_SIG_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'inst/srcImg_rows_V_c_U/U_fifo_w10_d2_A_ram/SRL_SIG_reg[0][2]' (FDE) to 'inst/srcImg_rows_V_c_U/U_fifo_w10_d2_A_ram/SRL_SIG_reg[0][3]'
+INFO: [Synth 8-3886] merging instance 'inst/srcImg_cols_V_c_U/U_fifo_w11_d2_A_ram/SRL_SIG_reg[0][0]' (FDE) to 'inst/srcImg_cols_V_c_U/U_fifo_w11_d2_A_ram/SRL_SIG_reg[0][1]'
+INFO: [Synth 8-3886] merging instance 'inst/srcImg_cols_V_c_U/U_fifo_w11_d2_A_ram/SRL_SIG_reg[1][1]' (FDE) to 'inst/srcImg_cols_V_c_U/U_fifo_w11_d2_A_ram/SRL_SIG_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'inst/srcImg_cols_V_c_U/U_fifo_w11_d2_A_ram/SRL_SIG_reg[0][1]' (FDE) to 'inst/srcImg_cols_V_c_U/U_fifo_w11_d2_A_ram/SRL_SIG_reg[0][2]'
+INFO: [Synth 8-3886] merging instance 'inst/srcImg_cols_V_c_U/U_fifo_w11_d2_A_ram/SRL_SIG_reg[1][2]' (FDE) to 'inst/srcImg_cols_V_c_U/U_fifo_w11_d2_A_ram/SRL_SIG_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'inst/srcImg_cols_V_c_U/U_fifo_w11_d2_A_ram/SRL_SIG_reg[0][2]' (FDE) to 'inst/srcImg_cols_V_c_U/U_fifo_w11_d2_A_ram/SRL_SIG_reg[0][3]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\Block_proc_U0/ap_done_reg_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\img_cpy_opr_U0/ap_done_reg_reg )
+INFO: [Synth 8-3886] merging instance 'inst/srcImg_rows_V_c_U/U_fifo_w10_d2_A_ram/SRL_SIG_reg[1][3]' (FDE) to 'inst/srcImg_rows_V_c_U/U_fifo_w10_d2_A_ram/SRL_SIG_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'inst/srcImg_rows_V_c_U/U_fifo_w10_d2_A_ram/SRL_SIG_reg[0][3]' (FDE) to 'inst/srcImg_rows_V_c_U/U_fifo_w10_d2_A_ram/SRL_SIG_reg[0][4]'
+INFO: [Synth 8-3886] merging instance 'inst/srcImg_rows_V_c_U/U_fifo_w10_d2_A_ram/SRL_SIG_reg[1][4]' (FDE) to 'inst/srcImg_rows_V_c_U/U_fifo_w10_d2_A_ram/SRL_SIG_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'inst/srcImg_rows_V_c_U/U_fifo_w10_d2_A_ram/SRL_SIG_reg[0][4]' (FDE) to 'inst/srcImg_rows_V_c_U/U_fifo_w10_d2_A_ram/SRL_SIG_reg[0][9]'
+INFO: [Synth 8-3886] merging instance 'inst/srcImg_rows_V_c_U/U_fifo_w10_d2_A_ram/SRL_SIG_reg[0][5]' (FDE) to 'inst/srcImg_rows_V_c_U/U_fifo_w10_d2_A_ram/SRL_SIG_reg[0][6]'
+INFO: [Synth 8-3886] merging instance 'inst/srcImg_rows_V_c_U/U_fifo_w10_d2_A_ram/SRL_SIG_reg[1][6]' (FDE) to 'inst/srcImg_rows_V_c_U/U_fifo_w10_d2_A_ram/SRL_SIG_reg[1][5]'
+INFO: [Synth 8-3886] merging instance 'inst/srcImg_rows_V_c_U/U_fifo_w10_d2_A_ram/SRL_SIG_reg[0][6]' (FDE) to 'inst/srcImg_rows_V_c_U/U_fifo_w10_d2_A_ram/SRL_SIG_reg[0][7]'
+INFO: [Synth 8-3886] merging instance 'inst/srcImg_rows_V_c_U/U_fifo_w10_d2_A_ram/SRL_SIG_reg[1][7]' (FDE) to 'inst/srcImg_rows_V_c_U/U_fifo_w10_d2_A_ram/SRL_SIG_reg[1][5]'
+INFO: [Synth 8-3886] merging instance 'inst/srcImg_rows_V_c_U/U_fifo_w10_d2_A_ram/SRL_SIG_reg[0][7]' (FDE) to 'inst/srcImg_rows_V_c_U/U_fifo_w10_d2_A_ram/SRL_SIG_reg[0][8]'
+INFO: [Synth 8-3886] merging instance 'inst/srcImg_rows_V_c_U/U_fifo_w10_d2_A_ram/SRL_SIG_reg[1][8]' (FDE) to 'inst/srcImg_rows_V_c_U/U_fifo_w10_d2_A_ram/SRL_SIG_reg[1][5]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\srcImg_rows_V_c_U/U_fifo_w10_d2_A_ram/SRL_SIG_reg[0][8] )
+INFO: [Synth 8-3886] merging instance 'inst/srcImg_rows_V_c_U/U_fifo_w10_d2_A_ram/SRL_SIG_reg[1][9]' (FDE) to 'inst/srcImg_rows_V_c_U/U_fifo_w10_d2_A_ram/SRL_SIG_reg[1][0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\srcImg_rows_V_c_U/U_fifo_w10_d2_A_ram/SRL_SIG_reg[0][9] )
+INFO: [Synth 8-3886] merging instance 'inst/srcImg_cols_V_c_U/U_fifo_w11_d2_A_ram/SRL_SIG_reg[1][3]' (FDE) to 'inst/srcImg_cols_V_c_U/U_fifo_w11_d2_A_ram/SRL_SIG_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'inst/srcImg_cols_V_c_U/U_fifo_w11_d2_A_ram/SRL_SIG_reg[0][3]' (FDE) to 'inst/srcImg_cols_V_c_U/U_fifo_w11_d2_A_ram/SRL_SIG_reg[0][4]'
+INFO: [Synth 8-3886] merging instance 'inst/srcImg_cols_V_c_U/U_fifo_w11_d2_A_ram/SRL_SIG_reg[1][4]' (FDE) to 'inst/srcImg_cols_V_c_U/U_fifo_w11_d2_A_ram/SRL_SIG_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'inst/srcImg_cols_V_c_U/U_fifo_w11_d2_A_ram/SRL_SIG_reg[0][4]' (FDE) to 'inst/srcImg_cols_V_c_U/U_fifo_w11_d2_A_ram/SRL_SIG_reg[0][5]'
+INFO: [Synth 8-3886] merging instance 'inst/srcImg_cols_V_c_U/U_fifo_w11_d2_A_ram/SRL_SIG_reg[1][5]' (FDE) to 'inst/srcImg_cols_V_c_U/U_fifo_w11_d2_A_ram/SRL_SIG_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'inst/srcImg_cols_V_c_U/U_fifo_w11_d2_A_ram/SRL_SIG_reg[0][5]' (FDE) to 'inst/srcImg_cols_V_c_U/U_fifo_w11_d2_A_ram/SRL_SIG_reg[0][6]'
+INFO: [Synth 8-3886] merging instance 'inst/srcImg_cols_V_c_U/U_fifo_w11_d2_A_ram/SRL_SIG_reg[1][6]' (FDE) to 'inst/srcImg_cols_V_c_U/U_fifo_w11_d2_A_ram/SRL_SIG_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'inst/srcImg_cols_V_c_U/U_fifo_w11_d2_A_ram/SRL_SIG_reg[0][6]' (FDE) to 'inst/srcImg_cols_V_c_U/U_fifo_w11_d2_A_ram/SRL_SIG_reg[0][8]'
+INFO: [Synth 8-3886] merging instance 'inst/srcImg_cols_V_c_U/U_fifo_w11_d2_A_ram/SRL_SIG_reg[0][7]' (FDE) to 'inst/srcImg_cols_V_c_U/U_fifo_w11_d2_A_ram/SRL_SIG_reg[0][9]'
+INFO: [Synth 8-3886] merging instance 'inst/srcImg_cols_V_c_U/U_fifo_w11_d2_A_ram/SRL_SIG_reg[1][8]' (FDE) to 'inst/srcImg_cols_V_c_U/U_fifo_w11_d2_A_ram/SRL_SIG_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'inst/srcImg_cols_V_c_U/U_fifo_w11_d2_A_ram/SRL_SIG_reg[0][8]' (FDE) to 'inst/srcImg_cols_V_c_U/U_fifo_w11_d2_A_ram/SRL_SIG_reg[0][10]'
+INFO: [Synth 8-3886] merging instance 'inst/srcImg_cols_V_c_U/U_fifo_w11_d2_A_ram/SRL_SIG_reg[1][9]' (FDE) to 'inst/srcImg_cols_V_c_U/U_fifo_w11_d2_A_ram/SRL_SIG_reg[1][7]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\srcImg_cols_V_c_U/U_fifo_w11_d2_A_ram/SRL_SIG_reg[0][9] )
+INFO: [Synth 8-3886] merging instance 'inst/srcImg_cols_V_c_U/U_fifo_w11_d2_A_ram/SRL_SIG_reg[1][10]' (FDE) to 'inst/srcImg_cols_V_c_U/U_fifo_w11_d2_A_ram/SRL_SIG_reg[1][0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\srcImg_cols_V_c_U/U_fifo_w11_d2_A_ram/SRL_SIG_reg[0][10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\AXIvideo2Mat_U0/ap_done_reg_reg )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\Block_proc_U0/ap_CS_fsm_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\Mat2AXIvideo_U0/ap_done_reg_reg )
+INFO: [Synth 8-3886] merging instance 'inst/srcImg_rows_V_c6_U/U_fifo_w10_d2_A_ram/SRL_SIG_reg[0][0]' (FDE) to 'inst/srcImg_rows_V_c6_U/U_fifo_w10_d2_A_ram/SRL_SIG_reg[0][1]'
+INFO: [Synth 8-3886] merging instance 'inst/srcImg_rows_V_c6_U/U_fifo_w10_d2_A_ram/SRL_SIG_reg[1][1]' (FDE) to 'inst/srcImg_rows_V_c6_U/U_fifo_w10_d2_A_ram/SRL_SIG_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'inst/srcImg_rows_V_c6_U/U_fifo_w10_d2_A_ram/SRL_SIG_reg[0][1]' (FDE) to 'inst/srcImg_rows_V_c6_U/U_fifo_w10_d2_A_ram/SRL_SIG_reg[0][2]'
+INFO: [Synth 8-3886] merging instance 'inst/srcImg_rows_V_c6_U/U_fifo_w10_d2_A_ram/SRL_SIG_reg[1][2]' (FDE) to 'inst/srcImg_rows_V_c6_U/U_fifo_w10_d2_A_ram/SRL_SIG_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'inst/srcImg_rows_V_c6_U/U_fifo_w10_d2_A_ram/SRL_SIG_reg[0][2]' (FDE) to 'inst/srcImg_rows_V_c6_U/U_fifo_w10_d2_A_ram/SRL_SIG_reg[0][3]'
+INFO: [Synth 8-3886] merging instance 'inst/srcImg_cols_V_c7_U/U_fifo_w11_d2_A_ram/SRL_SIG_reg[0][0]' (FDE) to 'inst/srcImg_cols_V_c7_U/U_fifo_w11_d2_A_ram/SRL_SIG_reg[0][1]'
+INFO: [Synth 8-3886] merging instance 'inst/srcImg_cols_V_c7_U/U_fifo_w11_d2_A_ram/SRL_SIG_reg[1][1]' (FDE) to 'inst/srcImg_cols_V_c7_U/U_fifo_w11_d2_A_ram/SRL_SIG_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'inst/srcImg_cols_V_c7_U/U_fifo_w11_d2_A_ram/SRL_SIG_reg[0][1]' (FDE) to 'inst/srcImg_cols_V_c7_U/U_fifo_w11_d2_A_ram/SRL_SIG_reg[0][2]'
+INFO: [Synth 8-3886] merging instance 'inst/srcImg_cols_V_c7_U/U_fifo_w11_d2_A_ram/SRL_SIG_reg[1][2]' (FDE) to 'inst/srcImg_cols_V_c7_U/U_fifo_w11_d2_A_ram/SRL_SIG_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'inst/srcImg_cols_V_c7_U/U_fifo_w11_d2_A_ram/SRL_SIG_reg[0][2]' (FDE) to 'inst/srcImg_cols_V_c7_U/U_fifo_w11_d2_A_ram/SRL_SIG_reg[0][3]'
+INFO: [Synth 8-3886] merging instance 'inst/srcImg_rows_V_c6_U/U_fifo_w10_d2_A_ram/SRL_SIG_reg[1][3]' (FDE) to 'inst/srcImg_rows_V_c6_U/U_fifo_w10_d2_A_ram/SRL_SIG_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'inst/srcImg_rows_V_c6_U/U_fifo_w10_d2_A_ram/SRL_SIG_reg[0][3]' (FDE) to 'inst/srcImg_rows_V_c6_U/U_fifo_w10_d2_A_ram/SRL_SIG_reg[0][4]'
+INFO: [Synth 8-3886] merging instance 'inst/srcImg_rows_V_c6_U/U_fifo_w10_d2_A_ram/SRL_SIG_reg[1][4]' (FDE) to 'inst/srcImg_rows_V_c6_U/U_fifo_w10_d2_A_ram/SRL_SIG_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'inst/srcImg_rows_V_c6_U/U_fifo_w10_d2_A_ram/SRL_SIG_reg[0][4]' (FDE) to 'inst/srcImg_rows_V_c6_U/U_fifo_w10_d2_A_ram/SRL_SIG_reg[0][9]'
+INFO: [Synth 8-3886] merging instance 'inst/srcImg_rows_V_c6_U/U_fifo_w10_d2_A_ram/SRL_SIG_reg[0][5]' (FDE) to 'inst/srcImg_rows_V_c6_U/U_fifo_w10_d2_A_ram/SRL_SIG_reg[0][6]'
+INFO: [Synth 8-3886] merging instance 'inst/srcImg_rows_V_c6_U/U_fifo_w10_d2_A_ram/SRL_SIG_reg[1][6]' (FDE) to 'inst/srcImg_rows_V_c6_U/U_fifo_w10_d2_A_ram/SRL_SIG_reg[1][5]'
+INFO: [Synth 8-3886] merging instance 'inst/srcImg_rows_V_c6_U/U_fifo_w10_d2_A_ram/SRL_SIG_reg[0][6]' (FDE) to 'inst/srcImg_rows_V_c6_U/U_fifo_w10_d2_A_ram/SRL_SIG_reg[0][7]'
+INFO: [Synth 8-3886] merging instance 'inst/srcImg_rows_V_c6_U/U_fifo_w10_d2_A_ram/SRL_SIG_reg[1][7]' (FDE) to 'inst/srcImg_rows_V_c6_U/U_fifo_w10_d2_A_ram/SRL_SIG_reg[1][5]'
+INFO: [Synth 8-3886] merging instance 'inst/srcImg_rows_V_c6_U/U_fifo_w10_d2_A_ram/SRL_SIG_reg[0][7]' (FDE) to 'inst/srcImg_rows_V_c6_U/U_fifo_w10_d2_A_ram/SRL_SIG_reg[0][8]'
+INFO: [Synth 8-3886] merging instance 'inst/srcImg_rows_V_c6_U/U_fifo_w10_d2_A_ram/SRL_SIG_reg[1][8]' (FDE) to 'inst/srcImg_rows_V_c6_U/U_fifo_w10_d2_A_ram/SRL_SIG_reg[1][5]'
+INFO: [Synth 8-3886] merging instance 'inst/srcImg_rows_V_c6_U/U_fifo_w10_d2_A_ram/SRL_SIG_reg[1][9]' (FDE) to 'inst/srcImg_rows_V_c6_U/U_fifo_w10_d2_A_ram/SRL_SIG_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'inst/srcImg_cols_V_c7_U/U_fifo_w11_d2_A_ram/SRL_SIG_reg[1][3]' (FDE) to 'inst/srcImg_cols_V_c7_U/U_fifo_w11_d2_A_ram/SRL_SIG_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'inst/srcImg_cols_V_c7_U/U_fifo_w11_d2_A_ram/SRL_SIG_reg[0][3]' (FDE) to 'inst/srcImg_cols_V_c7_U/U_fifo_w11_d2_A_ram/SRL_SIG_reg[0][4]'
+INFO: [Synth 8-3886] merging instance 'inst/srcImg_cols_V_c7_U/U_fifo_w11_d2_A_ram/SRL_SIG_reg[1][4]' (FDE) to 'inst/srcImg_cols_V_c7_U/U_fifo_w11_d2_A_ram/SRL_SIG_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'inst/srcImg_cols_V_c7_U/U_fifo_w11_d2_A_ram/SRL_SIG_reg[0][4]' (FDE) to 'inst/srcImg_cols_V_c7_U/U_fifo_w11_d2_A_ram/SRL_SIG_reg[0][5]'
+INFO: [Synth 8-3886] merging instance 'inst/srcImg_cols_V_c7_U/U_fifo_w11_d2_A_ram/SRL_SIG_reg[1][5]' (FDE) to 'inst/srcImg_cols_V_c7_U/U_fifo_w11_d2_A_ram/SRL_SIG_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'inst/srcImg_cols_V_c7_U/U_fifo_w11_d2_A_ram/SRL_SIG_reg[0][5]' (FDE) to 'inst/srcImg_cols_V_c7_U/U_fifo_w11_d2_A_ram/SRL_SIG_reg[0][6]'
+INFO: [Synth 8-3886] merging instance 'inst/srcImg_cols_V_c7_U/U_fifo_w11_d2_A_ram/SRL_SIG_reg[1][6]' (FDE) to 'inst/srcImg_cols_V_c7_U/U_fifo_w11_d2_A_ram/SRL_SIG_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'inst/srcImg_cols_V_c7_U/U_fifo_w11_d2_A_ram/SRL_SIG_reg[0][6]' (FDE) to 'inst/srcImg_cols_V_c7_U/U_fifo_w11_d2_A_ram/SRL_SIG_reg[0][8]'
+INFO: [Synth 8-3886] merging instance 'inst/srcImg_cols_V_c7_U/U_fifo_w11_d2_A_ram/SRL_SIG_reg[0][7]' (FDE) to 'inst/srcImg_cols_V_c7_U/U_fifo_w11_d2_A_ram/SRL_SIG_reg[0][9]'
+INFO: [Synth 8-3886] merging instance 'inst/srcImg_cols_V_c7_U/U_fifo_w11_d2_A_ram/SRL_SIG_reg[1][8]' (FDE) to 'inst/srcImg_cols_V_c7_U/U_fifo_w11_d2_A_ram/SRL_SIG_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'inst/srcImg_cols_V_c7_U/U_fifo_w11_d2_A_ram/SRL_SIG_reg[0][8]' (FDE) to 'inst/srcImg_cols_V_c7_U/U_fifo_w11_d2_A_ram/SRL_SIG_reg[0][10]'
+INFO: [Synth 8-3886] merging instance 'inst/srcImg_cols_V_c7_U/U_fifo_w11_d2_A_ram/SRL_SIG_reg[1][9]' (FDE) to 'inst/srcImg_cols_V_c7_U/U_fifo_w11_d2_A_ram/SRL_SIG_reg[1][7]'
+INFO: [Synth 8-3886] merging instance 'inst/srcImg_cols_V_c7_U/U_fifo_w11_d2_A_ram/SRL_SIG_reg[1][10]' (FDE) to 'inst/srcImg_cols_V_c7_U/U_fifo_w11_d2_A_ram/SRL_SIG_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'inst/AXIvideo2Mat_U0/rows_V_reg_405_reg[0]' (FDE) to 'inst/AXIvideo2Mat_U0/rows_V_reg_405_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/AXIvideo2Mat_U0/rows_V_reg_405_reg[1]' (FDE) to 'inst/AXIvideo2Mat_U0/rows_V_reg_405_reg[2]'
+INFO: [Synth 8-3886] merging instance 'inst/AXIvideo2Mat_U0/rows_V_reg_405_reg[2]' (FDE) to 'inst/AXIvideo2Mat_U0/rows_V_reg_405_reg[3]'
+INFO: [Synth 8-3886] merging instance 'inst/srcImg_rows_V_c_U/U_fifo_w10_d2_A_ram/SRL_SIG_reg[0][8]' (FDE) to 'inst/srcImg_rows_V_c_U/U_fifo_w10_d2_A_ram/SRL_SIG_reg[1][5]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\srcImg_rows_V_c_U/U_fifo_w10_d2_A_ram/SRL_SIG_reg[1][5] )
+INFO: [Synth 8-3886] merging instance 'inst/srcImg_rows_V_c_U/U_fifo_w10_d2_A_ram/SRL_SIG_reg[0][9]' (FDE) to 'inst/srcImg_rows_V_c_U/U_fifo_w10_d2_A_ram/SRL_SIG_reg[1][0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\srcImg_rows_V_c_U/U_fifo_w10_d2_A_ram/SRL_SIG_reg[1][0] )
+INFO: [Synth 8-3886] merging instance 'inst/AXIvideo2Mat_U0/cols_V_reg_410_reg[0]' (FDE) to 'inst/AXIvideo2Mat_U0/cols_V_reg_410_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/AXIvideo2Mat_U0/cols_V_reg_410_reg[1]' (FDE) to 'inst/AXIvideo2Mat_U0/cols_V_reg_410_reg[2]'
+INFO: [Synth 8-3886] merging instance 'inst/AXIvideo2Mat_U0/cols_V_reg_410_reg[2]' (FDE) to 'inst/AXIvideo2Mat_U0/cols_V_reg_410_reg[3]'
+INFO: [Synth 8-3886] merging instance 'inst/srcImg_cols_V_c_U/U_fifo_w11_d2_A_ram/SRL_SIG_reg[0][9]' (FDE) to 'inst/srcImg_cols_V_c_U/U_fifo_w11_d2_A_ram/SRL_SIG_reg[1][7]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\srcImg_cols_V_c_U/U_fifo_w11_d2_A_ram/SRL_SIG_reg[1][7] )
+INFO: [Synth 8-3886] merging instance 'inst/srcImg_cols_V_c_U/U_fifo_w11_d2_A_ram/SRL_SIG_reg[0][10]' (FDE) to 'inst/srcImg_cols_V_c_U/U_fifo_w11_d2_A_ram/SRL_SIG_reg[1][0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\srcImg_cols_V_c_U/U_fifo_w11_d2_A_ram/SRL_SIG_reg[1][0] )
+INFO: [Synth 8-3886] merging instance 'inst/AXIvideo2Mat_U0/rows_V_reg_405_reg[3]' (FDE) to 'inst/AXIvideo2Mat_U0/rows_V_reg_405_reg[4]'
+INFO: [Synth 8-3886] merging instance 'inst/AXIvideo2Mat_U0/rows_V_reg_405_reg[4]' (FDE) to 'inst/AXIvideo2Mat_U0/rows_V_reg_405_reg[9]'
+INFO: [Synth 8-3886] merging instance 'inst/AXIvideo2Mat_U0/rows_V_reg_405_reg[5]' (FDE) to 'inst/AXIvideo2Mat_U0/rows_V_reg_405_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/AXIvideo2Mat_U0/rows_V_reg_405_reg[6]' (FDE) to 'inst/AXIvideo2Mat_U0/rows_V_reg_405_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst/AXIvideo2Mat_U0/rows_V_reg_405_reg[7]' (FDE) to 'inst/AXIvideo2Mat_U0/rows_V_reg_405_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/AXIvideo2Mat_U0/cols_V_reg_410_reg[3]' (FDE) to 'inst/AXIvideo2Mat_U0/cols_V_reg_410_reg[4]'
+INFO: [Synth 8-3886] merging instance 'inst/AXIvideo2Mat_U0/cols_V_reg_410_reg[4]' (FDE) to 'inst/AXIvideo2Mat_U0/cols_V_reg_410_reg[5]'
+INFO: [Synth 8-3886] merging instance 'inst/AXIvideo2Mat_U0/cols_V_reg_410_reg[5]' (FDE) to 'inst/AXIvideo2Mat_U0/cols_V_reg_410_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/AXIvideo2Mat_U0/cols_V_reg_410_reg[6]' (FDE) to 'inst/AXIvideo2Mat_U0/cols_V_reg_410_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/AXIvideo2Mat_U0/cols_V_reg_410_reg[7]' (FDE) to 'inst/AXIvideo2Mat_U0/cols_V_reg_410_reg[9]'
+INFO: [Synth 8-3886] merging instance 'inst/AXIvideo2Mat_U0/cols_V_reg_410_reg[8]' (FDE) to 'inst/AXIvideo2Mat_U0/cols_V_reg_410_reg[10]'
+INFO: [Synth 8-3886] merging instance 'inst/img_cpy_opr_U0/tmp_1_reg_179_reg[0]' (FDE) to 'inst/img_cpy_opr_U0/tmp_1_reg_179_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/img_cpy_opr_U0/tmp_1_reg_179_reg[1]' (FDE) to 'inst/img_cpy_opr_U0/tmp_1_reg_179_reg[2]'
+INFO: [Synth 8-3886] merging instance 'inst/img_cpy_opr_U0/tmp_1_reg_179_reg[2]' (FDE) to 'inst/img_cpy_opr_U0/tmp_1_reg_179_reg[3]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\srcImg_rows_V_c6_U/U_fifo_w10_d2_A_ram/SRL_SIG_reg[0][8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\srcImg_rows_V_c6_U/U_fifo_w10_d2_A_ram/SRL_SIG_reg[0][9] )
+INFO: [Synth 8-3886] merging instance 'inst/img_cpy_opr_U0/tmp_reg_174_reg[0]' (FDE) to 'inst/img_cpy_opr_U0/tmp_reg_174_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/img_cpy_opr_U0/tmp_reg_174_reg[1]' (FDE) to 'inst/img_cpy_opr_U0/tmp_reg_174_reg[2]'
+INFO: [Synth 8-3886] merging instance 'inst/img_cpy_opr_U0/tmp_reg_174_reg[2]' (FDE) to 'inst/img_cpy_opr_U0/tmp_reg_174_reg[3]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\srcImg_cols_V_c7_U/U_fifo_w11_d2_A_ram/SRL_SIG_reg[0][9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\srcImg_cols_V_c7_U/U_fifo_w11_d2_A_ram/SRL_SIG_reg[0][10] )
+INFO: [Synth 8-3886] merging instance 'inst/img_cpy_opr_U0/tmp_1_reg_179_reg[3]' (FDE) to 'inst/img_cpy_opr_U0/tmp_1_reg_179_reg[4]'
+INFO: [Synth 8-3886] merging instance 'inst/img_cpy_opr_U0/tmp_1_reg_179_reg[4]' (FDE) to 'inst/img_cpy_opr_U0/tmp_1_reg_179_reg[9]'
+INFO: [Synth 8-3886] merging instance 'inst/img_cpy_opr_U0/tmp_1_reg_179_reg[5]' (FDE) to 'inst/img_cpy_opr_U0/tmp_1_reg_179_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/img_cpy_opr_U0/tmp_1_reg_179_reg[6]' (FDE) to 'inst/img_cpy_opr_U0/tmp_1_reg_179_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst/img_cpy_opr_U0/tmp_1_reg_179_reg[7]' (FDE) to 'inst/img_cpy_opr_U0/tmp_1_reg_179_reg[8]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\AXIvideo2Mat_U0/cols_V_reg_410_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\AXIvideo2Mat_U0/cols_V_reg_410_reg[10] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\srcImg_rows_V_c6_U/U_fifo_w10_d2_A_ram/SRL_SIG_reg[1][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\srcImg_rows_V_c6_U/U_fifo_w10_d2_A_ram/SRL_SIG_reg[1][0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\srcImg_cols_V_c7_U/U_fifo_w11_d2_A_ram/SRL_SIG_reg[1][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\srcImg_cols_V_c7_U/U_fifo_w11_d2_A_ram/SRL_SIG_reg[1][0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\img_cpy_opr_U0/tmp_reg_174_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\img_cpy_opr_U0/tmp_reg_174_reg[10] )
+WARNING: [Synth 8-3332] Sequential element (Block_proc_U0/ap_done_reg_reg) is unused and will be removed from module img_cpy.
+WARNING: [Synth 8-3332] Sequential element (Block_proc_U0/ap_CS_fsm_reg[0]) is unused and will be removed from module img_cpy.
+WARNING: [Synth 8-3332] Sequential element (AXIvideo2Mat_U0/ap_done_reg_reg) is unused and will be removed from module img_cpy.
+WARNING: [Synth 8-3332] Sequential element (img_cpy_opr_U0/ap_done_reg_reg) is unused and will be removed from module img_cpy.
+WARNING: [Synth 8-3332] Sequential element (Mat2AXIvideo_U0/ap_done_reg_reg) is unused and will be removed from module img_cpy.
+WARNING: [Synth 8-3332] Sequential element (start_for_img_cpybkb_U/U_start_for_img_cpybkb_ram/SRL_SIG_reg[0][0]) is unused and will be removed from module img_cpy.
+WARNING: [Synth 8-3332] Sequential element (start_for_img_cpybkb_U/U_start_for_img_cpybkb_ram/SRL_SIG_reg[1][0]) is unused and will be removed from module img_cpy.
+WARNING: [Synth 8-3332] Sequential element (start_for_Mat2AXIcud_U/U_start_for_Mat2AXIcud_ram/SRL_SIG_reg[0][0]) is unused and will be removed from module img_cpy.
+WARNING: [Synth 8-3332] Sequential element (start_for_Mat2AXIcud_U/U_start_for_Mat2AXIcud_ram/SRL_SIG_reg[1][0]) is unused and will be removed from module img_cpy.
+WARNING: [Synth 8-3332] Sequential element (AXIvideo2Mat_U0/axi_data_V_3_i_reg_316_reg[63]) is unused and will be removed from module img_cpy.
+WARNING: [Synth 8-3332] Sequential element (AXIvideo2Mat_U0/axi_data_V_3_i_reg_316_reg[62]) is unused and will be removed from module img_cpy.
+WARNING: [Synth 8-3332] Sequential element (AXIvideo2Mat_U0/axi_data_V_3_i_reg_316_reg[61]) is unused and will be removed from module img_cpy.
+WARNING: [Synth 8-3332] Sequential element (AXIvideo2Mat_U0/axi_data_V_3_i_reg_316_reg[60]) is unused and will be removed from module img_cpy.
+WARNING: [Synth 8-3332] Sequential element (AXIvideo2Mat_U0/axi_data_V_3_i_reg_316_reg[59]) is unused and will be removed from module img_cpy.
+WARNING: [Synth 8-3332] Sequential element (AXIvideo2Mat_U0/axi_data_V_3_i_reg_316_reg[58]) is unused and will be removed from module img_cpy.
+WARNING: [Synth 8-3332] Sequential element (AXIvideo2Mat_U0/axi_data_V_3_i_reg_316_reg[57]) is unused and will be removed from module img_cpy.
+WARNING: [Synth 8-3332] Sequential element (AXIvideo2Mat_U0/axi_data_V_3_i_reg_316_reg[56]) is unused and will be removed from module img_cpy.
+WARNING: [Synth 8-3332] Sequential element (AXIvideo2Mat_U0/axi_data_V_3_i_reg_316_reg[55]) is unused and will be removed from module img_cpy.
+WARNING: [Synth 8-3332] Sequential element (AXIvideo2Mat_U0/axi_data_V_3_i_reg_316_reg[54]) is unused and will be removed from module img_cpy.
+WARNING: [Synth 8-3332] Sequential element (AXIvideo2Mat_U0/axi_data_V_3_i_reg_316_reg[53]) is unused and will be removed from module img_cpy.
+WARNING: [Synth 8-3332] Sequential element (AXIvideo2Mat_U0/axi_data_V_3_i_reg_316_reg[52]) is unused and will be removed from module img_cpy.
+WARNING: [Synth 8-3332] Sequential element (AXIvideo2Mat_U0/axi_data_V_3_i_reg_316_reg[51]) is unused and will be removed from module img_cpy.
+WARNING: [Synth 8-3332] Sequential element (AXIvideo2Mat_U0/axi_data_V_3_i_reg_316_reg[50]) is unused and will be removed from module img_cpy.
+WARNING: [Synth 8-3332] Sequential element (AXIvideo2Mat_U0/axi_data_V_3_i_reg_316_reg[49]) is unused and will be removed from module img_cpy.
+WARNING: [Synth 8-3332] Sequential element (AXIvideo2Mat_U0/axi_data_V_3_i_reg_316_reg[48]) is unused and will be removed from module img_cpy.
+WARNING: [Synth 8-3332] Sequential element (AXIvideo2Mat_U0/axi_data_V_3_i_reg_316_reg[47]) is unused and will be removed from module img_cpy.
+WARNING: [Synth 8-3332] Sequential element (AXIvideo2Mat_U0/axi_data_V_3_i_reg_316_reg[46]) is unused and will be removed from module img_cpy.
+WARNING: [Synth 8-3332] Sequential element (AXIvideo2Mat_U0/axi_data_V_3_i_reg_316_reg[45]) is unused and will be removed from module img_cpy.
+WARNING: [Synth 8-3332] Sequential element (AXIvideo2Mat_U0/axi_data_V_3_i_reg_316_reg[44]) is unused and will be removed from module img_cpy.
+WARNING: [Synth 8-3332] Sequential element (AXIvideo2Mat_U0/axi_data_V_3_i_reg_316_reg[43]) is unused and will be removed from module img_cpy.
+WARNING: [Synth 8-3332] Sequential element (AXIvideo2Mat_U0/axi_data_V_3_i_reg_316_reg[42]) is unused and will be removed from module img_cpy.
+WARNING: [Synth 8-3332] Sequential element (AXIvideo2Mat_U0/axi_data_V_3_i_reg_316_reg[41]) is unused and will be removed from module img_cpy.
+WARNING: [Synth 8-3332] Sequential element (AXIvideo2Mat_U0/axi_data_V_3_i_reg_316_reg[40]) is unused and will be removed from module img_cpy.
+WARNING: [Synth 8-3332] Sequential element (AXIvideo2Mat_U0/axi_data_V_3_i_reg_316_reg[39]) is unused and will be removed from module img_cpy.
+WARNING: [Synth 8-3332] Sequential element (AXIvideo2Mat_U0/axi_data_V_3_i_reg_316_reg[38]) is unused and will be removed from module img_cpy.
+WARNING: [Synth 8-3332] Sequential element (AXIvideo2Mat_U0/axi_data_V_3_i_reg_316_reg[37]) is unused and will be removed from module img_cpy.
+WARNING: [Synth 8-3332] Sequential element (AXIvideo2Mat_U0/axi_data_V_3_i_reg_316_reg[36]) is unused and will be removed from module img_cpy.
+WARNING: [Synth 8-3332] Sequential element (AXIvideo2Mat_U0/axi_data_V_3_i_reg_316_reg[35]) is unused and will be removed from module img_cpy.
+WARNING: [Synth 8-3332] Sequential element (AXIvideo2Mat_U0/axi_data_V_3_i_reg_316_reg[34]) is unused and will be removed from module img_cpy.
+WARNING: [Synth 8-3332] Sequential element (AXIvideo2Mat_U0/axi_data_V_3_i_reg_316_reg[33]) is unused and will be removed from module img_cpy.
+WARNING: [Synth 8-3332] Sequential element (AXIvideo2Mat_U0/axi_data_V_3_i_reg_316_reg[32]) is unused and will be removed from module img_cpy.
+WARNING: [Synth 8-3332] Sequential element (AXIvideo2Mat_U0/axi_data_V_3_i_reg_316_reg[31]) is unused and will be removed from module img_cpy.
+WARNING: [Synth 8-3332] Sequential element (AXIvideo2Mat_U0/axi_data_V_3_i_reg_316_reg[30]) is unused and will be removed from module img_cpy.
+WARNING: [Synth 8-3332] Sequential element (AXIvideo2Mat_U0/axi_data_V_3_i_reg_316_reg[29]) is unused and will be removed from module img_cpy.
+WARNING: [Synth 8-3332] Sequential element (AXIvideo2Mat_U0/axi_data_V_3_i_reg_316_reg[28]) is unused and will be removed from module img_cpy.
+WARNING: [Synth 8-3332] Sequential element (AXIvideo2Mat_U0/axi_data_V_3_i_reg_316_reg[27]) is unused and will be removed from module img_cpy.
+WARNING: [Synth 8-3332] Sequential element (AXIvideo2Mat_U0/axi_data_V_3_i_reg_316_reg[26]) is unused and will be removed from module img_cpy.
+WARNING: [Synth 8-3332] Sequential element (AXIvideo2Mat_U0/axi_data_V_3_i_reg_316_reg[25]) is unused and will be removed from module img_cpy.
+WARNING: [Synth 8-3332] Sequential element (AXIvideo2Mat_U0/axi_data_V_3_i_reg_316_reg[24]) is unused and will be removed from module img_cpy.
+WARNING: [Synth 8-3332] Sequential element (AXIvideo2Mat_U0/axi_data_V_3_i_reg_316_reg[23]) is unused and will be removed from module img_cpy.
+WARNING: [Synth 8-3332] Sequential element (AXIvideo2Mat_U0/axi_data_V_3_i_reg_316_reg[22]) is unused and will be removed from module img_cpy.
+WARNING: [Synth 8-3332] Sequential element (AXIvideo2Mat_U0/axi_data_V_3_i_reg_316_reg[21]) is unused and will be removed from module img_cpy.
+WARNING: [Synth 8-3332] Sequential element (AXIvideo2Mat_U0/axi_data_V_3_i_reg_316_reg[20]) is unused and will be removed from module img_cpy.
+WARNING: [Synth 8-3332] Sequential element (AXIvideo2Mat_U0/axi_data_V_3_i_reg_316_reg[19]) is unused and will be removed from module img_cpy.
+WARNING: [Synth 8-3332] Sequential element (AXIvideo2Mat_U0/axi_data_V_3_i_reg_316_reg[18]) is unused and will be removed from module img_cpy.
+WARNING: [Synth 8-3332] Sequential element (AXIvideo2Mat_U0/axi_data_V_3_i_reg_316_reg[17]) is unused and will be removed from module img_cpy.
+WARNING: [Synth 8-3332] Sequential element (AXIvideo2Mat_U0/axi_data_V_3_i_reg_316_reg[16]) is unused and will be removed from module img_cpy.
+WARNING: [Synth 8-3332] Sequential element (AXIvideo2Mat_U0/axi_data_V_3_i_reg_316_reg[15]) is unused and will be removed from module img_cpy.
+WARNING: [Synth 8-3332] Sequential element (AXIvideo2Mat_U0/axi_data_V_3_i_reg_316_reg[14]) is unused and will be removed from module img_cpy.
+WARNING: [Synth 8-3332] Sequential element (AXIvideo2Mat_U0/axi_data_V_3_i_reg_316_reg[13]) is unused and will be removed from module img_cpy.
+WARNING: [Synth 8-3332] Sequential element (AXIvideo2Mat_U0/axi_data_V_3_i_reg_316_reg[12]) is unused and will be removed from module img_cpy.
+WARNING: [Synth 8-3332] Sequential element (AXIvideo2Mat_U0/axi_data_V_3_i_reg_316_reg[11]) is unused and will be removed from module img_cpy.
+WARNING: [Synth 8-3332] Sequential element (AXIvideo2Mat_U0/axi_data_V_3_i_reg_316_reg[10]) is unused and will be removed from module img_cpy.
+WARNING: [Synth 8-3332] Sequential element (AXIvideo2Mat_U0/axi_data_V_3_i_reg_316_reg[9]) is unused and will be removed from module img_cpy.
+WARNING: [Synth 8-3332] Sequential element (AXIvideo2Mat_U0/axi_data_V_3_i_reg_316_reg[8]) is unused and will be removed from module img_cpy.
+WARNING: [Synth 8-3332] Sequential element (AXIvideo2Mat_U0/tmp_data_V_reg_415_reg[63]) is unused and will be removed from module img_cpy.
+WARNING: [Synth 8-3332] Sequential element (AXIvideo2Mat_U0/tmp_data_V_reg_415_reg[62]) is unused and will be removed from module img_cpy.
+WARNING: [Synth 8-3332] Sequential element (AXIvideo2Mat_U0/tmp_data_V_reg_415_reg[61]) is unused and will be removed from module img_cpy.
+WARNING: [Synth 8-3332] Sequential element (AXIvideo2Mat_U0/tmp_data_V_reg_415_reg[60]) is unused and will be removed from module img_cpy.
+WARNING: [Synth 8-3332] Sequential element (AXIvideo2Mat_U0/tmp_data_V_reg_415_reg[59]) is unused and will be removed from module img_cpy.
+WARNING: [Synth 8-3332] Sequential element (AXIvideo2Mat_U0/tmp_data_V_reg_415_reg[58]) is unused and will be removed from module img_cpy.
+WARNING: [Synth 8-3332] Sequential element (AXIvideo2Mat_U0/tmp_data_V_reg_415_reg[57]) is unused and will be removed from module img_cpy.
+WARNING: [Synth 8-3332] Sequential element (AXIvideo2Mat_U0/tmp_data_V_reg_415_reg[56]) is unused and will be removed from module img_cpy.
+WARNING: [Synth 8-3332] Sequential element (AXIvideo2Mat_U0/tmp_data_V_reg_415_reg[55]) is unused and will be removed from module img_cpy.
+WARNING: [Synth 8-3332] Sequential element (AXIvideo2Mat_U0/tmp_data_V_reg_415_reg[54]) is unused and will be removed from module img_cpy.
+WARNING: [Synth 8-3332] Sequential element (AXIvideo2Mat_U0/tmp_data_V_reg_415_reg[53]) is unused and will be removed from module img_cpy.
+WARNING: [Synth 8-3332] Sequential element (AXIvideo2Mat_U0/tmp_data_V_reg_415_reg[52]) is unused and will be removed from module img_cpy.
+WARNING: [Synth 8-3332] Sequential element (AXIvideo2Mat_U0/tmp_data_V_reg_415_reg[51]) is unused and will be removed from module img_cpy.
+WARNING: [Synth 8-3332] Sequential element (AXIvideo2Mat_U0/tmp_data_V_reg_415_reg[50]) is unused and will be removed from module img_cpy.
+WARNING: [Synth 8-3332] Sequential element (AXIvideo2Mat_U0/tmp_data_V_reg_415_reg[49]) is unused and will be removed from module img_cpy.
+WARNING: [Synth 8-3332] Sequential element (AXIvideo2Mat_U0/tmp_data_V_reg_415_reg[48]) is unused and will be removed from module img_cpy.
+WARNING: [Synth 8-3332] Sequential element (AXIvideo2Mat_U0/tmp_data_V_reg_415_reg[47]) is unused and will be removed from module img_cpy.
+WARNING: [Synth 8-3332] Sequential element (AXIvideo2Mat_U0/tmp_data_V_reg_415_reg[46]) is unused and will be removed from module img_cpy.
+WARNING: [Synth 8-3332] Sequential element (AXIvideo2Mat_U0/tmp_data_V_reg_415_reg[45]) is unused and will be removed from module img_cpy.
+WARNING: [Synth 8-3332] Sequential element (AXIvideo2Mat_U0/tmp_data_V_reg_415_reg[44]) is unused and will be removed from module img_cpy.
+WARNING: [Synth 8-3332] Sequential element (AXIvideo2Mat_U0/tmp_data_V_reg_415_reg[43]) is unused and will be removed from module img_cpy.
+WARNING: [Synth 8-3332] Sequential element (AXIvideo2Mat_U0/tmp_data_V_reg_415_reg[42]) is unused and will be removed from module img_cpy.
+WARNING: [Synth 8-3332] Sequential element (AXIvideo2Mat_U0/tmp_data_V_reg_415_reg[41]) is unused and will be removed from module img_cpy.
+WARNING: [Synth 8-3332] Sequential element (AXIvideo2Mat_U0/tmp_data_V_reg_415_reg[40]) is unused and will be removed from module img_cpy.
+WARNING: [Synth 8-3332] Sequential element (AXIvideo2Mat_U0/tmp_data_V_reg_415_reg[39]) is unused and will be removed from module img_cpy.
+WARNING: [Synth 8-3332] Sequential element (AXIvideo2Mat_U0/tmp_data_V_reg_415_reg[38]) is unused and will be removed from module img_cpy.
+WARNING: [Synth 8-3332] Sequential element (AXIvideo2Mat_U0/tmp_data_V_reg_415_reg[37]) is unused and will be removed from module img_cpy.
+WARNING: [Synth 8-3332] Sequential element (AXIvideo2Mat_U0/tmp_data_V_reg_415_reg[36]) is unused and will be removed from module img_cpy.
+WARNING: [Synth 8-3332] Sequential element (AXIvideo2Mat_U0/tmp_data_V_reg_415_reg[35]) is unused and will be removed from module img_cpy.
+WARNING: [Synth 8-3332] Sequential element (AXIvideo2Mat_U0/tmp_data_V_reg_415_reg[34]) is unused and will be removed from module img_cpy.
+WARNING: [Synth 8-3332] Sequential element (AXIvideo2Mat_U0/tmp_data_V_reg_415_reg[33]) is unused and will be removed from module img_cpy.
+WARNING: [Synth 8-3332] Sequential element (AXIvideo2Mat_U0/tmp_data_V_reg_415_reg[32]) is unused and will be removed from module img_cpy.
+WARNING: [Synth 8-3332] Sequential element (AXIvideo2Mat_U0/tmp_data_V_reg_415_reg[31]) is unused and will be removed from module img_cpy.
+WARNING: [Synth 8-3332] Sequential element (AXIvideo2Mat_U0/tmp_data_V_reg_415_reg[30]) is unused and will be removed from module img_cpy.
+WARNING: [Synth 8-3332] Sequential element (AXIvideo2Mat_U0/tmp_data_V_reg_415_reg[29]) is unused and will be removed from module img_cpy.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 892.203 ; gain = 537.293
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:33 ; elapsed = 00:00:37 . Memory (MB): peak = 892.203 ; gain = 537.293
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:33 ; elapsed = 00:00:38 . Memory (MB): peak = 913.590 ; gain = 558.680
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:34 ; elapsed = 00:00:38 . Memory (MB): peak = 919.766 ; gain = 564.855
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:34 ; elapsed = 00:00:39 . Memory (MB): peak = 919.766 ; gain = 564.855
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:34 ; elapsed = 00:00:39 . Memory (MB): peak = 919.766 ; gain = 564.855
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:34 ; elapsed = 00:00:39 . Memory (MB): peak = 919.766 ; gain = 564.855
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:34 ; elapsed = 00:00:39 . Memory (MB): peak = 919.766 ; gain = 564.855
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:34 ; elapsed = 00:00:39 . Memory (MB): peak = 919.766 ; gain = 564.855
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:34 ; elapsed = 00:00:39 . Memory (MB): peak = 919.766 ; gain = 564.855
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY4 |    30|
+|2     |LUT1   |    12|
+|3     |LUT2   |    21|
+|4     |LUT3   |    81|
+|5     |LUT4   |    35|
+|6     |LUT5   |    25|
+|7     |LUT6   |    55|
+|8     |FDRE   |   287|
+|9     |FDSE   |    19|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------------------------+------------------------+------+
+|      |Instance                   |Module                  |Cells |
++------+---------------------------+------------------------+------+
+|1     |top                        |                        |   565|
+|2     |  inst                     |img_cpy                 |   565|
+|3     |    AXIvideo2Mat_U0        |AXIvideo2Mat            |   293|
+|4     |    Mat2AXIvideo_U0        |Mat2AXIvideo            |    85|
+|5     |    dstImg_data_stream_0_U |fifo_w8_d2_A            |    32|
+|6     |      U_fifo_w8_d2_A_ram   |fifo_w8_d2_A_shiftReg_3 |    24|
+|7     |    img_cpy_opr_U0         |img_cpy_opr             |    70|
+|8     |    srcImg_cols_V_c7_U     |fifo_w11_d2_A           |     8|
+|9     |    srcImg_cols_V_c_U      |fifo_w11_d2_A_0         |     9|
+|10    |    srcImg_data_stream_0_U |fifo_w8_d2_A_1          |    32|
+|11    |      U_fifo_w8_d2_A_ram   |fifo_w8_d2_A_shiftReg   |    24|
+|12    |    srcImg_rows_V_c6_U     |fifo_w10_d2_A           |     8|
+|13    |    srcImg_rows_V_c_U      |fifo_w10_d2_A_2         |     8|
+|14    |    start_for_Mat2AXIcud_U |start_for_Mat2AXIcud    |    10|
+|15    |    start_for_img_cpybkb_U |start_for_img_cpybkb    |    10|
++------+---------------------------+------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:34 ; elapsed = 00:00:39 . Memory (MB): peak = 919.766 ; gain = 564.855
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 319 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:26 . Memory (MB): peak = 919.766 ; gain = 186.961
+Synthesis Optimization Complete : Time (s): cpu = 00:00:35 ; elapsed = 00:00:39 . Memory (MB): peak = 919.766 ; gain = 564.855
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 30 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+189 Infos, 136 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:37 ; elapsed = 00:00:42 . Memory (MB): peak = 919.766 ; gain = 577.164
+INFO: [Common 17-1381] The checkpoint 'E:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.runs/img_cpy_0_synth_1/img_cpy_0.dcp' has been generated.
+INFO: [Coretcl 2-1482] Added synthesis output to IP cache for IP e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/ip/img_cpy_0/img_cpy_0.xci
+INFO: [Coretcl 2-1174] Renamed 14 cell refs.
+INFO: [Common 17-1381] The checkpoint 'E:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.runs/img_cpy_0_synth_1/img_cpy_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file img_cpy_0_utilization_synth.rpt -pb img_cpy_0_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.043 . Memory (MB): peak = 919.766 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sat Aug  3 08:44:04 2019...

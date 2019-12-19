@@ -1,0 +1,1522 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Mon Aug 26 16:01:47 2019
+# Process ID: 8236
+# Current directory: E:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.runs/design_1_canny_bd_0_0_synth_1
+# Command line: vivado.exe -log design_1_canny_bd_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_canny_bd_0_0.tcl
+# Log file: E:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.runs/design_1_canny_bd_0_0_synth_1/design_1_canny_bd_0_0.vds
+# Journal file: E:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.runs/design_1_canny_bd_0_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source design_1_canny_bd_0_0.tcl -notrace
+Command: synth_design -top design_1_canny_bd_0_0 -part xc7z020clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 14696 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 473.273 ; gain = 105.340
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_canny_bd_0_0' [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ip/design_1_canny_bd_0_0/synth/design_1_canny_bd_0_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'canny_bd' [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/192b/src/canny_bd.v:13]
+INFO: [Synth 8-6157] synthesizing module 'canny_bd_canny_HystThreshold_0_0' [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ip/design_1_canny_bd_0_0/src/canny_bd_canny_HystThreshold_0_0/synth/canny_bd_canny_HystThreshold_0_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'canny_HystThreshold' [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ip/design_1_canny_bd_0_0/ipshared/9cb6/canny_HystThreshold.v:23]
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter IMG_WIDTH bound to: 640 - type: integer 
+WARNING: [Synth 8-6014] Unused sequential element matrix2_tdata_dly1_reg was removed.  [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ip/design_1_canny_bd_0_0/ipshared/9cb6/canny_HystThreshold.v:93]
+WARNING: [Synth 8-6014] Unused sequential element matrix2_tdata_dly2_reg was removed.  [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ip/design_1_canny_bd_0_0/ipshared/9cb6/canny_HystThreshold.v:97]
+WARNING: [Synth 8-6014] Unused sequential element matrix1_tdata_dly3_reg was removed.  [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ip/design_1_canny_bd_0_0/ipshared/9cb6/canny_HystThreshold.v:100]
+WARNING: [Synth 8-6014] Unused sequential element matrix2_tdata_dly3_reg was removed.  [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ip/design_1_canny_bd_0_0/ipshared/9cb6/canny_HystThreshold.v:101]
+INFO: [Synth 8-6155] done synthesizing module 'canny_HystThreshold' (1#1) [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ip/design_1_canny_bd_0_0/ipshared/9cb6/canny_HystThreshold.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'canny_bd_canny_HystThreshold_0_0' (2#1) [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ip/design_1_canny_bd_0_0/src/canny_bd_canny_HystThreshold_0_0/synth/canny_bd_canny_HystThreshold_0_0.v:57]
+WARNING: [Synth 8-350] instance 'canny_HystThreshold_0' of module 'canny_bd_canny_HystThreshold_0_0' requires 18 connections, but only 17 given [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/192b/src/canny_bd.v:128]
+INFO: [Synth 8-6157] synthesizing module 'canny_bd_canny_NonMaxSupp_0_0' [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ip/design_1_canny_bd_0_0/src/canny_bd_canny_NonMaxSupp_0_0/synth/canny_bd_canny_NonMaxSupp_0_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'canny_NonMaxSupp' [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ip/design_1_canny_bd_0_0/ipshared/600e/canny_NonMaxSupp.v:35]
+	Parameter DATA_WIDTH bound to: 13 - type: integer 
+INFO: [Synth 8-226] default block is never used [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ip/design_1_canny_bd_0_0/ipshared/600e/canny_NonMaxSupp.v:136]
+WARNING: [Synth 8-6014] Unused sequential element theta_dly3_reg was removed.  [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ip/design_1_canny_bd_0_0/ipshared/600e/canny_NonMaxSupp.v:130]
+INFO: [Synth 8-6155] done synthesizing module 'canny_NonMaxSupp' (3#1) [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ip/design_1_canny_bd_0_0/ipshared/600e/canny_NonMaxSupp.v:35]
+INFO: [Synth 8-6155] done synthesizing module 'canny_bd_canny_NonMaxSupp_0_0' (4#1) [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ip/design_1_canny_bd_0_0/src/canny_bd_canny_NonMaxSupp_0_0/synth/canny_bd_canny_NonMaxSupp_0_0.v:57]
+WARNING: [Synth 8-350] instance 'canny_NonMaxSupp_0' of module 'canny_bd_canny_NonMaxSupp_0_0' requires 21 connections, but only 20 given [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/192b/src/canny_bd.v:146]
+INFO: [Synth 8-6157] synthesizing module 'canny_bd_img_edge_cut_0_0' [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ip/design_1_canny_bd_0_0/src/canny_bd_img_edge_cut_0_0/synth/canny_bd_img_edge_cut_0_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'img_edge_cut' [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ip/design_1_canny_bd_0_0/ipshared/d721/img_edge_cut.v:23]
+	Parameter CUT_COLUMN bound to: 1 - type: integer 
+	Parameter CUT_ROW bound to: 1 - type: integer 
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter IMG_WIDTH bound to: 640 - type: integer 
+	Parameter IMG_HEIGHT bound to: 480 - type: integer 
+	Parameter WIDTH bound to: 23 - type: integer 
+WARNING: [Synth 8-3936] Found unconnected internal register 's_axis_tlast_dly_reg' and it is trimmed from '3' to '2' bits. [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ip/design_1_canny_bd_0_0/ipshared/d721/img_edge_cut.v:74]
+WARNING: [Synth 8-3936] Found unconnected internal register 's_axis_tuser_dly_reg' and it is trimmed from '3' to '2' bits. [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ip/design_1_canny_bd_0_0/ipshared/d721/img_edge_cut.v:75]
+WARNING: [Synth 8-3936] Found unconnected internal register 's_axis_tvalid_dly_reg' and it is trimmed from '3' to '2' bits. [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ip/design_1_canny_bd_0_0/ipshared/d721/img_edge_cut.v:76]
+WARNING: [Synth 8-3936] Found unconnected internal register 's_axis_tdata_dly_reg' and it is trimmed from '24' to '16' bits. [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ip/design_1_canny_bd_0_0/ipshared/d721/img_edge_cut.v:77]
+INFO: [Synth 8-6155] done synthesizing module 'img_edge_cut' (5#1) [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ip/design_1_canny_bd_0_0/ipshared/d721/img_edge_cut.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'canny_bd_img_edge_cut_0_0' (6#1) [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ip/design_1_canny_bd_0_0/src/canny_bd_img_edge_cut_0_0/synth/canny_bd_img_edge_cut_0_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'canny_bd_maxtri3x3_CannyNMS_0_0' [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ip/design_1_canny_bd_0_0/src/canny_bd_maxtri3x3_CannyNMS_0_0/synth/canny_bd_maxtri3x3_CannyNMS_0_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'maxtri3x3_CannyNMS' [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ip/design_1_canny_bd_0_0/ipshared/30f0/maxtri3x3_CannyNMS.v:26]
+	Parameter DATA_WIDTH bound to: 2 - type: integer 
+	Parameter IMG_HEIGHT bound to: 480 - type: integer 
+	Parameter HL bound to: 2'b10 
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ip/design_1_canny_bd_0_0/ipshared/30f0/maxtri3x3_CannyNMS.v:61]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ip/design_1_canny_bd_0_0/ipshared/30f0/maxtri3x3_CannyNMS.v:62]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ip/design_1_canny_bd_0_0/ipshared/30f0/maxtri3x3_CannyNMS.v:63]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ip/design_1_canny_bd_0_0/ipshared/30f0/maxtri3x3_CannyNMS.v:74]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ip/design_1_canny_bd_0_0/ipshared/30f0/maxtri3x3_CannyNMS.v:90]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ip/design_1_canny_bd_0_0/ipshared/30f0/maxtri3x3_CannyNMS.v:91]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ip/design_1_canny_bd_0_0/ipshared/30f0/maxtri3x3_CannyNMS.v:93]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ip/design_1_canny_bd_0_0/ipshared/30f0/maxtri3x3_CannyNMS.v:94]
+INFO: [Synth 8-638] synthesizing module 'fifo_CannyNMS' [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ip/prj_ip/prj_ip/prj_ip.srcs/sources_1/ip/fifo_CannyNMS/synth/fifo_CannyNMS.vhd:72]
+	Parameter C_COMMON_CLOCK bound to: 1 - type: integer 
+	Parameter C_SELECT_XPM bound to: 0 - type: integer 
+	Parameter C_COUNT_TYPE bound to: 0 - type: integer 
+	Parameter C_DATA_COUNT_WIDTH bound to: 10 - type: integer 
+	Parameter C_DEFAULT_VALUE bound to: BlankString - type: string 
+	Parameter C_DIN_WIDTH bound to: 5 - type: integer 
+	Parameter C_DOUT_RST_VAL bound to: 0 - type: string 
+	Parameter C_DOUT_WIDTH bound to: 5 - type: integer 
+	Parameter C_ENABLE_RLOCS bound to: 0 - type: integer 
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_FULL_FLAGS_RST_VAL bound to: 0 - type: integer 
+	Parameter C_HAS_ALMOST_EMPTY bound to: 0 - type: integer 
+	Parameter C_HAS_ALMOST_FULL bound to: 0 - type: integer 
+	Parameter C_HAS_BACKUP bound to: 0 - type: integer 
+	Parameter C_HAS_DATA_COUNT bound to: 0 - type: integer 
+	Parameter C_HAS_INT_CLK bound to: 0 - type: integer 
+	Parameter C_HAS_MEMINIT_FILE bound to: 0 - type: integer 
+	Parameter C_HAS_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_RD_DATA_COUNT bound to: 0 - type: integer 
+	Parameter C_HAS_RD_RST bound to: 0 - type: integer 
+	Parameter C_HAS_RST bound to: 0 - type: integer 
+	Parameter C_HAS_SRST bound to: 1 - type: integer 
+	Parameter C_HAS_UNDERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_VALID bound to: 0 - type: integer 
+	Parameter C_HAS_WR_ACK bound to: 0 - type: integer 
+	Parameter C_HAS_WR_DATA_COUNT bound to: 0 - type: integer 
+	Parameter C_HAS_WR_RST bound to: 0 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE bound to: 0 - type: integer 
+	Parameter C_INIT_WR_PNTR_VAL bound to: 0 - type: integer 
+	Parameter C_MEMORY_TYPE bound to: 1 - type: integer 
+	Parameter C_MIF_FILE_NAME bound to: BlankString - type: string 
+	Parameter C_OPTIMIZATION_MODE bound to: 0 - type: integer 
+	Parameter C_OVERFLOW_LOW bound to: 0 - type: integer 
+	Parameter C_PRELOAD_LATENCY bound to: 1 - type: integer 
+	Parameter C_PRELOAD_REGS bound to: 0 - type: integer 
+	Parameter C_PRIM_FIFO_TYPE bound to: 1kx18 - type: string 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL bound to: 2 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_NEGATE_VAL bound to: 3 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL bound to: 1022 - type: integer 
+	Parameter C_PROG_FULL_THRESH_NEGATE_VAL bound to: 1021 - type: integer 
+	Parameter C_PROG_FULL_TYPE bound to: 0 - type: integer 
+	Parameter C_RD_DATA_COUNT_WIDTH bound to: 10 - type: integer 
+	Parameter C_RD_DEPTH bound to: 1024 - type: integer 
+	Parameter C_RD_FREQ bound to: 1 - type: integer 
+	Parameter C_RD_PNTR_WIDTH bound to: 10 - type: integer 
+	Parameter C_UNDERFLOW_LOW bound to: 0 - type: integer 
+	Parameter C_USE_DOUT_RST bound to: 1 - type: integer 
+	Parameter C_USE_ECC bound to: 0 - type: integer 
+	Parameter C_USE_EMBEDDED_REG bound to: 0 - type: integer 
+	Parameter C_USE_PIPELINE_REG bound to: 0 - type: integer 
+	Parameter C_POWER_SAVING_MODE bound to: 0 - type: integer 
+	Parameter C_USE_FIFO16_FLAGS bound to: 0 - type: integer 
+	Parameter C_USE_FWFT_DATA_COUNT bound to: 0 - type: integer 
+	Parameter C_VALID_LOW bound to: 0 - type: integer 
+	Parameter C_WR_ACK_LOW bound to: 0 - type: integer 
+	Parameter C_WR_DATA_COUNT_WIDTH bound to: 10 - type: integer 
+	Parameter C_WR_DEPTH bound to: 1024 - type: integer 
+	Parameter C_WR_FREQ bound to: 1 - type: integer 
+	Parameter C_WR_PNTR_WIDTH bound to: 10 - type: integer 
+	Parameter C_WR_RESPONSE_LATENCY bound to: 1 - type: integer 
+	Parameter C_MSGON_VAL bound to: 1 - type: integer 
+	Parameter C_ENABLE_RST_SYNC bound to: 1 - type: integer 
+	Parameter C_EN_SAFETY_CKT bound to: 0 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE bound to: 0 - type: integer 
+	Parameter C_SYNCHRONIZER_STAGE bound to: 2 - type: integer 
+	Parameter C_INTERFACE_TYPE bound to: 0 - type: integer 
+	Parameter C_AXI_TYPE bound to: 1 - type: integer 
+	Parameter C_HAS_AXI_WR_CHANNEL bound to: 1 - type: integer 
+	Parameter C_HAS_AXI_RD_CHANNEL bound to: 1 - type: integer 
+	Parameter C_HAS_SLAVE_CE bound to: 0 - type: integer 
+	Parameter C_HAS_MASTER_CE bound to: 0 - type: integer 
+	Parameter C_ADD_NGC_CONSTRAINT bound to: 0 - type: integer 
+	Parameter C_USE_COMMON_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_USE_COMMON_UNDERFLOW bound to: 0 - type: integer 
+	Parameter C_USE_DEFAULT_SETTINGS bound to: 0 - type: integer 
+	Parameter C_AXI_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_AXI_DATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_AXI_LEN_WIDTH bound to: 8 - type: integer 
+	Parameter C_AXI_LOCK_WIDTH bound to: 1 - type: integer 
+	Parameter C_HAS_AXI_ID bound to: 0 - type: integer 
+	Parameter C_HAS_AXI_AWUSER bound to: 0 - type: integer 
+	Parameter C_HAS_AXI_WUSER bound to: 0 - type: integer 
+	Parameter C_HAS_AXI_BUSER bound to: 0 - type: integer 
+	Parameter C_HAS_AXI_ARUSER bound to: 0 - type: integer 
+	Parameter C_HAS_AXI_RUSER bound to: 0 - type: integer 
+	Parameter C_AXI_ARUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_AWUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_WUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_BUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_RUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_HAS_AXIS_TDATA bound to: 1 - type: integer 
+	Parameter C_HAS_AXIS_TID bound to: 0 - type: integer 
+	Parameter C_HAS_AXIS_TDEST bound to: 0 - type: integer 
+	Parameter C_HAS_AXIS_TUSER bound to: 1 - type: integer 
+	Parameter C_HAS_AXIS_TREADY bound to: 1 - type: integer 
+	Parameter C_HAS_AXIS_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_AXIS_TSTRB bound to: 0 - type: integer 
+	Parameter C_HAS_AXIS_TKEEP bound to: 0 - type: integer 
+	Parameter C_AXIS_TDATA_WIDTH bound to: 8 - type: integer 
+	Parameter C_AXIS_TID_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXIS_TDEST_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXIS_TUSER_WIDTH bound to: 4 - type: integer 
+	Parameter C_AXIS_TSTRB_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXIS_TKEEP_WIDTH bound to: 1 - type: integer 
+	Parameter C_WACH_TYPE bound to: 0 - type: integer 
+	Parameter C_WDCH_TYPE bound to: 0 - type: integer 
+	Parameter C_WRCH_TYPE bound to: 0 - type: integer 
+	Parameter C_RACH_TYPE bound to: 0 - type: integer 
+	Parameter C_RDCH_TYPE bound to: 0 - type: integer 
+	Parameter C_AXIS_TYPE bound to: 0 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE_WACH bound to: 1 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE_WDCH bound to: 1 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE_WRCH bound to: 1 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE_RACH bound to: 1 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE_RDCH bound to: 1 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE_AXIS bound to: 1 - type: integer 
+	Parameter C_APPLICATION_TYPE_WACH bound to: 0 - type: integer 
+	Parameter C_APPLICATION_TYPE_WDCH bound to: 0 - type: integer 
+	Parameter C_APPLICATION_TYPE_WRCH bound to: 0 - type: integer 
+	Parameter C_APPLICATION_TYPE_RACH bound to: 0 - type: integer 
+	Parameter C_APPLICATION_TYPE_RDCH bound to: 0 - type: integer 
+	Parameter C_APPLICATION_TYPE_AXIS bound to: 0 - type: integer 
+	Parameter C_PRIM_FIFO_TYPE_WACH bound to: 512x36 - type: string 
+	Parameter C_PRIM_FIFO_TYPE_WDCH bound to: 1kx36 - type: string 
+	Parameter C_PRIM_FIFO_TYPE_WRCH bound to: 512x36 - type: string 
+	Parameter C_PRIM_FIFO_TYPE_RACH bound to: 512x36 - type: string 
+	Parameter C_PRIM_FIFO_TYPE_RDCH bound to: 1kx36 - type: string 
+	Parameter C_PRIM_FIFO_TYPE_AXIS bound to: 1kx18 - type: string 
+	Parameter C_USE_ECC_WACH bound to: 0 - type: integer 
+	Parameter C_USE_ECC_WDCH bound to: 0 - type: integer 
+	Parameter C_USE_ECC_WRCH bound to: 0 - type: integer 
+	Parameter C_USE_ECC_RACH bound to: 0 - type: integer 
+	Parameter C_USE_ECC_RDCH bound to: 0 - type: integer 
+	Parameter C_USE_ECC_AXIS bound to: 0 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE_WACH bound to: 0 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE_WDCH bound to: 0 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE_WRCH bound to: 0 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE_RACH bound to: 0 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE_RDCH bound to: 0 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE_AXIS bound to: 0 - type: integer 
+	Parameter C_DIN_WIDTH_WACH bound to: 1 - type: integer 
+	Parameter C_DIN_WIDTH_WDCH bound to: 64 - type: integer 
+	Parameter C_DIN_WIDTH_WRCH bound to: 2 - type: integer 
+	Parameter C_DIN_WIDTH_RACH bound to: 32 - type: integer 
+	Parameter C_DIN_WIDTH_RDCH bound to: 64 - type: integer 
+	Parameter C_DIN_WIDTH_AXIS bound to: 1 - type: integer 
+	Parameter C_WR_DEPTH_WACH bound to: 16 - type: integer 
+	Parameter C_WR_DEPTH_WDCH bound to: 1024 - type: integer 
+	Parameter C_WR_DEPTH_WRCH bound to: 16 - type: integer 
+	Parameter C_WR_DEPTH_RACH bound to: 16 - type: integer 
+	Parameter C_WR_DEPTH_RDCH bound to: 1024 - type: integer 
+	Parameter C_WR_DEPTH_AXIS bound to: 1024 - type: integer 
+	Parameter C_WR_PNTR_WIDTH_WACH bound to: 4 - type: integer 
+	Parameter C_WR_PNTR_WIDTH_WDCH bound to: 10 - type: integer 
+	Parameter C_WR_PNTR_WIDTH_WRCH bound to: 4 - type: integer 
+	Parameter C_WR_PNTR_WIDTH_RACH bound to: 4 - type: integer 
+	Parameter C_WR_PNTR_WIDTH_RDCH bound to: 10 - type: integer 
+	Parameter C_WR_PNTR_WIDTH_AXIS bound to: 10 - type: integer 
+	Parameter C_HAS_DATA_COUNTS_WACH bound to: 0 - type: integer 
+	Parameter C_HAS_DATA_COUNTS_WDCH bound to: 0 - type: integer 
+	Parameter C_HAS_DATA_COUNTS_WRCH bound to: 0 - type: integer 
+	Parameter C_HAS_DATA_COUNTS_RACH bound to: 0 - type: integer 
+	Parameter C_HAS_DATA_COUNTS_RDCH bound to: 0 - type: integer 
+	Parameter C_HAS_DATA_COUNTS_AXIS bound to: 0 - type: integer 
+	Parameter C_HAS_PROG_FLAGS_WACH bound to: 0 - type: integer 
+	Parameter C_HAS_PROG_FLAGS_WDCH bound to: 0 - type: integer 
+	Parameter C_HAS_PROG_FLAGS_WRCH bound to: 0 - type: integer 
+	Parameter C_HAS_PROG_FLAGS_RACH bound to: 0 - type: integer 
+	Parameter C_HAS_PROG_FLAGS_RDCH bound to: 0 - type: integer 
+	Parameter C_HAS_PROG_FLAGS_AXIS bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_TYPE_WACH bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_TYPE_WDCH bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_TYPE_WRCH bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_TYPE_RACH bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_TYPE_RDCH bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_TYPE_AXIS bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_WACH bound to: 1023 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_WDCH bound to: 1023 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_WRCH bound to: 1023 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_RACH bound to: 1023 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_RDCH bound to: 1023 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_AXIS bound to: 1023 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE_WACH bound to: 0 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE_WDCH bound to: 0 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE_WRCH bound to: 0 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE_RACH bound to: 0 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE_RDCH bound to: 0 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE_AXIS bound to: 0 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_WACH bound to: 1022 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_WDCH bound to: 1022 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_WRCH bound to: 1022 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_RACH bound to: 1022 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_RDCH bound to: 1022 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_AXIS bound to: 1022 - type: integer 
+	Parameter C_REG_SLICE_MODE_WACH bound to: 0 - type: integer 
+	Parameter C_REG_SLICE_MODE_WDCH bound to: 0 - type: integer 
+	Parameter C_REG_SLICE_MODE_WRCH bound to: 0 - type: integer 
+	Parameter C_REG_SLICE_MODE_RACH bound to: 0 - type: integer 
+	Parameter C_REG_SLICE_MODE_RDCH bound to: 0 - type: integer 
+	Parameter C_REG_SLICE_MODE_AXIS bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'fifo_generator_v13_2_2' declared at 'e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ip/prj_ip/prj_ip/prj_ip.srcs/sources_1/ip/fifo_maxtrix3x3/hdl/fifo_generator_v13_2_vhsyn_rfs.vhd:38483' bound to instance 'U0' of component 'fifo_generator_v13_2_2' [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ip/prj_ip/prj_ip/prj_ip.srcs/sources_1/ip/fifo_CannyNMS/synth/fifo_CannyNMS.vhd:540]
+INFO: [Synth 8-256] done synthesizing module 'fifo_CannyNMS' (30#1) [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ip/prj_ip/prj_ip/prj_ip.srcs/sources_1/ip/fifo_CannyNMS/synth/fifo_CannyNMS.vhd:72]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'line_buff_1'. This will prevent further optimization [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ip/design_1_canny_bd_0_0/ipshared/30f0/maxtri3x3_CannyNMS.v:281]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'line_buff_2'. This will prevent further optimization [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ip/design_1_canny_bd_0_0/ipshared/30f0/maxtri3x3_CannyNMS.v:294]
+WARNING: [Synth 8-6014] Unused sequential element s_axis_tdata_dly3_reg was removed.  [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ip/design_1_canny_bd_0_0/ipshared/30f0/maxtri3x3_CannyNMS.v:135]
+WARNING: [Synth 8-6014] Unused sequential element s_axis_tdata_dly4_reg was removed.  [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ip/design_1_canny_bd_0_0/ipshared/30f0/maxtri3x3_CannyNMS.v:140]
+INFO: [Synth 8-6155] done synthesizing module 'maxtri3x3_CannyNMS' (31#1) [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ip/design_1_canny_bd_0_0/ipshared/30f0/maxtri3x3_CannyNMS.v:26]
+INFO: [Synth 8-6155] done synthesizing module 'canny_bd_maxtri3x3_CannyNMS_0_0' (32#1) [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ip/design_1_canny_bd_0_0/src/canny_bd_maxtri3x3_CannyNMS_0_0/synth/canny_bd_maxtri3x3_CannyNMS_0_0.v:57]
+WARNING: [Synth 8-350] instance 'maxtri3x3_CannyNMS_0' of module 'canny_bd_maxtri3x3_CannyNMS_0_0' requires 18 connections, but only 17 given [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/192b/src/canny_bd.v:179]
+INFO: [Synth 8-6157] synthesizing module 'canny_bd_maxtri3x3_SobelDir_0_0' [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ip/design_1_canny_bd_0_0/src/canny_bd_maxtri3x3_SobelDir_0_0/synth/canny_bd_maxtri3x3_SobelDir_0_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'maxtri3x3_SobelDir' [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ip/design_1_canny_bd_0_0/ipshared/fbb4/maxtri3x3_SobelDir.v:26]
+	Parameter DATA_WIDTH bound to: 13 - type: integer 
+	Parameter IMG_HEIGHT bound to: 480 - type: integer 
+	Parameter HL bound to: 2'b10 
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ip/design_1_canny_bd_0_0/ipshared/fbb4/maxtri3x3_SobelDir.v:61]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ip/design_1_canny_bd_0_0/ipshared/fbb4/maxtri3x3_SobelDir.v:62]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ip/design_1_canny_bd_0_0/ipshared/fbb4/maxtri3x3_SobelDir.v:63]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ip/design_1_canny_bd_0_0/ipshared/fbb4/maxtri3x3_SobelDir.v:74]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ip/design_1_canny_bd_0_0/ipshared/fbb4/maxtri3x3_SobelDir.v:90]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ip/design_1_canny_bd_0_0/ipshared/fbb4/maxtri3x3_SobelDir.v:91]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ip/design_1_canny_bd_0_0/ipshared/fbb4/maxtri3x3_SobelDir.v:93]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ip/design_1_canny_bd_0_0/ipshared/fbb4/maxtri3x3_SobelDir.v:94]
+INFO: [Synth 8-638] synthesizing module 'fifo_SobelDir' [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ip/prj_ip/prj_ip/prj_ip.srcs/sources_1/ip/fifo_SobelDir/synth/fifo_SobelDir.vhd:72]
+	Parameter C_COMMON_CLOCK bound to: 1 - type: integer 
+	Parameter C_SELECT_XPM bound to: 0 - type: integer 
+	Parameter C_COUNT_TYPE bound to: 0 - type: integer 
+	Parameter C_DATA_COUNT_WIDTH bound to: 10 - type: integer 
+	Parameter C_DEFAULT_VALUE bound to: BlankString - type: string 
+	Parameter C_DIN_WIDTH bound to: 16 - type: integer 
+	Parameter C_DOUT_RST_VAL bound to: 0 - type: string 
+	Parameter C_DOUT_WIDTH bound to: 16 - type: integer 
+	Parameter C_ENABLE_RLOCS bound to: 0 - type: integer 
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_FULL_FLAGS_RST_VAL bound to: 0 - type: integer 
+	Parameter C_HAS_ALMOST_EMPTY bound to: 0 - type: integer 
+	Parameter C_HAS_ALMOST_FULL bound to: 0 - type: integer 
+	Parameter C_HAS_BACKUP bound to: 0 - type: integer 
+	Parameter C_HAS_DATA_COUNT bound to: 0 - type: integer 
+	Parameter C_HAS_INT_CLK bound to: 0 - type: integer 
+	Parameter C_HAS_MEMINIT_FILE bound to: 0 - type: integer 
+	Parameter C_HAS_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_RD_DATA_COUNT bound to: 0 - type: integer 
+	Parameter C_HAS_RD_RST bound to: 0 - type: integer 
+	Parameter C_HAS_RST bound to: 0 - type: integer 
+	Parameter C_HAS_SRST bound to: 1 - type: integer 
+	Parameter C_HAS_UNDERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_VALID bound to: 0 - type: integer 
+	Parameter C_HAS_WR_ACK bound to: 0 - type: integer 
+	Parameter C_HAS_WR_DATA_COUNT bound to: 0 - type: integer 
+	Parameter C_HAS_WR_RST bound to: 0 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE bound to: 0 - type: integer 
+	Parameter C_INIT_WR_PNTR_VAL bound to: 0 - type: integer 
+	Parameter C_MEMORY_TYPE bound to: 1 - type: integer 
+	Parameter C_MIF_FILE_NAME bound to: BlankString - type: string 
+	Parameter C_OPTIMIZATION_MODE bound to: 0 - type: integer 
+	Parameter C_OVERFLOW_LOW bound to: 0 - type: integer 
+	Parameter C_PRELOAD_LATENCY bound to: 1 - type: integer 
+	Parameter C_PRELOAD_REGS bound to: 0 - type: integer 
+	Parameter C_PRIM_FIFO_TYPE bound to: 1kx18 - type: string 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL bound to: 2 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_NEGATE_VAL bound to: 3 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL bound to: 1022 - type: integer 
+	Parameter C_PROG_FULL_THRESH_NEGATE_VAL bound to: 1021 - type: integer 
+	Parameter C_PROG_FULL_TYPE bound to: 0 - type: integer 
+	Parameter C_RD_DATA_COUNT_WIDTH bound to: 10 - type: integer 
+	Parameter C_RD_DEPTH bound to: 1024 - type: integer 
+	Parameter C_RD_FREQ bound to: 1 - type: integer 
+	Parameter C_RD_PNTR_WIDTH bound to: 10 - type: integer 
+	Parameter C_UNDERFLOW_LOW bound to: 0 - type: integer 
+	Parameter C_USE_DOUT_RST bound to: 1 - type: integer 
+	Parameter C_USE_ECC bound to: 0 - type: integer 
+	Parameter C_USE_EMBEDDED_REG bound to: 0 - type: integer 
+	Parameter C_USE_PIPELINE_REG bound to: 0 - type: integer 
+	Parameter C_POWER_SAVING_MODE bound to: 0 - type: integer 
+	Parameter C_USE_FIFO16_FLAGS bound to: 0 - type: integer 
+	Parameter C_USE_FWFT_DATA_COUNT bound to: 0 - type: integer 
+	Parameter C_VALID_LOW bound to: 0 - type: integer 
+	Parameter C_WR_ACK_LOW bound to: 0 - type: integer 
+	Parameter C_WR_DATA_COUNT_WIDTH bound to: 10 - type: integer 
+	Parameter C_WR_DEPTH bound to: 1024 - type: integer 
+	Parameter C_WR_FREQ bound to: 1 - type: integer 
+	Parameter C_WR_PNTR_WIDTH bound to: 10 - type: integer 
+	Parameter C_WR_RESPONSE_LATENCY bound to: 1 - type: integer 
+	Parameter C_MSGON_VAL bound to: 1 - type: integer 
+	Parameter C_ENABLE_RST_SYNC bound to: 1 - type: integer 
+	Parameter C_EN_SAFETY_CKT bound to: 0 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE bound to: 0 - type: integer 
+	Parameter C_SYNCHRONIZER_STAGE bound to: 2 - type: integer 
+	Parameter C_INTERFACE_TYPE bound to: 0 - type: integer 
+	Parameter C_AXI_TYPE bound to: 1 - type: integer 
+	Parameter C_HAS_AXI_WR_CHANNEL bound to: 1 - type: integer 
+	Parameter C_HAS_AXI_RD_CHANNEL bound to: 1 - type: integer 
+	Parameter C_HAS_SLAVE_CE bound to: 0 - type: integer 
+	Parameter C_HAS_MASTER_CE bound to: 0 - type: integer 
+	Parameter C_ADD_NGC_CONSTRAINT bound to: 0 - type: integer 
+	Parameter C_USE_COMMON_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_USE_COMMON_UNDERFLOW bound to: 0 - type: integer 
+	Parameter C_USE_DEFAULT_SETTINGS bound to: 0 - type: integer 
+	Parameter C_AXI_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_AXI_DATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_AXI_LEN_WIDTH bound to: 8 - type: integer 
+	Parameter C_AXI_LOCK_WIDTH bound to: 1 - type: integer 
+	Parameter C_HAS_AXI_ID bound to: 0 - type: integer 
+	Parameter C_HAS_AXI_AWUSER bound to: 0 - type: integer 
+	Parameter C_HAS_AXI_WUSER bound to: 0 - type: integer 
+	Parameter C_HAS_AXI_BUSER bound to: 0 - type: integer 
+	Parameter C_HAS_AXI_ARUSER bound to: 0 - type: integer 
+	Parameter C_HAS_AXI_RUSER bound to: 0 - type: integer 
+	Parameter C_AXI_ARUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_AWUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_WUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_BUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_RUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_HAS_AXIS_TDATA bound to: 1 - type: integer 
+	Parameter C_HAS_AXIS_TID bound to: 0 - type: integer 
+	Parameter C_HAS_AXIS_TDEST bound to: 0 - type: integer 
+	Parameter C_HAS_AXIS_TUSER bound to: 1 - type: integer 
+	Parameter C_HAS_AXIS_TREADY bound to: 1 - type: integer 
+	Parameter C_HAS_AXIS_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_AXIS_TSTRB bound to: 0 - type: integer 
+	Parameter C_HAS_AXIS_TKEEP bound to: 0 - type: integer 
+	Parameter C_AXIS_TDATA_WIDTH bound to: 8 - type: integer 
+	Parameter C_AXIS_TID_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXIS_TDEST_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXIS_TUSER_WIDTH bound to: 4 - type: integer 
+	Parameter C_AXIS_TSTRB_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXIS_TKEEP_WIDTH bound to: 1 - type: integer 
+	Parameter C_WACH_TYPE bound to: 0 - type: integer 
+	Parameter C_WDCH_TYPE bound to: 0 - type: integer 
+	Parameter C_WRCH_TYPE bound to: 0 - type: integer 
+	Parameter C_RACH_TYPE bound to: 0 - type: integer 
+	Parameter C_RDCH_TYPE bound to: 0 - type: integer 
+	Parameter C_AXIS_TYPE bound to: 0 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE_WACH bound to: 1 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE_WDCH bound to: 1 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE_WRCH bound to: 1 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE_RACH bound to: 1 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE_RDCH bound to: 1 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE_AXIS bound to: 1 - type: integer 
+	Parameter C_APPLICATION_TYPE_WACH bound to: 0 - type: integer 
+	Parameter C_APPLICATION_TYPE_WDCH bound to: 0 - type: integer 
+	Parameter C_APPLICATION_TYPE_WRCH bound to: 0 - type: integer 
+	Parameter C_APPLICATION_TYPE_RACH bound to: 0 - type: integer 
+	Parameter C_APPLICATION_TYPE_RDCH bound to: 0 - type: integer 
+	Parameter C_APPLICATION_TYPE_AXIS bound to: 0 - type: integer 
+	Parameter C_PRIM_FIFO_TYPE_WACH bound to: 512x36 - type: string 
+	Parameter C_PRIM_FIFO_TYPE_WDCH bound to: 1kx36 - type: string 
+	Parameter C_PRIM_FIFO_TYPE_WRCH bound to: 512x36 - type: string 
+	Parameter C_PRIM_FIFO_TYPE_RACH bound to: 512x36 - type: string 
+	Parameter C_PRIM_FIFO_TYPE_RDCH bound to: 1kx36 - type: string 
+	Parameter C_PRIM_FIFO_TYPE_AXIS bound to: 1kx18 - type: string 
+	Parameter C_USE_ECC_WACH bound to: 0 - type: integer 
+	Parameter C_USE_ECC_WDCH bound to: 0 - type: integer 
+	Parameter C_USE_ECC_WRCH bound to: 0 - type: integer 
+	Parameter C_USE_ECC_RACH bound to: 0 - type: integer 
+	Parameter C_USE_ECC_RDCH bound to: 0 - type: integer 
+	Parameter C_USE_ECC_AXIS bound to: 0 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE_WACH bound to: 0 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE_WDCH bound to: 0 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE_WRCH bound to: 0 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE_RACH bound to: 0 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE_RDCH bound to: 0 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE_AXIS bound to: 0 - type: integer 
+	Parameter C_DIN_WIDTH_WACH bound to: 1 - type: integer 
+	Parameter C_DIN_WIDTH_WDCH bound to: 64 - type: integer 
+	Parameter C_DIN_WIDTH_WRCH bound to: 2 - type: integer 
+	Parameter C_DIN_WIDTH_RACH bound to: 32 - type: integer 
+	Parameter C_DIN_WIDTH_RDCH bound to: 64 - type: integer 
+	Parameter C_DIN_WIDTH_AXIS bound to: 1 - type: integer 
+	Parameter C_WR_DEPTH_WACH bound to: 16 - type: integer 
+	Parameter C_WR_DEPTH_WDCH bound to: 1024 - type: integer 
+	Parameter C_WR_DEPTH_WRCH bound to: 16 - type: integer 
+	Parameter C_WR_DEPTH_RACH bound to: 16 - type: integer 
+	Parameter C_WR_DEPTH_RDCH bound to: 1024 - type: integer 
+	Parameter C_WR_DEPTH_AXIS bound to: 1024 - type: integer 
+	Parameter C_WR_PNTR_WIDTH_WACH bound to: 4 - type: integer 
+	Parameter C_WR_PNTR_WIDTH_WDCH bound to: 10 - type: integer 
+	Parameter C_WR_PNTR_WIDTH_WRCH bound to: 4 - type: integer 
+	Parameter C_WR_PNTR_WIDTH_RACH bound to: 4 - type: integer 
+	Parameter C_WR_PNTR_WIDTH_RDCH bound to: 10 - type: integer 
+	Parameter C_WR_PNTR_WIDTH_AXIS bound to: 10 - type: integer 
+	Parameter C_HAS_DATA_COUNTS_WACH bound to: 0 - type: integer 
+	Parameter C_HAS_DATA_COUNTS_WDCH bound to: 0 - type: integer 
+	Parameter C_HAS_DATA_COUNTS_WRCH bound to: 0 - type: integer 
+	Parameter C_HAS_DATA_COUNTS_RACH bound to: 0 - type: integer 
+	Parameter C_HAS_DATA_COUNTS_RDCH bound to: 0 - type: integer 
+	Parameter C_HAS_DATA_COUNTS_AXIS bound to: 0 - type: integer 
+	Parameter C_HAS_PROG_FLAGS_WACH bound to: 0 - type: integer 
+	Parameter C_HAS_PROG_FLAGS_WDCH bound to: 0 - type: integer 
+	Parameter C_HAS_PROG_FLAGS_WRCH bound to: 0 - type: integer 
+	Parameter C_HAS_PROG_FLAGS_RACH bound to: 0 - type: integer 
+	Parameter C_HAS_PROG_FLAGS_RDCH bound to: 0 - type: integer 
+	Parameter C_HAS_PROG_FLAGS_AXIS bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_TYPE_WACH bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_TYPE_WDCH bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_TYPE_WRCH bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_TYPE_RACH bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_TYPE_RDCH bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_TYPE_AXIS bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_WACH bound to: 1023 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_WDCH bound to: 1023 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_WRCH bound to: 1023 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_RACH bound to: 1023 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_RDCH bound to: 1023 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_AXIS bound to: 1023 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE_WACH bound to: 0 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE_WDCH bound to: 0 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE_WRCH bound to: 0 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE_RACH bound to: 0 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE_RDCH bound to: 0 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE_AXIS bound to: 0 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_WACH bound to: 1022 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_WDCH bound to: 1022 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_WRCH bound to: 1022 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_RACH bound to: 1022 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_RDCH bound to: 1022 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_AXIS bound to: 1022 - type: integer 
+	Parameter C_REG_SLICE_MODE_WACH bound to: 0 - type: integer 
+	Parameter C_REG_SLICE_MODE_WDCH bound to: 0 - type: integer 
+	Parameter C_REG_SLICE_MODE_WRCH bound to: 0 - type: integer 
+	Parameter C_REG_SLICE_MODE_RACH bound to: 0 - type: integer 
+	Parameter C_REG_SLICE_MODE_RDCH bound to: 0 - type: integer 
+	Parameter C_REG_SLICE_MODE_AXIS bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'fifo_generator_v13_2_2' declared at 'e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ip/prj_ip/prj_ip/prj_ip.srcs/sources_1/ip/fifo_maxtrix3x3/hdl/fifo_generator_v13_2_vhsyn_rfs.vhd:38483' bound to instance 'U0' of component 'fifo_generator_v13_2_2' [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ip/prj_ip/prj_ip/prj_ip.srcs/sources_1/ip/fifo_SobelDir/synth/fifo_SobelDir.vhd:540]
+INFO: [Synth 8-256] done synthesizing module 'fifo_SobelDir' (33#1) [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ip/prj_ip/prj_ip/prj_ip.srcs/sources_1/ip/fifo_SobelDir/synth/fifo_SobelDir.vhd:72]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'line_buff_1'. This will prevent further optimization [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ip/design_1_canny_bd_0_0/ipshared/fbb4/maxtri3x3_SobelDir.v:281]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'line_buff_2'. This will prevent further optimization [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ip/design_1_canny_bd_0_0/ipshared/fbb4/maxtri3x3_SobelDir.v:294]
+WARNING: [Synth 8-6014] Unused sequential element s_axis_tdata_dly3_reg was removed.  [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ip/design_1_canny_bd_0_0/ipshared/fbb4/maxtri3x3_SobelDir.v:135]
+WARNING: [Synth 8-6014] Unused sequential element s_axis_tdata_dly4_reg was removed.  [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ip/design_1_canny_bd_0_0/ipshared/fbb4/maxtri3x3_SobelDir.v:140]
+INFO: [Synth 8-6155] done synthesizing module 'maxtri3x3_SobelDir' (34#1) [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ip/design_1_canny_bd_0_0/ipshared/fbb4/maxtri3x3_SobelDir.v:26]
+INFO: [Synth 8-6155] done synthesizing module 'canny_bd_maxtri3x3_SobelDir_0_0' (35#1) [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ip/design_1_canny_bd_0_0/src/canny_bd_maxtri3x3_SobelDir_0_0/synth/canny_bd_maxtri3x3_SobelDir_0_0.v:57]
+WARNING: [Synth 8-350] instance 'maxtri3x3_SobelDir_0' of module 'canny_bd_maxtri3x3_SobelDir_0_0' requires 18 connections, but only 17 given [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/192b/src/canny_bd.v:197]
+INFO: [Synth 8-6157] synthesizing module 'canny_bd_maxtri3x3_shift_0_0' [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ip/design_1_canny_bd_0_0/src/canny_bd_maxtri3x3_shift_0_0/synth/canny_bd_maxtri3x3_shift_0_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'maxtri3x3_shift' [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ip/design_1_canny_bd_0_0/ipshared/db51/maxtri3x3_shift.v:26]
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter IMG_HEIGHT bound to: 480 - type: integer 
+	Parameter HL bound to: 2'b10 
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ip/design_1_canny_bd_0_0/ipshared/db51/maxtri3x3_shift.v:61]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ip/design_1_canny_bd_0_0/ipshared/db51/maxtri3x3_shift.v:62]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ip/design_1_canny_bd_0_0/ipshared/db51/maxtri3x3_shift.v:63]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ip/design_1_canny_bd_0_0/ipshared/db51/maxtri3x3_shift.v:74]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ip/design_1_canny_bd_0_0/ipshared/db51/maxtri3x3_shift.v:90]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ip/design_1_canny_bd_0_0/ipshared/db51/maxtri3x3_shift.v:91]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ip/design_1_canny_bd_0_0/ipshared/db51/maxtri3x3_shift.v:93]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ip/design_1_canny_bd_0_0/ipshared/db51/maxtri3x3_shift.v:94]
+INFO: [Synth 8-638] synthesizing module 'fifo_maxtrix3x3' [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ip/prj_ip/prj_ip/prj_ip.srcs/sources_1/ip/fifo_maxtrix3x3/synth/fifo_maxtrix3x3.vhd:72]
+	Parameter C_COMMON_CLOCK bound to: 1 - type: integer 
+	Parameter C_SELECT_XPM bound to: 0 - type: integer 
+	Parameter C_COUNT_TYPE bound to: 0 - type: integer 
+	Parameter C_DATA_COUNT_WIDTH bound to: 10 - type: integer 
+	Parameter C_DEFAULT_VALUE bound to: BlankString - type: string 
+	Parameter C_DIN_WIDTH bound to: 11 - type: integer 
+	Parameter C_DOUT_RST_VAL bound to: 0 - type: string 
+	Parameter C_DOUT_WIDTH bound to: 11 - type: integer 
+	Parameter C_ENABLE_RLOCS bound to: 0 - type: integer 
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_FULL_FLAGS_RST_VAL bound to: 0 - type: integer 
+	Parameter C_HAS_ALMOST_EMPTY bound to: 0 - type: integer 
+	Parameter C_HAS_ALMOST_FULL bound to: 0 - type: integer 
+	Parameter C_HAS_BACKUP bound to: 0 - type: integer 
+	Parameter C_HAS_DATA_COUNT bound to: 0 - type: integer 
+	Parameter C_HAS_INT_CLK bound to: 0 - type: integer 
+	Parameter C_HAS_MEMINIT_FILE bound to: 0 - type: integer 
+	Parameter C_HAS_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_RD_DATA_COUNT bound to: 0 - type: integer 
+	Parameter C_HAS_RD_RST bound to: 0 - type: integer 
+	Parameter C_HAS_RST bound to: 0 - type: integer 
+	Parameter C_HAS_SRST bound to: 1 - type: integer 
+	Parameter C_HAS_UNDERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_VALID bound to: 0 - type: integer 
+	Parameter C_HAS_WR_ACK bound to: 0 - type: integer 
+	Parameter C_HAS_WR_DATA_COUNT bound to: 0 - type: integer 
+	Parameter C_HAS_WR_RST bound to: 0 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE bound to: 0 - type: integer 
+	Parameter C_INIT_WR_PNTR_VAL bound to: 0 - type: integer 
+	Parameter C_MEMORY_TYPE bound to: 1 - type: integer 
+	Parameter C_MIF_FILE_NAME bound to: BlankString - type: string 
+	Parameter C_OPTIMIZATION_MODE bound to: 0 - type: integer 
+	Parameter C_OVERFLOW_LOW bound to: 0 - type: integer 
+	Parameter C_PRELOAD_LATENCY bound to: 1 - type: integer 
+	Parameter C_PRELOAD_REGS bound to: 0 - type: integer 
+	Parameter C_PRIM_FIFO_TYPE bound to: 1kx18 - type: string 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL bound to: 2 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_NEGATE_VAL bound to: 3 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL bound to: 1022 - type: integer 
+	Parameter C_PROG_FULL_THRESH_NEGATE_VAL bound to: 1021 - type: integer 
+	Parameter C_PROG_FULL_TYPE bound to: 0 - type: integer 
+	Parameter C_RD_DATA_COUNT_WIDTH bound to: 10 - type: integer 
+	Parameter C_RD_DEPTH bound to: 1024 - type: integer 
+	Parameter C_RD_FREQ bound to: 1 - type: integer 
+	Parameter C_RD_PNTR_WIDTH bound to: 10 - type: integer 
+	Parameter C_UNDERFLOW_LOW bound to: 0 - type: integer 
+	Parameter C_USE_DOUT_RST bound to: 1 - type: integer 
+	Parameter C_USE_ECC bound to: 0 - type: integer 
+	Parameter C_USE_EMBEDDED_REG bound to: 0 - type: integer 
+	Parameter C_USE_PIPELINE_REG bound to: 0 - type: integer 
+	Parameter C_POWER_SAVING_MODE bound to: 0 - type: integer 
+	Parameter C_USE_FIFO16_FLAGS bound to: 0 - type: integer 
+	Parameter C_USE_FWFT_DATA_COUNT bound to: 0 - type: integer 
+	Parameter C_VALID_LOW bound to: 0 - type: integer 
+	Parameter C_WR_ACK_LOW bound to: 0 - type: integer 
+	Parameter C_WR_DATA_COUNT_WIDTH bound to: 10 - type: integer 
+	Parameter C_WR_DEPTH bound to: 1024 - type: integer 
+	Parameter C_WR_FREQ bound to: 1 - type: integer 
+	Parameter C_WR_PNTR_WIDTH bound to: 10 - type: integer 
+	Parameter C_WR_RESPONSE_LATENCY bound to: 1 - type: integer 
+	Parameter C_MSGON_VAL bound to: 1 - type: integer 
+	Parameter C_ENABLE_RST_SYNC bound to: 1 - type: integer 
+	Parameter C_EN_SAFETY_CKT bound to: 0 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE bound to: 0 - type: integer 
+	Parameter C_SYNCHRONIZER_STAGE bound to: 2 - type: integer 
+	Parameter C_INTERFACE_TYPE bound to: 0 - type: integer 
+	Parameter C_AXI_TYPE bound to: 1 - type: integer 
+	Parameter C_HAS_AXI_WR_CHANNEL bound to: 1 - type: integer 
+	Parameter C_HAS_AXI_RD_CHANNEL bound to: 1 - type: integer 
+	Parameter C_HAS_SLAVE_CE bound to: 0 - type: integer 
+	Parameter C_HAS_MASTER_CE bound to: 0 - type: integer 
+	Parameter C_ADD_NGC_CONSTRAINT bound to: 0 - type: integer 
+	Parameter C_USE_COMMON_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_USE_COMMON_UNDERFLOW bound to: 0 - type: integer 
+	Parameter C_USE_DEFAULT_SETTINGS bound to: 0 - type: integer 
+	Parameter C_AXI_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_AXI_DATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_AXI_LEN_WIDTH bound to: 8 - type: integer 
+	Parameter C_AXI_LOCK_WIDTH bound to: 1 - type: integer 
+	Parameter C_HAS_AXI_ID bound to: 0 - type: integer 
+	Parameter C_HAS_AXI_AWUSER bound to: 0 - type: integer 
+	Parameter C_HAS_AXI_WUSER bound to: 0 - type: integer 
+	Parameter C_HAS_AXI_BUSER bound to: 0 - type: integer 
+	Parameter C_HAS_AXI_ARUSER bound to: 0 - type: integer 
+	Parameter C_HAS_AXI_RUSER bound to: 0 - type: integer 
+	Parameter C_AXI_ARUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_AWUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_WUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_BUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_RUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_HAS_AXIS_TDATA bound to: 1 - type: integer 
+	Parameter C_HAS_AXIS_TID bound to: 0 - type: integer 
+	Parameter C_HAS_AXIS_TDEST bound to: 0 - type: integer 
+	Parameter C_HAS_AXIS_TUSER bound to: 1 - type: integer 
+	Parameter C_HAS_AXIS_TREADY bound to: 1 - type: integer 
+	Parameter C_HAS_AXIS_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_AXIS_TSTRB bound to: 0 - type: integer 
+	Parameter C_HAS_AXIS_TKEEP bound to: 0 - type: integer 
+	Parameter C_AXIS_TDATA_WIDTH bound to: 8 - type: integer 
+	Parameter C_AXIS_TID_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXIS_TDEST_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXIS_TUSER_WIDTH bound to: 4 - type: integer 
+	Parameter C_AXIS_TSTRB_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXIS_TKEEP_WIDTH bound to: 1 - type: integer 
+	Parameter C_WACH_TYPE bound to: 0 - type: integer 
+	Parameter C_WDCH_TYPE bound to: 0 - type: integer 
+	Parameter C_WRCH_TYPE bound to: 0 - type: integer 
+	Parameter C_RACH_TYPE bound to: 0 - type: integer 
+	Parameter C_RDCH_TYPE bound to: 0 - type: integer 
+	Parameter C_AXIS_TYPE bound to: 0 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE_WACH bound to: 1 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE_WDCH bound to: 1 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE_WRCH bound to: 1 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE_RACH bound to: 1 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE_RDCH bound to: 1 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE_AXIS bound to: 1 - type: integer 
+	Parameter C_APPLICATION_TYPE_WACH bound to: 0 - type: integer 
+	Parameter C_APPLICATION_TYPE_WDCH bound to: 0 - type: integer 
+	Parameter C_APPLICATION_TYPE_WRCH bound to: 0 - type: integer 
+	Parameter C_APPLICATION_TYPE_RACH bound to: 0 - type: integer 
+	Parameter C_APPLICATION_TYPE_RDCH bound to: 0 - type: integer 
+	Parameter C_APPLICATION_TYPE_AXIS bound to: 0 - type: integer 
+	Parameter C_PRIM_FIFO_TYPE_WACH bound to: 512x36 - type: string 
+	Parameter C_PRIM_FIFO_TYPE_WDCH bound to: 1kx36 - type: string 
+	Parameter C_PRIM_FIFO_TYPE_WRCH bound to: 512x36 - type: string 
+	Parameter C_PRIM_FIFO_TYPE_RACH bound to: 512x36 - type: string 
+	Parameter C_PRIM_FIFO_TYPE_RDCH bound to: 1kx36 - type: string 
+	Parameter C_PRIM_FIFO_TYPE_AXIS bound to: 1kx18 - type: string 
+	Parameter C_USE_ECC_WACH bound to: 0 - type: integer 
+	Parameter C_USE_ECC_WDCH bound to: 0 - type: integer 
+	Parameter C_USE_ECC_WRCH bound to: 0 - type: integer 
+	Parameter C_USE_ECC_RACH bound to: 0 - type: integer 
+	Parameter C_USE_ECC_RDCH bound to: 0 - type: integer 
+	Parameter C_USE_ECC_AXIS bound to: 0 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE_WACH bound to: 0 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE_WDCH bound to: 0 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE_WRCH bound to: 0 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE_RACH bound to: 0 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE_RDCH bound to: 0 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE_AXIS bound to: 0 - type: integer 
+	Parameter C_DIN_WIDTH_WACH bound to: 1 - type: integer 
+	Parameter C_DIN_WIDTH_WDCH bound to: 64 - type: integer 
+	Parameter C_DIN_WIDTH_WRCH bound to: 2 - type: integer 
+	Parameter C_DIN_WIDTH_RACH bound to: 32 - type: integer 
+	Parameter C_DIN_WIDTH_RDCH bound to: 64 - type: integer 
+	Parameter C_DIN_WIDTH_AXIS bound to: 1 - type: integer 
+	Parameter C_WR_DEPTH_WACH bound to: 16 - type: integer 
+	Parameter C_WR_DEPTH_WDCH bound to: 1024 - type: integer 
+	Parameter C_WR_DEPTH_WRCH bound to: 16 - type: integer 
+	Parameter C_WR_DEPTH_RACH bound to: 16 - type: integer 
+	Parameter C_WR_DEPTH_RDCH bound to: 1024 - type: integer 
+	Parameter C_WR_DEPTH_AXIS bound to: 1024 - type: integer 
+	Parameter C_WR_PNTR_WIDTH_WACH bound to: 4 - type: integer 
+	Parameter C_WR_PNTR_WIDTH_WDCH bound to: 10 - type: integer 
+	Parameter C_WR_PNTR_WIDTH_WRCH bound to: 4 - type: integer 
+	Parameter C_WR_PNTR_WIDTH_RACH bound to: 4 - type: integer 
+	Parameter C_WR_PNTR_WIDTH_RDCH bound to: 10 - type: integer 
+	Parameter C_WR_PNTR_WIDTH_AXIS bound to: 10 - type: integer 
+	Parameter C_HAS_DATA_COUNTS_WACH bound to: 0 - type: integer 
+	Parameter C_HAS_DATA_COUNTS_WDCH bound to: 0 - type: integer 
+	Parameter C_HAS_DATA_COUNTS_WRCH bound to: 0 - type: integer 
+	Parameter C_HAS_DATA_COUNTS_RACH bound to: 0 - type: integer 
+	Parameter C_HAS_DATA_COUNTS_RDCH bound to: 0 - type: integer 
+	Parameter C_HAS_DATA_COUNTS_AXIS bound to: 0 - type: integer 
+	Parameter C_HAS_PROG_FLAGS_WACH bound to: 0 - type: integer 
+	Parameter C_HAS_PROG_FLAGS_WDCH bound to: 0 - type: integer 
+	Parameter C_HAS_PROG_FLAGS_WRCH bound to: 0 - type: integer 
+	Parameter C_HAS_PROG_FLAGS_RACH bound to: 0 - type: integer 
+	Parameter C_HAS_PROG_FLAGS_RDCH bound to: 0 - type: integer 
+	Parameter C_HAS_PROG_FLAGS_AXIS bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_TYPE_WACH bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_TYPE_WDCH bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_TYPE_WRCH bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_TYPE_RACH bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_TYPE_RDCH bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_TYPE_AXIS bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_WACH bound to: 1023 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_WDCH bound to: 1023 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_WRCH bound to: 1023 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_RACH bound to: 1023 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_RDCH bound to: 1023 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_AXIS bound to: 1023 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE_WACH bound to: 0 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE_WDCH bound to: 0 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE_WRCH bound to: 0 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE_RACH bound to: 0 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE_RDCH bound to: 0 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE_AXIS bound to: 0 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_WACH bound to: 1022 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_WDCH bound to: 1022 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_WRCH bound to: 1022 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_RACH bound to: 1022 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_RDCH bound to: 1022 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_AXIS bound to: 1022 - type: integer 
+	Parameter C_REG_SLICE_MODE_WACH bound to: 0 - type: integer 
+	Parameter C_REG_SLICE_MODE_WDCH bound to: 0 - type: integer 
+	Parameter C_REG_SLICE_MODE_WRCH bound to: 0 - type: integer 
+	Parameter C_REG_SLICE_MODE_RACH bound to: 0 - type: integer 
+	Parameter C_REG_SLICE_MODE_RDCH bound to: 0 - type: integer 
+	Parameter C_REG_SLICE_MODE_AXIS bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'fifo_generator_v13_2_2' declared at 'e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ip/prj_ip/prj_ip/prj_ip.srcs/sources_1/ip/fifo_maxtrix3x3/hdl/fifo_generator_v13_2_vhsyn_rfs.vhd:38483' bound to instance 'U0' of component 'fifo_generator_v13_2_2' [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ip/prj_ip/prj_ip/prj_ip.srcs/sources_1/ip/fifo_maxtrix3x3/synth/fifo_maxtrix3x3.vhd:540]
+INFO: [Synth 8-256] done synthesizing module 'fifo_maxtrix3x3' (36#1) [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ip/prj_ip/prj_ip/prj_ip.srcs/sources_1/ip/fifo_maxtrix3x3/synth/fifo_maxtrix3x3.vhd:72]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'line_buff_1'. This will prevent further optimization [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ip/design_1_canny_bd_0_0/ipshared/db51/maxtri3x3_shift.v:279]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'line_buff_2'. This will prevent further optimization [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ip/design_1_canny_bd_0_0/ipshared/db51/maxtri3x3_shift.v:292]
+WARNING: [Synth 8-6014] Unused sequential element s_axis_tdata_dly3_reg was removed.  [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ip/design_1_canny_bd_0_0/ipshared/db51/maxtri3x3_shift.v:135]
+WARNING: [Synth 8-6014] Unused sequential element s_axis_tdata_dly4_reg was removed.  [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ip/design_1_canny_bd_0_0/ipshared/db51/maxtri3x3_shift.v:140]
+INFO: [Synth 8-6155] done synthesizing module 'maxtri3x3_shift' (37#1) [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ip/design_1_canny_bd_0_0/ipshared/db51/maxtri3x3_shift.v:26]
+INFO: [Synth 8-6155] done synthesizing module 'canny_bd_maxtri3x3_shift_0_0' (38#1) [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ip/design_1_canny_bd_0_0/src/canny_bd_maxtri3x3_shift_0_0/synth/canny_bd_maxtri3x3_shift_0_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'canny_bd_sobel3x3_algorithm_0_0' [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ip/design_1_canny_bd_0_0/src/canny_bd_sobel3x3_algorithm_0_0/synth/canny_bd_sobel3x3_algorithm_0_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'sobel3x3_algorithm' [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ip/design_1_canny_bd_0_0/ipshared/a1a3/sobel3x3_algorithm.v:36]
+	Parameter TDATA_WIDTH bound to: 8 - type: integer 
+	Parameter IMG_WIDTH bound to: 640 - type: integer 
+	Parameter IMG_HEIGHT bound to: 480 - type: integer 
+WARNING: [Synth 8-6014] Unused sequential element s_axis_tlast_dly6_reg was removed.  [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ip/design_1_canny_bd_0_0/ipshared/a1a3/sobel3x3_algorithm.v:171]
+WARNING: [Synth 8-6014] Unused sequential element s_axis_tuser_dly6_reg was removed.  [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ip/design_1_canny_bd_0_0/ipshared/a1a3/sobel3x3_algorithm.v:178]
+WARNING: [Synth 8-6014] Unused sequential element s_axis_tvalid_dly6_reg was removed.  [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ip/design_1_canny_bd_0_0/ipshared/a1a3/sobel3x3_algorithm.v:185]
+WARNING: [Synth 8-6014] Unused sequential element matrix1_tdata_dly6_reg was removed.  [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ip/design_1_canny_bd_0_0/ipshared/a1a3/sobel3x3_algorithm.v:196]
+WARNING: [Synth 8-3936] Found unconnected internal register 'matrix1_tdata_dly5_reg' and it is trimmed from '11' to '8' bits. [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ip/design_1_canny_bd_0_0/ipshared/a1a3/sobel3x3_algorithm.v:195]
+WARNING: [Synth 8-3936] Found unconnected internal register 'matrix1_tdata_dly4_reg' and it is trimmed from '11' to '8' bits. [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ip/design_1_canny_bd_0_0/ipshared/a1a3/sobel3x3_algorithm.v:194]
+WARNING: [Synth 8-3848] Net m_axis_raw_tlast in module/entity sobel3x3_algorithm does not have driver. [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ip/design_1_canny_bd_0_0/ipshared/a1a3/sobel3x3_algorithm.v:82]
+WARNING: [Synth 8-3848] Net m_axis_raw_tuser in module/entity sobel3x3_algorithm does not have driver. [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ip/design_1_canny_bd_0_0/ipshared/a1a3/sobel3x3_algorithm.v:83]
+WARNING: [Synth 8-3848] Net m_axis_raw_tvalid in module/entity sobel3x3_algorithm does not have driver. [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ip/design_1_canny_bd_0_0/ipshared/a1a3/sobel3x3_algorithm.v:84]
+INFO: [Synth 8-6155] done synthesizing module 'sobel3x3_algorithm' (39#1) [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ip/design_1_canny_bd_0_0/ipshared/a1a3/sobel3x3_algorithm.v:36]
+INFO: [Synth 8-6155] done synthesizing module 'canny_bd_sobel3x3_algorithm_0_0' (40#1) [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ip/design_1_canny_bd_0_0/src/canny_bd_sobel3x3_algorithm_0_0/synth/canny_bd_sobel3x3_algorithm_0_0.v:57]
+WARNING: [Synth 8-350] instance 'sobel3x3_algorithm_0' of module 'canny_bd_sobel3x3_algorithm_0_0' requires 34 connections, but only 18 given [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/192b/src/canny_bd.v:234]
+INFO: [Synth 8-6155] done synthesizing module 'canny_bd' (41#1) [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/192b/src/canny_bd.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_canny_bd_0_0' (42#1) [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ip/design_1_canny_bd_0_0/synth/design_1_canny_bd_0_0.v:57]
+WARNING: [Synth 8-3331] design sobel3x3_algorithm has unconnected port m_axis_raw_tlast
+WARNING: [Synth 8-3331] design sobel3x3_algorithm has unconnected port m_axis_raw_tuser
+WARNING: [Synth 8-3331] design sobel3x3_algorithm has unconnected port m_axis_raw_tvalid
+WARNING: [Synth 8-3331] design sobel3x3_algorithm has unconnected port s_axis_matrix0_tlast
+WARNING: [Synth 8-3331] design sobel3x3_algorithm has unconnected port s_axis_matrix0_tuser
+WARNING: [Synth 8-3331] design sobel3x3_algorithm has unconnected port s_axis_matrix0_tvalid
+WARNING: [Synth 8-3331] design sobel3x3_algorithm has unconnected port s_axis_matrix2_tlast
+WARNING: [Synth 8-3331] design sobel3x3_algorithm has unconnected port s_axis_matrix2_tuser
+WARNING: [Synth 8-3331] design sobel3x3_algorithm has unconnected port s_axis_matrix2_tvalid
+WARNING: [Synth 8-3331] design wr_status_flags_ss has unconnected port RST_FULL_FF
+WARNING: [Synth 8-3331] design wr_status_flags_ss has unconnected port WR_RST
+WARNING: [Synth 8-3331] design wr_status_flags_ss has unconnected port SRST
+WARNING: [Synth 8-3331] design wr_status_flags_ss has unconnected port SAFETY_CKT_WR_RST
+WARNING: [Synth 8-3331] design wr_status_flags_ss has unconnected port WR_PNTR_PLUS2[9]
+WARNING: [Synth 8-3331] design wr_status_flags_ss has unconnected port WR_PNTR_PLUS2[8]
+WARNING: [Synth 8-3331] design wr_status_flags_ss has unconnected port WR_PNTR_PLUS2[7]
+WARNING: [Synth 8-3331] design wr_status_flags_ss has unconnected port WR_PNTR_PLUS2[6]
+WARNING: [Synth 8-3331] design wr_status_flags_ss has unconnected port WR_PNTR_PLUS2[5]
+WARNING: [Synth 8-3331] design wr_status_flags_ss has unconnected port WR_PNTR_PLUS2[4]
+WARNING: [Synth 8-3331] design wr_status_flags_ss has unconnected port WR_PNTR_PLUS2[3]
+WARNING: [Synth 8-3331] design wr_status_flags_ss has unconnected port WR_PNTR_PLUS2[2]
+WARNING: [Synth 8-3331] design wr_status_flags_ss has unconnected port WR_PNTR_PLUS2[1]
+WARNING: [Synth 8-3331] design wr_status_flags_ss has unconnected port WR_PNTR_PLUS2[0]
+WARNING: [Synth 8-3331] design wr_status_flags_ss has unconnected port WR_PNTR_PLUS3[9]
+WARNING: [Synth 8-3331] design wr_status_flags_ss has unconnected port WR_PNTR_PLUS3[8]
+WARNING: [Synth 8-3331] design wr_status_flags_ss has unconnected port WR_PNTR_PLUS3[7]
+WARNING: [Synth 8-3331] design wr_status_flags_ss has unconnected port WR_PNTR_PLUS3[6]
+WARNING: [Synth 8-3331] design wr_status_flags_ss has unconnected port WR_PNTR_PLUS3[5]
+WARNING: [Synth 8-3331] design wr_status_flags_ss has unconnected port WR_PNTR_PLUS3[4]
+WARNING: [Synth 8-3331] design wr_status_flags_ss has unconnected port WR_PNTR_PLUS3[3]
+WARNING: [Synth 8-3331] design wr_status_flags_ss has unconnected port WR_PNTR_PLUS3[2]
+WARNING: [Synth 8-3331] design wr_status_flags_ss has unconnected port WR_PNTR_PLUS3[1]
+WARNING: [Synth 8-3331] design wr_status_flags_ss has unconnected port WR_PNTR_PLUS3[0]
+WARNING: [Synth 8-3331] design wr_bin_cntr has unconnected port RST
+WARNING: [Synth 8-3331] design wr_logic has unconnected port WR_EN_INTO_LOGIC
+WARNING: [Synth 8-3331] design wr_logic has unconnected port WR_RST_INTO_LOGIC
+WARNING: [Synth 8-3331] design wr_logic has unconnected port RD_EN
+WARNING: [Synth 8-3331] design wr_logic has unconnected port WR_RST_BUSY
+WARNING: [Synth 8-3331] design wr_logic has unconnected port EMPTY
+WARNING: [Synth 8-3331] design wr_logic has unconnected port ALMOST_EMPTY
+WARNING: [Synth 8-3331] design wr_logic has unconnected port PROG_FULL_THRESH[9]
+WARNING: [Synth 8-3331] design wr_logic has unconnected port PROG_FULL_THRESH[8]
+WARNING: [Synth 8-3331] design wr_logic has unconnected port PROG_FULL_THRESH[7]
+WARNING: [Synth 8-3331] design wr_logic has unconnected port PROG_FULL_THRESH[6]
+WARNING: [Synth 8-3331] design wr_logic has unconnected port PROG_FULL_THRESH[5]
+WARNING: [Synth 8-3331] design wr_logic has unconnected port PROG_FULL_THRESH[4]
+WARNING: [Synth 8-3331] design wr_logic has unconnected port PROG_FULL_THRESH[3]
+WARNING: [Synth 8-3331] design wr_logic has unconnected port PROG_FULL_THRESH[2]
+WARNING: [Synth 8-3331] design wr_logic has unconnected port PROG_FULL_THRESH[1]
+WARNING: [Synth 8-3331] design wr_logic has unconnected port PROG_FULL_THRESH[0]
+WARNING: [Synth 8-3331] design wr_logic has unconnected port PROG_FULL_THRESH_ASSERT[9]
+WARNING: [Synth 8-3331] design wr_logic has unconnected port PROG_FULL_THRESH_ASSERT[8]
+WARNING: [Synth 8-3331] design wr_logic has unconnected port PROG_FULL_THRESH_ASSERT[7]
+WARNING: [Synth 8-3331] design wr_logic has unconnected port PROG_FULL_THRESH_ASSERT[6]
+WARNING: [Synth 8-3331] design wr_logic has unconnected port PROG_FULL_THRESH_ASSERT[5]
+WARNING: [Synth 8-3331] design wr_logic has unconnected port PROG_FULL_THRESH_ASSERT[4]
+WARNING: [Synth 8-3331] design wr_logic has unconnected port PROG_FULL_THRESH_ASSERT[3]
+WARNING: [Synth 8-3331] design wr_logic has unconnected port PROG_FULL_THRESH_ASSERT[2]
+WARNING: [Synth 8-3331] design wr_logic has unconnected port PROG_FULL_THRESH_ASSERT[1]
+WARNING: [Synth 8-3331] design wr_logic has unconnected port PROG_FULL_THRESH_ASSERT[0]
+WARNING: [Synth 8-3331] design wr_logic has unconnected port PROG_FULL_THRESH_NEGATE[9]
+WARNING: [Synth 8-3331] design wr_logic has unconnected port PROG_FULL_THRESH_NEGATE[8]
+WARNING: [Synth 8-3331] design wr_logic has unconnected port PROG_FULL_THRESH_NEGATE[7]
+WARNING: [Synth 8-3331] design wr_logic has unconnected port PROG_FULL_THRESH_NEGATE[6]
+WARNING: [Synth 8-3331] design wr_logic has unconnected port PROG_FULL_THRESH_NEGATE[5]
+WARNING: [Synth 8-3331] design wr_logic has unconnected port PROG_FULL_THRESH_NEGATE[4]
+WARNING: [Synth 8-3331] design wr_logic has unconnected port PROG_FULL_THRESH_NEGATE[3]
+WARNING: [Synth 8-3331] design wr_logic has unconnected port PROG_FULL_THRESH_NEGATE[2]
+WARNING: [Synth 8-3331] design wr_logic has unconnected port PROG_FULL_THRESH_NEGATE[1]
+WARNING: [Synth 8-3331] design wr_logic has unconnected port PROG_FULL_THRESH_NEGATE[0]
+WARNING: [Synth 8-3331] design rd_status_flags_ss has unconnected port RD_RST
+WARNING: [Synth 8-3331] design rd_status_flags_ss has unconnected port SAFETY_CKT_RD_RST
+WARNING: [Synth 8-3331] design rd_status_flags_ss has unconnected port RD_PNTR_PLUS2[9]
+WARNING: [Synth 8-3331] design rd_status_flags_ss has unconnected port RD_PNTR_PLUS2[8]
+WARNING: [Synth 8-3331] design rd_status_flags_ss has unconnected port RD_PNTR_PLUS2[7]
+WARNING: [Synth 8-3331] design rd_status_flags_ss has unconnected port RD_PNTR_PLUS2[6]
+WARNING: [Synth 8-3331] design rd_status_flags_ss has unconnected port RD_PNTR_PLUS2[5]
+WARNING: [Synth 8-3331] design rd_status_flags_ss has unconnected port RD_PNTR_PLUS2[4]
+WARNING: [Synth 8-3331] design rd_status_flags_ss has unconnected port RD_PNTR_PLUS2[3]
+WARNING: [Synth 8-3331] design rd_status_flags_ss has unconnected port RD_PNTR_PLUS2[2]
+WARNING: [Synth 8-3331] design rd_status_flags_ss has unconnected port RD_PNTR_PLUS2[1]
+WARNING: [Synth 8-3331] design rd_status_flags_ss has unconnected port RD_PNTR_PLUS2[0]
+WARNING: [Synth 8-3331] design rd_bin_cntr has unconnected port RST
+WARNING: [Synth 8-3331] design rd_logic has unconnected port RD_EN_INTO_LOGIC
+WARNING: [Synth 8-3331] design rd_logic has unconnected port RD_RST_INTO_LOGIC
+WARNING: [Synth 8-3331] design rd_logic has unconnected port RD_RST_BUSY
+WARNING: [Synth 8-3331] design rd_logic has unconnected port RST_FULL_FF
+WARNING: [Synth 8-3331] design rd_logic has unconnected port ALMOST_FULL_FB
+WARNING: [Synth 8-3331] design rd_logic has unconnected port FULL
+WARNING: [Synth 8-3331] design rd_logic has unconnected port WR_PNTR_PLUS1_RD[9]
+WARNING: [Synth 8-3331] design rd_logic has unconnected port WR_PNTR_PLUS1_RD[8]
+WARNING: [Synth 8-3331] design rd_logic has unconnected port WR_PNTR_PLUS1_RD[7]
+WARNING: [Synth 8-3331] design rd_logic has unconnected port WR_PNTR_PLUS1_RD[6]
+WARNING: [Synth 8-3331] design rd_logic has unconnected port WR_PNTR_PLUS1_RD[5]
+WARNING: [Synth 8-3331] design rd_logic has unconnected port WR_PNTR_PLUS1_RD[4]
+WARNING: [Synth 8-3331] design rd_logic has unconnected port WR_PNTR_PLUS1_RD[3]
+WARNING: [Synth 8-3331] design rd_logic has unconnected port WR_PNTR_PLUS1_RD[2]
+WARNING: [Synth 8-3331] design rd_logic has unconnected port WR_PNTR_PLUS1_RD[1]
+WARNING: [Synth 8-3331] design rd_logic has unconnected port WR_PNTR_PLUS1_RD[0]
+WARNING: [Synth 8-3331] design rd_logic has unconnected port PROG_EMPTY_THRESH[9]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:03:08 ; elapsed = 00:03:10 . Memory (MB): peak = 909.574 ; gain = 541.641
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:03:08 ; elapsed = 00:03:10 . Memory (MB): peak = 909.574 ; gain = 541.641
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:03:08 ; elapsed = 00:03:10 . Memory (MB): peak = 909.574 ; gain = 541.641
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 126 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ip/design_1_canny_bd_0_0/src/canny_bd_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ip/design_1_canny_bd_0_0/src/canny_bd_ooc.xdc] for cell 'inst'
+Parsing XDC File [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ip/prj_ip/prj_ip/prj_ip.srcs/sources_1/ip/fifo_maxtrix3x3/fifo_maxtrix3x3.xdc] for cell 'inst/maxtri3x3_shift_0/inst/line_buff_1/U0'
+Finished Parsing XDC File [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ip/prj_ip/prj_ip/prj_ip.srcs/sources_1/ip/fifo_maxtrix3x3/fifo_maxtrix3x3.xdc] for cell 'inst/maxtri3x3_shift_0/inst/line_buff_1/U0'
+Parsing XDC File [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ip/prj_ip/prj_ip/prj_ip.srcs/sources_1/ip/fifo_maxtrix3x3/fifo_maxtrix3x3.xdc] for cell 'inst/maxtri3x3_shift_0/inst/line_buff_2/U0'
+Finished Parsing XDC File [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ip/prj_ip/prj_ip/prj_ip.srcs/sources_1/ip/fifo_maxtrix3x3/fifo_maxtrix3x3.xdc] for cell 'inst/maxtri3x3_shift_0/inst/line_buff_2/U0'
+Parsing XDC File [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ip/prj_ip/prj_ip/prj_ip.srcs/sources_1/ip/fifo_SobelDir/fifo_SobelDir.xdc] for cell 'inst/maxtri3x3_SobelDir_0/inst/line_buff_1/U0'
+Finished Parsing XDC File [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ip/prj_ip/prj_ip/prj_ip.srcs/sources_1/ip/fifo_SobelDir/fifo_SobelDir.xdc] for cell 'inst/maxtri3x3_SobelDir_0/inst/line_buff_1/U0'
+Parsing XDC File [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ip/prj_ip/prj_ip/prj_ip.srcs/sources_1/ip/fifo_SobelDir/fifo_SobelDir.xdc] for cell 'inst/maxtri3x3_SobelDir_0/inst/line_buff_2/U0'
+Finished Parsing XDC File [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ip/prj_ip/prj_ip/prj_ip.srcs/sources_1/ip/fifo_SobelDir/fifo_SobelDir.xdc] for cell 'inst/maxtri3x3_SobelDir_0/inst/line_buff_2/U0'
+Parsing XDC File [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ip/prj_ip/prj_ip/prj_ip.srcs/sources_1/ip/fifo_CannyNMS/fifo_CannyNMS.xdc] for cell 'inst/maxtri3x3_CannyNMS_0/inst/line_buff_1/U0'
+Finished Parsing XDC File [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ip/prj_ip/prj_ip/prj_ip.srcs/sources_1/ip/fifo_CannyNMS/fifo_CannyNMS.xdc] for cell 'inst/maxtri3x3_CannyNMS_0/inst/line_buff_1/U0'
+Parsing XDC File [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ip/prj_ip/prj_ip/prj_ip.srcs/sources_1/ip/fifo_CannyNMS/fifo_CannyNMS.xdc] for cell 'inst/maxtri3x3_CannyNMS_0/inst/line_buff_2/U0'
+Finished Parsing XDC File [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ip/prj_ip/prj_ip/prj_ip.srcs/sources_1/ip/fifo_CannyNMS/fifo_CannyNMS.xdc] for cell 'inst/maxtri3x3_CannyNMS_0/inst/line_buff_2/U0'
+Parsing XDC File [E:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.runs/design_1_canny_bd_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [E:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.runs/design_1_canny_bd_0_0_synth_1/dont_touch.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.runs/design_1_canny_bd_0_0_synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_canny_bd_0_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_canny_bd_0_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.071 . Memory (MB): peak = 932.516 ; gain = 1.125
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:03:28 ; elapsed = 00:03:34 . Memory (MB): peak = 932.516 ; gain = 564.582
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:03:28 ; elapsed = 00:03:34 . Memory (MB): peak = 932.516 ; gain = 564.582
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for inst/maxtri3x3_shift_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/maxtri3x3_shift_0/inst/line_buff_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/maxtri3x3_shift_0/inst/line_buff_2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/sobel3x3_algorithm_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/maxtri3x3_SobelDir_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/maxtri3x3_SobelDir_0/inst/line_buff_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/maxtri3x3_SobelDir_0/inst/line_buff_2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/canny_NonMaxSupp_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/maxtri3x3_CannyNMS_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/maxtri3x3_CannyNMS_0/inst/line_buff_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/maxtri3x3_CannyNMS_0/inst/line_buff_2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/canny_HystThreshold_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/img_edge_cut_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/maxtri3x3_shift_0/inst/line_buff_1/U0. (constraint file  E:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.runs/design_1_canny_bd_0_0_synth_1/dont_touch.xdc, line 38).
+Applied set_property DONT_TOUCH = true for inst/maxtri3x3_shift_0/inst/line_buff_2/U0. (constraint file  E:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.runs/design_1_canny_bd_0_0_synth_1/dont_touch.xdc, line 38).
+Applied set_property DONT_TOUCH = true for inst/maxtri3x3_SobelDir_0/inst/line_buff_1/U0. (constraint file  E:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.runs/design_1_canny_bd_0_0_synth_1/dont_touch.xdc, line 41).
+Applied set_property DONT_TOUCH = true for inst/maxtri3x3_SobelDir_0/inst/line_buff_2/U0. (constraint file  E:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.runs/design_1_canny_bd_0_0_synth_1/dont_touch.xdc, line 41).
+Applied set_property DONT_TOUCH = true for inst/maxtri3x3_CannyNMS_0/inst/line_buff_1/U0. (constraint file  E:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.runs/design_1_canny_bd_0_0_synth_1/dont_touch.xdc, line 44).
+Applied set_property DONT_TOUCH = true for inst/maxtri3x3_CannyNMS_0/inst/line_buff_2/U0. (constraint file  E:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.runs/design_1_canny_bd_0_0_synth_1/dont_touch.xdc, line 44).
+Applied set_property DONT_TOUCH = true for inst. (constraint file  E:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.runs/design_1_canny_bd_0_0_synth_1/dont_touch.xdc, line 48).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:03:28 ; elapsed = 00:03:34 . Memory (MB): peak = 932.516 ; gain = 564.582
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6014] Unused sequential element pre_row_flg_reg was removed.  [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ip/design_1_canny_bd_0_0/ipshared/9cb6/canny_HystThreshold.v:216]
+WARNING: [Synth 8-3936] Found unconnected internal register 's_axis_tlast_dly_reg' and it is trimmed from '2' to '1' bits. [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ip/design_1_canny_bd_0_0/ipshared/d721/img_edge_cut.v:74]
+WARNING: [Synth 8-3936] Found unconnected internal register 's_axis_tuser_dly_reg' and it is trimmed from '2' to '1' bits. [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ip/design_1_canny_bd_0_0/ipshared/d721/img_edge_cut.v:75]
+WARNING: [Synth 8-3936] Found unconnected internal register 's_axis_tvalid_dly_reg' and it is trimmed from '2' to '1' bits. [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ip/design_1_canny_bd_0_0/ipshared/d721/img_edge_cut.v:76]
+WARNING: [Synth 8-3936] Found unconnected internal register 's_axis_tdata_dly_reg' and it is trimmed from '16' to '8' bits. [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ip/design_1_canny_bd_0_0/ipshared/d721/img_edge_cut.v:77]
+INFO: [Synth 8-5546] ROM "line_buff_1_rd" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "line_buff_1_rd" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "line_buff_1_rd" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ip/design_1_canny_bd_0_0/ipshared/a1a3/sobel3x3_algorithm.v:255]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ip/design_1_canny_bd_0_0/ipshared/a1a3/sobel3x3_algorithm.v:284]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:03:30 ; elapsed = 00:03:36 . Memory (MB): peak = 932.516 ; gain = 564.582
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   5 Input     17 Bit       Adders := 1     
+	   4 Input     17 Bit       Adders := 1     
+	   2 Input     12 Bit       Adders := 3     
+	   3 Input     11 Bit       Adders := 6     
+	   2 Input     11 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 16    
++---XORs : 
+	   2 Input      1 Bit         XORs := 240   
++---Registers : 
+	               17 Bit    Registers := 3     
+	               13 Bit    Registers := 2     
+	               12 Bit    Registers := 3     
+	               11 Bit    Registers := 24    
+	               10 Bit    Registers := 27    
+	                8 Bit    Registers := 17    
+	                2 Bit    Registers := 10    
+	                1 Bit    Registers := 119   
++---RAMs : 
+	              640 Bit         RAMs := 1     
++---Muxes : 
+	   2 Input     11 Bit        Muxes := 8     
+	   4 Input     11 Bit        Muxes := 1     
+	   4 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 5     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 3     
+	   4 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 46    
+	   3 Input      1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module canny_HystThreshold 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 3     
++---Registers : 
+	               10 Bit    Registers := 2     
+	                8 Bit    Registers := 1     
+	                2 Bit    Registers := 5     
+	                1 Bit    Registers := 13    
++---RAMs : 
+	              640 Bit         RAMs := 1     
++---Muxes : 
+	   4 Input      8 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+Module canny_NonMaxSupp 
+Detailed RTL Component Info : 
++---Registers : 
+	               11 Bit    Registers := 10    
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 9     
++---Muxes : 
+	   2 Input     11 Bit        Muxes := 4     
+	   4 Input     11 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+Module img_edge_cut 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+Module rd_bin_cntr 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 2     
+Module compare 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 10    
+Module rd_status_flags_ss 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module wr_bin_cntr 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 2     
+Module wr_status_flags_ss 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
+Module maxtri3x3_CannyNMS 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     12 Bit       Adders := 1     
++---Registers : 
+	               12 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 15    
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 12    
+	   3 Input      1 Bit        Muxes := 1     
+Module maxtri3x3_SobelDir 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     12 Bit       Adders := 1     
++---Registers : 
+	               13 Bit    Registers := 2     
+	               12 Bit    Registers := 1     
+	                1 Bit    Registers := 15    
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 12    
+	   3 Input      1 Bit        Muxes := 1     
+Module maxtri3x3_shift 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     12 Bit       Adders := 1     
++---Registers : 
+	               12 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+	                1 Bit    Registers := 15    
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 10    
+	   3 Input      1 Bit        Muxes := 1     
+Module sobel3x3_algorithm 
+Detailed RTL Component Info : 
++---Adders : 
+	   5 Input     17 Bit       Adders := 1     
+	   4 Input     17 Bit       Adders := 1     
+	   3 Input     11 Bit       Adders := 6     
+	   2 Input     11 Bit       Adders := 1     
++---Registers : 
+	               17 Bit    Registers := 3     
+	               11 Bit    Registers := 14    
+	                8 Bit    Registers := 12    
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 20    
++---Muxes : 
+	   2 Input     11 Bit        Muxes := 4     
+	   2 Input      8 Bit        Muxes := 3     
+	   2 Input      2 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-3886] merging instance 'inst/canny_HystThreshold_0/inst/tdata_out_reg1_reg[0]' (FD) to 'inst/canny_HystThreshold_0/inst/tdata_out_reg1_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/canny_HystThreshold_0/inst/tdata_out_reg1_reg[1]' (FD) to 'inst/canny_HystThreshold_0/inst/tdata_out_reg1_reg[2]'
+INFO: [Synth 8-3886] merging instance 'inst/canny_HystThreshold_0/inst/tdata_out_reg1_reg[2]' (FD) to 'inst/canny_HystThreshold_0/inst/tdata_out_reg1_reg[3]'
+INFO: [Synth 8-3886] merging instance 'inst/canny_HystThreshold_0/inst/tdata_out_reg1_reg[3]' (FD) to 'inst/canny_HystThreshold_0/inst/tdata_out_reg1_reg[4]'
+INFO: [Synth 8-3886] merging instance 'inst/canny_HystThreshold_0/inst/tdata_out_reg1_reg[4]' (FD) to 'inst/canny_HystThreshold_0/inst/tdata_out_reg1_reg[5]'
+INFO: [Synth 8-3886] merging instance 'inst/canny_HystThreshold_0/inst/tdata_out_reg1_reg[5]' (FD) to 'inst/canny_HystThreshold_0/inst/tdata_out_reg1_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/canny_HystThreshold_0/inst/tdata_out_reg1_reg[6]' (FD) to 'inst/canny_HystThreshold_0/inst/tdata_out_reg1_reg[7]'
+INFO: [Synth 8-3332] Sequential element (inst/matrix0_tdata_dly1_reg[0]) is unused and will be removed from module canny_bd_canny_HystThreshold_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/matrix0_tdata_dly2_reg[0]) is unused and will be removed from module canny_bd_canny_HystThreshold_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/matrix0_tdata_dly3_reg[0]) is unused and will be removed from module canny_bd_canny_HystThreshold_0_0.
+INFO: [Synth 8-3886] merging instance 'inst/sobel3x3_algorithm_0/inst/Gy2_reg[10]' (FD) to 'inst/sobel3x3_algorithm_0/inst/Gy1_reg[10]'
+INFO: [Synth 8-3886] merging instance 'inst/sobel3x3_algorithm_0/inst/Gy1_reg[10]' (FD) to 'inst/sobel3x3_algorithm_0/inst/Gx2_reg[10]'
+INFO: [Synth 8-3886] merging instance 'inst/sobel3x3_algorithm_0/inst/Gx1_reg[10]' (FD) to 'inst/sobel3x3_algorithm_0/inst/Gx2_reg[10]'
+INFO: [Synth 8-3886] merging instance 'inst/sobel3x3_algorithm_0/inst/Gx2_reg[10]' (FD) to 'inst/sobel3x3_algorithm_0/inst/Gx_6625_reg[14]'
+INFO: [Synth 8-3886] merging instance 'inst/sobel3x3_algorithm_0/inst/Gy_4abs_reg[0]' (FDR) to 'inst/sobel3x3_algorithm_0/inst/Gy_4abs_reg[16]'
+INFO: [Synth 8-3886] merging instance 'inst/sobel3x3_algorithm_0/inst/Gy_4abs_reg[1]' (FDR) to 'inst/sobel3x3_algorithm_0/inst/Gy_4abs_reg[16]'
+INFO: [Synth 8-3886] merging instance 'inst/sobel3x3_algorithm_0/inst/Gy_4abs_reg[2]' (FDR) to 'inst/sobel3x3_algorithm_0/inst/Gy_4abs_reg[16]'
+INFO: [Synth 8-3886] merging instance 'inst/sobel3x3_algorithm_0/inst/Gy_4abs_reg[3]' (FDR) to 'inst/sobel3x3_algorithm_0/inst/Gy_4abs_reg[16]'
+INFO: [Synth 8-3886] merging instance 'inst/sobel3x3_algorithm_0/inst/Gx_6625_reg[14]' (FD) to 'inst/sobel3x3_algorithm_0/inst/Gx_6625_reg[15]'
+INFO: [Synth 8-3886] merging instance 'inst/sobel3x3_algorithm_0/inst/Gy_4abs_reg[15]' (FDR) to 'inst/sobel3x3_algorithm_0/inst/Gy_4abs_reg[16]'
+INFO: [Synth 8-3886] merging instance 'inst/sobel3x3_algorithm_0/inst/Gx_6625_reg[15]' (FD) to 'inst/sobel3x3_algorithm_0/inst/Gx_6625_reg[16]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/sobel3x3_algorithm_0/\inst/Gy_4abs_reg[16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/sobel3x3_algorithm_0/\inst/Gx_6625_reg[16] )
+INFO: [Synth 8-3332] Sequential element (inst/Gx_38625_reg[3]) is unused and will be removed from module canny_bd_sobel3x3_algorithm_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/Gx_38625_reg[2]) is unused and will be removed from module canny_bd_sobel3x3_algorithm_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/Gx_38625_reg[1]) is unused and will be removed from module canny_bd_sobel3x3_algorithm_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/Gx_38625_reg[0]) is unused and will be removed from module canny_bd_sobel3x3_algorithm_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/Gy_4abs_reg[16]) is unused and will be removed from module canny_bd_sobel3x3_algorithm_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/Gx_6625_reg[16]) is unused and will be removed from module canny_bd_sobel3x3_algorithm_0_0.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:03:32 ; elapsed = 00:03:38 . Memory (MB): peak = 932.516 ; gain = 564.582
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping  Report (see note below)
++---------------------+-------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name          | RTL Object  | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++---------------------+-------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|canny_HystThreshold: | pre_mem_reg | 1 K x 1(WRITE_FIRST)   |   | R | 1 K x 1(READ_FIRST)    | W |   | Port A and B     | 1      | 0      | 
++---------------------+-------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The tale above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4480] The timing for the instance inst/canny_HystThreshold_0/insti_0/inst/pre_mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:03:41 ; elapsed = 00:03:48 . Memory (MB): peak = 932.516 ; gain = 564.582
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5584] The signal inst/pre_mem_reg is implemented as distributed LUT RAM for the following reason(s): The timing constraints suggest that the chosen mapping will yield better timing results.
+INFO: [Synth 8-5584] The signal inst/pre_mem_reg is implemented as distributed LUT RAM for the following reason(s): The timing constraints suggest that the chosen mapping will yield better timing results.
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:03:42 ; elapsed = 00:03:48 . Memory (MB): peak = 939.648 ; gain = 571.715
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping  Report
+-------NONE-------
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance 'inst/canny_HystThreshold_0/inst/read_addr_reg_rep[0]' (FDRE) to 'inst/canny_HystThreshold_0/inst/read_addr_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/canny_HystThreshold_0/inst/read_addr_reg_rep[1]' (FDRE) to 'inst/canny_HystThreshold_0/inst/read_addr_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/canny_HystThreshold_0/inst/read_addr_reg_rep[2]' (FDRE) to 'inst/canny_HystThreshold_0/inst/read_addr_reg[2]'
+INFO: [Synth 8-3886] merging instance 'inst/canny_HystThreshold_0/inst/read_addr_reg_rep[3]' (FDRE) to 'inst/canny_HystThreshold_0/inst/read_addr_reg[3]'
+INFO: [Synth 8-3886] merging instance 'inst/canny_HystThreshold_0/inst/read_addr_reg_rep[4]' (FDRE) to 'inst/canny_HystThreshold_0/inst/read_addr_reg[4]'
+INFO: [Synth 8-3886] merging instance 'inst/canny_HystThreshold_0/inst/read_addr_reg_rep[5]' (FDRE) to 'inst/canny_HystThreshold_0/inst/read_addr_reg[5]'
+INFO: [Synth 8-3886] merging instance 'inst/canny_HystThreshold_0/inst/read_addr_reg_rep[6]' (FDRE) to 'inst/canny_HystThreshold_0/inst/read_addr_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/canny_HystThreshold_0/inst/read_addr_reg_rep[9]' (FDRE) to 'inst/canny_HystThreshold_0/inst/read_addr_reg[9]'
+INFO: [Synth 8-3886] merging instance 'inst/canny_HystThreshold_0/inst/read_addr_reg_rep[7]' (FDRE) to 'inst/canny_HystThreshold_0/inst/read_addr_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst/canny_HystThreshold_0/inst/read_addr_reg_rep[8]' (FDRE) to 'inst/canny_HystThreshold_0/inst/read_addr_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/canny_HystThreshold_0/inst/cur_flg_reg' (FD) to 'inst/canny_HystThreshold_0/inst/tdata_out_reg1_reg[7]'
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:03:42 ; elapsed = 00:03:49 . Memory (MB): peak = 940.918 ; gain = 572.984
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3295] tying undriven pin inst/line_buff_1_wr_inferred:in0 to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst/line_buff_1_wr_inferred:in0 to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst/line_buff_1_wr_inferred:in0 to constant 0
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:03:43 ; elapsed = 00:03:50 . Memory (MB): peak = 940.918 ; gain = 572.984
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:03:43 ; elapsed = 00:03:50 . Memory (MB): peak = 940.918 ; gain = 572.984
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:03:43 ; elapsed = 00:03:50 . Memory (MB): peak = 940.918 ; gain = 572.984
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:03:43 ; elapsed = 00:03:50 . Memory (MB): peak = 940.918 ; gain = 572.984
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:03:44 ; elapsed = 00:03:50 . Memory (MB): peak = 940.918 ; gain = 572.984
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:03:44 ; elapsed = 00:03:50 . Memory (MB): peak = 940.918 ; gain = 572.984
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++---------------------------------+-------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name                      | RTL Name                      | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++---------------------------------+-------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|canny_bd_canny_HystThreshold_0_0 | inst/s_axis_tuser_dly3_reg    | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|canny_bd_sobel3x3_algorithm_0_0  | inst/tlast_out_reg_reg        | 6      | 1     | NO           | YES                | YES               | 1      | 0       | 
+|canny_bd_sobel3x3_algorithm_0_0  | inst/tuser_out_reg_reg        | 6      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|canny_bd_sobel3x3_algorithm_0_0  | inst/tvalid_out_reg_reg       | 6      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|canny_bd_sobel3x3_algorithm_0_0  | inst/tdata_raw_out_reg_reg[7] | 3      | 8     | NO           | NO                 | YES               | 8      | 0       | 
++---------------------------------+-------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |CARRY4     |    84|
+|2     |LUT1       |    41|
+|3     |LUT2       |   125|
+|4     |LUT3       |   142|
+|5     |LUT4       |   375|
+|6     |LUT5       |    56|
+|7     |LUT6       |    81|
+|8     |MUXCY      |   120|
+|9     |RAM128X1D  |     5|
+|10    |RAMB18E1_1 |     6|
+|11    |SRL16E     |    12|
+|12    |FDRE       |   890|
+|13    |FDSE       |    24|
++------+-----------+------+
+
+Report Instance Areas: 
++------+---------------------------------------------------------------+------------------------------------------------+------+
+|      |Instance                                                       |Module                                          |Cells |
++------+---------------------------------------------------------------+------------------------------------------------+------+
+|1     |top                                                            |                                                |  1961|
+|2     |  inst                                                         |canny_bd                                        |  1961|
+|3     |    canny_HystThreshold_0                                      |canny_bd_canny_HystThreshold_0_0                |    78|
+|4     |      inst                                                     |canny_HystThreshold                             |    78|
+|5     |    canny_NonMaxSupp_0                                         |canny_bd_canny_NonMaxSupp_0_0                   |   276|
+|6     |      inst                                                     |canny_NonMaxSupp                                |   276|
+|7     |    img_edge_cut_0                                             |canny_bd_img_edge_cut_0_0                       |    88|
+|8     |      inst                                                     |img_edge_cut                                    |    88|
+|9     |    maxtri3x3_CannyNMS_0                                       |canny_bd_maxtri3x3_CannyNMS_0_0                 |   297|
+|10    |      inst                                                     |maxtri3x3_CannyNMS                              |   297|
+|11    |        line_buff_1                                            |fifo_CannyNMS__xdcDup__1                        |   114|
+|12    |          U0                                                   |fifo_generator_v13_2_2__2                       |   114|
+|13    |            inst_fifo_gen                                      |fifo_generator_v13_2_2_synth_63                 |   114|
+|14    |              \gconvfifo.rf                                    |fifo_generator_top_64                           |   114|
+|15    |                \grf.rf                                        |fifo_generator_ramfifo_65                       |   114|
+|16    |                  \gntv_or_sync_fifo.gl0.rd                    |rd_logic_66                                     |    66|
+|17    |                    \grss.rsts                                 |rd_status_flags_ss_79                           |    15|
+|18    |                      c1                                       |compare_81                                      |     5|
+|19    |                      c2                                       |compare_82                                      |     6|
+|20    |                    rpntr                                      |rd_bin_cntr_80                                  |    51|
+|21    |                  \gntv_or_sync_fifo.gl0.wr                    |wr_logic_67                                     |    47|
+|22    |                    \gwss.wsts                                 |wr_status_flags_ss_75                           |    16|
+|23    |                      c0                                       |compare_77                                      |     5|
+|24    |                      c1                                       |compare_78                                      |     6|
+|25    |                    wpntr                                      |wr_bin_cntr_76                                  |    31|
+|26    |                  \gntv_or_sync_fifo.mem                       |memory_68                                       |     1|
+|27    |                    \gbm.gbmg.gbmga.ngecc.bmg                  |blk_mem_gen_v8_4_1_69                           |     1|
+|28    |                      inst_blk_mem_gen                         |blk_mem_gen_v8_4_1_synth_70                     |     1|
+|29    |                        \gnbram.gnativebmg.native_blk_mem_gen  |blk_mem_gen_top_71                              |     1|
+|30    |                          \valid.cstr                          |blk_mem_gen_generic_cstr_72                     |     1|
+|31    |                            \ramloop[0].ram.r                  |blk_mem_gen_prim_width_73                       |     1|
+|32    |                              \prim_noinit.ram                 |blk_mem_gen_prim_wrapper_74                     |     1|
+|33    |        line_buff_2                                            |fifo_CannyNMS                                   |   114|
+|34    |          U0                                                   |fifo_generator_v13_2_2                          |   114|
+|35    |            inst_fifo_gen                                      |fifo_generator_v13_2_2_synth                    |   114|
+|36    |              \gconvfifo.rf                                    |fifo_generator_top                              |   114|
+|37    |                \grf.rf                                        |fifo_generator_ramfifo                          |   114|
+|38    |                  \gntv_or_sync_fifo.gl0.rd                    |rd_logic_53                                     |    66|
+|39    |                    \grss.rsts                                 |rd_status_flags_ss_59                           |    15|
+|40    |                      c1                                       |compare_61                                      |     5|
+|41    |                      c2                                       |compare_62                                      |     6|
+|42    |                    rpntr                                      |rd_bin_cntr_60                                  |    51|
+|43    |                  \gntv_or_sync_fifo.gl0.wr                    |wr_logic_54                                     |    47|
+|44    |                    \gwss.wsts                                 |wr_status_flags_ss_55                           |    16|
+|45    |                      c0                                       |compare_57                                      |     5|
+|46    |                      c1                                       |compare_58                                      |     6|
+|47    |                    wpntr                                      |wr_bin_cntr_56                                  |    31|
+|48    |                  \gntv_or_sync_fifo.mem                       |memory                                          |     1|
+|49    |                    \gbm.gbmg.gbmga.ngecc.bmg                  |blk_mem_gen_v8_4_1                              |     1|
+|50    |                      inst_blk_mem_gen                         |blk_mem_gen_v8_4_1_synth                        |     1|
+|51    |                        \gnbram.gnativebmg.native_blk_mem_gen  |blk_mem_gen_top                                 |     1|
+|52    |                          \valid.cstr                          |blk_mem_gen_generic_cstr                        |     1|
+|53    |                            \ramloop[0].ram.r                  |blk_mem_gen_prim_width                          |     1|
+|54    |                              \prim_noinit.ram                 |blk_mem_gen_prim_wrapper                        |     1|
+|55    |    maxtri3x3_SobelDir_0                                       |canny_bd_maxtri3x3_SobelDir_0_0                 |   319|
+|56    |      inst                                                     |maxtri3x3_SobelDir                              |   319|
+|57    |        line_buff_1                                            |fifo_SobelDir__xdcDup__1                        |   114|
+|58    |          U0                                                   |fifo_generator_v13_2_2__parameterized1__2       |   114|
+|59    |            inst_fifo_gen                                      |fifo_generator_v13_2_2_synth__parameterized0_33 |   114|
+|60    |              \gconvfifo.rf                                    |fifo_generator_top__parameterized0_34           |   114|
+|61    |                \grf.rf                                        |fifo_generator_ramfifo__parameterized0_35       |   114|
+|62    |                  \gntv_or_sync_fifo.gl0.rd                    |rd_logic_36                                     |    66|
+|63    |                    \grss.rsts                                 |rd_status_flags_ss_49                           |    15|
+|64    |                      c1                                       |compare_51                                      |     5|
+|65    |                      c2                                       |compare_52                                      |     6|
+|66    |                    rpntr                                      |rd_bin_cntr_50                                  |    51|
+|67    |                  \gntv_or_sync_fifo.gl0.wr                    |wr_logic_37                                     |    47|
+|68    |                    \gwss.wsts                                 |wr_status_flags_ss_45                           |    16|
+|69    |                      c0                                       |compare_47                                      |     5|
+|70    |                      c1                                       |compare_48                                      |     6|
+|71    |                    wpntr                                      |wr_bin_cntr_46                                  |    31|
+|72    |                  \gntv_or_sync_fifo.mem                       |memory__parameterized0_38                       |     1|
+|73    |                    \gbm.gbmg.gbmga.ngecc.bmg                  |blk_mem_gen_v8_4_1__parameterized1_39           |     1|
+|74    |                      inst_blk_mem_gen                         |blk_mem_gen_v8_4_1_synth__parameterized0_40     |     1|
+|75    |                        \gnbram.gnativebmg.native_blk_mem_gen  |blk_mem_gen_top__parameterized0_41              |     1|
+|76    |                          \valid.cstr                          |blk_mem_gen_generic_cstr__parameterized0_42     |     1|
+|77    |                            \ramloop[0].ram.r                  |blk_mem_gen_prim_width__parameterized0_43       |     1|
+|78    |                              \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized0_44     |     1|
+|79    |        line_buff_2                                            |fifo_SobelDir                                   |   114|
+|80    |          U0                                                   |fifo_generator_v13_2_2__parameterized1          |   114|
+|81    |            inst_fifo_gen                                      |fifo_generator_v13_2_2_synth__parameterized0    |   114|
+|82    |              \gconvfifo.rf                                    |fifo_generator_top__parameterized0              |   114|
+|83    |                \grf.rf                                        |fifo_generator_ramfifo__parameterized0          |   114|
+|84    |                  \gntv_or_sync_fifo.gl0.rd                    |rd_logic_23                                     |    66|
+|85    |                    \grss.rsts                                 |rd_status_flags_ss_29                           |    15|
+|86    |                      c1                                       |compare_31                                      |     5|
+|87    |                      c2                                       |compare_32                                      |     6|
+|88    |                    rpntr                                      |rd_bin_cntr_30                                  |    51|
+|89    |                  \gntv_or_sync_fifo.gl0.wr                    |wr_logic_24                                     |    47|
+|90    |                    \gwss.wsts                                 |wr_status_flags_ss_25                           |    16|
+|91    |                      c0                                       |compare_27                                      |     5|
+|92    |                      c1                                       |compare_28                                      |     6|
+|93    |                    wpntr                                      |wr_bin_cntr_26                                  |    31|
+|94    |                  \gntv_or_sync_fifo.mem                       |memory__parameterized0                          |     1|
+|95    |                    \gbm.gbmg.gbmga.ngecc.bmg                  |blk_mem_gen_v8_4_1__parameterized1              |     1|
+|96    |                      inst_blk_mem_gen                         |blk_mem_gen_v8_4_1_synth__parameterized0        |     1|
+|97    |                        \gnbram.gnativebmg.native_blk_mem_gen  |blk_mem_gen_top__parameterized0                 |     1|
+|98    |                          \valid.cstr                          |blk_mem_gen_generic_cstr__parameterized0        |     1|
+|99    |                            \ramloop[0].ram.r                  |blk_mem_gen_prim_width__parameterized0          |     1|
+|100   |                              \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized0        |     1|
+|101   |    maxtri3x3_shift_0                                          |canny_bd_maxtri3x3_shift_0_0                    |   316|
+|102   |      inst                                                     |maxtri3x3_shift                                 |   316|
+|103   |        line_buff_1                                            |fifo_maxtrix3x3__xdcDup__1                      |   114|
+|104   |          U0                                                   |fifo_generator_v13_2_2__parameterized3__2       |   114|
+|105   |            inst_fifo_gen                                      |fifo_generator_v13_2_2_synth__parameterized1_3  |   114|
+|106   |              \gconvfifo.rf                                    |fifo_generator_top__parameterized1_4            |   114|
+|107   |                \grf.rf                                        |fifo_generator_ramfifo__parameterized1_5        |   114|
+|108   |                  \gntv_or_sync_fifo.gl0.rd                    |rd_logic_6                                      |    66|
+|109   |                    \grss.rsts                                 |rd_status_flags_ss_19                           |    15|
+|110   |                      c1                                       |compare_21                                      |     5|
+|111   |                      c2                                       |compare_22                                      |     6|
+|112   |                    rpntr                                      |rd_bin_cntr_20                                  |    51|
+|113   |                  \gntv_or_sync_fifo.gl0.wr                    |wr_logic_7                                      |    47|
+|114   |                    \gwss.wsts                                 |wr_status_flags_ss_15                           |    16|
+|115   |                      c0                                       |compare_17                                      |     5|
+|116   |                      c1                                       |compare_18                                      |     6|
+|117   |                    wpntr                                      |wr_bin_cntr_16                                  |    31|
+|118   |                  \gntv_or_sync_fifo.mem                       |memory__parameterized1_8                        |     1|
+|119   |                    \gbm.gbmg.gbmga.ngecc.bmg                  |blk_mem_gen_v8_4_1__parameterized3_9            |     1|
+|120   |                      inst_blk_mem_gen                         |blk_mem_gen_v8_4_1_synth__parameterized1_10     |     1|
+|121   |                        \gnbram.gnativebmg.native_blk_mem_gen  |blk_mem_gen_top__parameterized1_11              |     1|
+|122   |                          \valid.cstr                          |blk_mem_gen_generic_cstr__parameterized1_12     |     1|
+|123   |                            \ramloop[0].ram.r                  |blk_mem_gen_prim_width__parameterized1_13       |     1|
+|124   |                              \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized1_14     |     1|
+|125   |        line_buff_2                                            |fifo_maxtrix3x3                                 |   114|
+|126   |          U0                                                   |fifo_generator_v13_2_2__parameterized3          |   114|
+|127   |            inst_fifo_gen                                      |fifo_generator_v13_2_2_synth__parameterized1    |   114|
+|128   |              \gconvfifo.rf                                    |fifo_generator_top__parameterized1              |   114|
+|129   |                \grf.rf                                        |fifo_generator_ramfifo__parameterized1          |   114|
+|130   |                  \gntv_or_sync_fifo.gl0.rd                    |rd_logic                                        |    66|
+|131   |                    \grss.rsts                                 |rd_status_flags_ss                              |    15|
+|132   |                      c1                                       |compare_1                                       |     5|
+|133   |                      c2                                       |compare_2                                       |     6|
+|134   |                    rpntr                                      |rd_bin_cntr                                     |    51|
+|135   |                  \gntv_or_sync_fifo.gl0.wr                    |wr_logic                                        |    47|
+|136   |                    \gwss.wsts                                 |wr_status_flags_ss                              |    16|
+|137   |                      c0                                       |compare                                         |     5|
+|138   |                      c1                                       |compare_0                                       |     6|
+|139   |                    wpntr                                      |wr_bin_cntr                                     |    31|
+|140   |                  \gntv_or_sync_fifo.mem                       |memory__parameterized1                          |     1|
+|141   |                    \gbm.gbmg.gbmga.ngecc.bmg                  |blk_mem_gen_v8_4_1__parameterized3              |     1|
+|142   |                      inst_blk_mem_gen                         |blk_mem_gen_v8_4_1_synth__parameterized1        |     1|
+|143   |                        \gnbram.gnativebmg.native_blk_mem_gen  |blk_mem_gen_top__parameterized1                 |     1|
+|144   |                          \valid.cstr                          |blk_mem_gen_generic_cstr__parameterized1        |     1|
+|145   |                            \ramloop[0].ram.r                  |blk_mem_gen_prim_width__parameterized1          |     1|
+|146   |                              \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized1        |     1|
+|147   |    sobel3x3_algorithm_0                                       |canny_bd_sobel3x3_algorithm_0_0                 |   587|
+|148   |      inst                                                     |sobel3x3_algorithm                              |   587|
++------+---------------------------------------------------------------+------------------------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:03:44 ; elapsed = 00:03:50 . Memory (MB): peak = 940.918 ; gain = 572.984
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1457 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:21 ; elapsed = 00:03:32 . Memory (MB): peak = 940.918 ; gain = 550.043
+Synthesis Optimization Complete : Time (s): cpu = 00:03:44 ; elapsed = 00:03:51 . Memory (MB): peak = 940.918 ; gain = 572.984
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 215 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 53 instances were transformed.
+  (MUXCY,XORCY) => CARRY4: 48 instances
+  RAM128X1D => RAM128X1D (RAMD64E, RAMD64E, MUXF7, MUXF7, RAMD64E, RAMD64E): 5 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+138 Infos, 134 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:03:46 ; elapsed = 00:03:54 . Memory (MB): peak = 945.859 ; gain = 590.184
+INFO: [Common 17-1381] The checkpoint 'E:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.runs/design_1_canny_bd_0_0_synth_1/design_1_canny_bd_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1482] Added synthesis output to IP cache for IP e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ip/design_1_canny_bd_0_0/design_1_canny_bd_0_0.xci
+INFO: [Coretcl 2-1174] Renamed 147 cell refs.
+INFO: [Common 17-1381] The checkpoint 'E:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.runs/design_1_canny_bd_0_0_synth_1/design_1_canny_bd_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_canny_bd_0_0_utilization_synth.rpt -pb design_1_canny_bd_0_0_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.076 . Memory (MB): peak = 945.859 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Mon Aug 26 16:05:57 2019...

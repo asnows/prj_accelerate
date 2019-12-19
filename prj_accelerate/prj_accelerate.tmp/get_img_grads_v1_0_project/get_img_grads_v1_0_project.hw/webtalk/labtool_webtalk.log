@@ -1,0 +1,9 @@
+
+****** Webtalk v2018.1 (64-bit)
+  **** SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+  **** IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source e:/workspace/project/fpga/prj_accelerate/prj_accelerate/prj_accelerate.tmp/get_img_grads_v1_0_project/get_img_grads_v1_0_project.hw/webtalk/labtool_webtalk.tcl -notrace
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 54.270 ; gain = 0.805
+INFO: [Common 17-206] Exiting Webtalk at Thu Jul 25 15:03:15 2019...

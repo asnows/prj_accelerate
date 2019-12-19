@@ -1,0 +1,376 @@
+/*
+ * dma.c
+ *
+ *  Created on: 2019楠烇拷7閺堬拷2閺冿拷
+ *      Author: Administrator
+ */
+
+
+#include"include.h"
+
+
+
+// 192
+//
+//
+//
+
+void dma_descriptor_init(unsigned int tx_DB_BaseAddr,unsigned int tx_buffer_BaseAddr,unsigned int rx_buffer_BaseAddr,unsigned int buff_len)
+{
+	struct SG_Desc_def * SG_TX_Descriptor;
+	struct SG_Desc_def * SG_RX_Descriptor;
+
+	unsigned int rx_DB_BaseAddr;
+	//unsigned int rx_buffer_BaseAddr;
+	unsigned int DB_desc_Size;
+	unsigned int TXSOF = 1;
+	unsigned int TXEOF = 1;
+	unsigned int tmpValue;
+	unsigned int Fun_sel;
+	unsigned int img_height;
+	unsigned int img_width;
+	unsigned int model_sel;
+	unsigned int rx_buff_len;
+
+	unsigned int Canny_maxVal = 200;
+	unsigned int Canny_minVal = 150;
+
+	unsigned int Sobel_edge_sel = 0;// 1= 标准sobel
+	unsigned int Canny_NonMaxSupp_en = 1;
+	unsigned int Canny_HystThreshold_en = 1;
+	unsigned int img_edge_cut_en = 1;
+
+
+
+
+	Fun_sel = 0;// 0 = 閸ユ儳鍎氭径鍕倞閿涘牆宓庣粔顖ょ礉濮瑰倹顫惔锔剧搼閿涳拷,1= 閸嶅繒绀岀痪褎鏆熺�涳附鎼锋担婊愮礄閸ユ稑鍨潻鎰暬閿涳拷2= 閺佺増宓侀幖顒冪箥
+	img_height = 480;
+	img_width = 640;
+	model_sel = 1;// channel switch
+	rx_buff_len = buff_len*4;
+
+	DB_desc_Size = sizeof(struct SG_Desc_def);
+	rx_DB_BaseAddr = tx_DB_BaseAddr + DB_NUM_AB * DB_desc_Size;
+	//rx_buffer_BaseAddr = DMA0_RX_BUFF_BASSE_ADDR;
+
+	printf("DB_NUM 				= %x \r\n",DB_NUM);
+	printf("tx_DB_BaseAddr 		= %x \r\n",tx_DB_BaseAddr);
+	printf("rx_DB_BaseAddr 		= %x \r\n",rx_DB_BaseAddr);
+	printf("tx_buffer_BaseAddr 	= %x \r\n",tx_buffer_BaseAddr);
+	printf("rx_buffer_BaseAddr 	= %x \r\n",rx_buffer_BaseAddr);
+
+	SG_TX_Descriptor = tx_DB_BaseAddr;
+	SG_RX_Descriptor = rx_DB_BaseAddr;
+
+	memset((void *)tx_DB_BaseAddr,0,(DB_NUM_AB + DB_NUM_C) * DB_desc_Size);
+
+
+	// init tx DB
+	for(int i=0;i<DB_NUM_AB;i++)
+	{
+		SG_TX_Descriptor->NXTDESC = tx_DB_BaseAddr + (i+1)*DB_desc_Size;
+		SG_TX_Descriptor->BUFFER_ADDRESS = tx_buffer_BaseAddr + i*buff_len;
+
+		if(i==0)
+		{
+
+
+			SG_TX_Descriptor->CONTROL = (TXSOF << 27) | buff_len;
+
+			SG_TX_Descriptor->APP0 = (img_width <<20)|(img_height<<8)|Fun_sel;
+			SG_TX_Descriptor->APP1 = (img_edge_cut_en << 27) + (Canny_HystThreshold_en << 26)
+								   + (Canny_NonMaxSupp_en <<25) + (Sobel_edge_sel << 24)
+								   + (Canny_minVal <<16 ) + (Canny_maxVal << 8)
+								   + model_sel <<4;
+			SG_TX_Descriptor->APP2 = 0x28282828;
+			SG_TX_Descriptor->APP3 = 0x2C2C2C2C;
+			SG_TX_Descriptor->APP4 = 0x30303032;
+
+		}
+		else
+		{
+
+			SG_TX_Descriptor->CONTROL =  buff_len;
+
+		}
+
+		if(i == (DB_NUM_AB - 1))
+		{
+			tmpValue = SG_TX_Descriptor->CONTROL & (TXSOF << 27);
+
+			SG_TX_Descriptor->CONTROL = tmpValue | (TXEOF << 26) | buff_len;
+			SG_TX_Descriptor->NXTDESC = tx_DB_BaseAddr;
+		}
+
+
+		printf("TX_ %d = %x \r\n",i,SG_TX_Descriptor);
+		SG_TX_Descriptor++;
+
+
+	}
+
+	// init rx DB
+	for(int i=0;i<DB_NUM_C;i++)
+	{
+		SG_RX_Descriptor->NXTDESC = rx_DB_BaseAddr + (i + 1)*DB_desc_Size;
+		SG_RX_Descriptor->BUFFER_ADDRESS = rx_buffer_BaseAddr + i*rx_buff_len;
+
+		if(i==0)
+		{
+			SG_RX_Descriptor->CONTROL = (TXSOF << 27) | rx_buff_len;
+
+		}
+		else
+		{
+			SG_RX_Descriptor->CONTROL =  rx_buff_len;
+
+		}
+
+
+	    if(i == (DB_NUM_C - 1))
+		{
+	    	tmpValue = SG_RX_Descriptor->CONTROL & (TXSOF << 27);
+			SG_RX_Descriptor->CONTROL = tmpValue | (TXEOF << 26) | rx_buff_len;
+			SG_RX_Descriptor->NXTDESC = rx_DB_BaseAddr;
+		}
+
+
+		printf("RX_ %d = %x \r\n",i,SG_RX_Descriptor);
+		SG_RX_Descriptor++;
+	}
+	Xil_DCacheFlushRange((UINTPTR)(u32)tx_DB_BaseAddr, (DB_NUM_AB + DB_NUM_C) * DB_desc_Size);
+
+}
+
+void dma_start(unsigned int dma_baseAddr,unsigned int tx_DB_BaseAddr,unsigned int Rx_buff_BaseAddr,unsigned int DB_num)
+{
+	struct SG_Reg_def *SG_Register;
+	SG_Register = dma_baseAddr;
+	XTime tEnd,tCur;
+	u32 tUsed;
+
+	// s2mm channel
+	SG_Register->S2MM_DMACR    = 0x04;
+	//SG_Register->MM2S_DMACR    = 0x04;
+
+	SG_Register->S2MM_CURDESC  = tx_DB_BaseAddr + DB_NUM_AB *sizeof(struct SG_Desc_def) ;
+	SG_Register->S2MM_DMACR    = 0x17001;
+	SG_Register->S2MM_TAILDESC = tx_DB_BaseAddr + (DB_NUM_AB + DB_NUM_C -1) *sizeof(struct SG_Desc_def);
+
+	//mm2s channel
+	SG_Register->MM2S_CURDESC = tx_DB_BaseAddr;
+	SG_Register->MM2S_DMACR   = 0x17001;
+
+
+
+	//get start time
+	XTime_GetTime(&tCur);
+	//usleep(4096);
+
+
+	SG_Register->MM2S_TAILDESC= tx_DB_BaseAddr + (DB_NUM_AB-1) *sizeof(struct SG_Desc_def);
+	Xil_DCacheFlushRange((UINTPTR)(u32)Rx_buff_BaseAddr, (DB_NUM_AB + DB_NUM_C) * DB_BUFF_LEN);
+
+	unsigned char i = 0;
+	while(!(SG_Register->S2MM_DMASR &(1<<12)))
+	{
+		printf("waiting DMA complete.....\r\n");
+		i ++;
+		if(i == 100)
+		{
+			printf("waiting DMA failed.....\r\n");
+			break;
+
+		}
+
+
+	}
+	//get end time
+	XTime_GetTime(&tEnd);
+	tUsed =((tEnd-tCur)*1000000)/(COUNTS_PER_SECOND);
+	printf("time elapsed = %d us\r\n",tUsed);
+
+	printf("DMA trans complete!\r\n");
+
+
+
+}
+
+
+
+void cpu_caclu(unsigned int tx_buffer_BaseAddr)
+{
+	float A_value=1.231;
+	float B_value=2.321;
+	float *p_A;
+	float *p_B;
+	float *p_Addr0;
+	float *p_Bddr0;
+	unsigned int bytes;//娴狅拷32bit鐠侊紕娈戦梹鍨
+
+
+
+	bytes = DB_BUFF_LEN/4;
+	printf("float_total = %d \r\n",bytes*DB_NUM);
+
+	for(int i=0; i < (DB_NUM*bytes);i++)
+	{
+		A_VALUE_BUFF[i] = A_value;
+		B_VALUE_BUFF[i] = B_value;
+		A_value += 0.5;
+		B_value += 0.5;
+	}
+
+
+	for(int i=0; i < (DB_NUM*bytes);i++)
+	{
+
+		CPU_CACLU_BUFF[i] = A_VALUE_BUFF[i] * B_VALUE_BUFF[i];
+	}
+
+
+	p_A = A_VALUE_BUFF;
+	p_B = B_VALUE_BUFF;
+	p_Addr0 = tx_buffer_BaseAddr;
+	p_Bddr0 = tx_buffer_BaseAddr + DB_BUFF_LEN;
+
+	for(int i=0;i<DB_NUM;i++)
+	{
+		printf("i=%d ,p_Addr0 = %x \r\n",i,p_Addr0);
+		printf("i=%d ,p_Bddr0 = %x \r\n",i,p_Bddr0);
+		memcpy(p_Addr0,p_A,DB_BUFF_LEN);
+		memcpy(p_Bddr0,p_B,DB_BUFF_LEN);
+		p_A += bytes;
+		p_B += bytes;
+
+		p_Addr0 += 2*bytes;
+		p_Bddr0 += 2*bytes;
+
+	}
+	Xil_DCacheFlushRange((UINTPTR)(u32)DMA0_TX_BUFF_BASSE_ADDR, 2*DB_NUM * DB_BUFF_LEN);
+
+	printf("\r\n###############AAAAAAAAAAA############### \r\n");
+	for(int i=0; i < (DB_NUM*bytes);i++)
+	{
+		printf("i=%d ,%f \r\n",i,A_VALUE_BUFF[i]);
+
+	}
+
+	printf("\r\n#############BBBBBBBBBBBBB#############\r\n");
+	for(int i=0; i < (DB_NUM*bytes);i++)
+	{
+		printf("i=%d ,%f \r\n",i,B_VALUE_BUFF[i]);
+
+	}
+
+	printf("\r\n#############DDR__AAAAAAAAA#############\r\n");
+	p_Addr0 = tx_buffer_BaseAddr;
+	for(int i=0; i < DB_NUM;i++)
+	{
+		for(int j=0;j<bytes;j++)
+		{
+			printf("i=%d ,%f \r\n",i,*p_Addr0);
+			p_Addr0 ++;
+		}
+		p_Addr0 += bytes;
+
+	}
+
+	printf("\r\n#############DDR__BBBBBBBBBBBBB#############\r\n");
+	p_Bddr0 = tx_buffer_BaseAddr + DB_BUFF_LEN;
+	for(int i=0; i < DB_NUM;i++)
+	{
+		for(int j=0;j<bytes;j++)
+		{
+			printf("i=%d ,%f \r\n",i,*p_Bddr0);
+			p_Bddr0 ++;
+		}
+		p_Bddr0 += bytes;
+
+	}
+
+
+	printf("\r\n#####################################\r\n");
+
+
+}
+
+void cpu_comp_FPGA(unsigned int ddr_baseAddr,unsigned int buff_baseAddr)
+{
+	float *p_ddr;
+	float *p_buff;
+	unsigned int bytes;//娴狅拷32bit鐠侊紕娈戦梹鍨
+	unsigned int err_count = 0;
+
+	bytes = (DB_BUFF_LEN/4) * DB_NUM;
+	p_ddr = ddr_baseAddr;
+	p_buff = buff_baseAddr;
+	printf("bytes =%d \r\n",bytes);
+	printf("ddr_baseAddr =%x \r\n",ddr_baseAddr);
+	printf("buff_baseAddr =%x \r\n",buff_baseAddr);
+
+
+	for(int i=0; i<bytes;i++)
+	{
+
+		if(*p_ddr != *p_buff)
+		{
+			printf("i = %d err,p_buff = %f ,p_ddr =%f \r\n",i,*p_buff,*p_ddr);
+			err_count += 1;
+		}
+		else
+		{
+			printf("i = %d   ,p_buff = %f ,p_ddr =%f \r\n",i,*p_buff,*p_ddr);
+		}
+
+		p_ddr++;
+		p_buff++;
+
+	}
+
+	printf("err_count =%d \r\n",err_count);
+
+
+}
+
+
+void dma_init(void)
+{
+
+
+	//dma_desc_init();
+
+
+
+
+
+
+	//dma_0
+	//cpu_caclu(DMA0_TX_BUFF_BASSE_ADDR);
+//	dma_descriptor_init(DMA0_TX_DB_BASSE_ADDR, DMA0_TX_BUFF_BASSE_ADDR, DB_BUFF_LEN);
+//	dma_start(DMA0_BASSE_ADDR, DMA0_TX_DB_BASSE_ADDR, DMA0_RX_BUFF_BASSE_ADDR, DB_NUM);
+//	cpu_comp_FPGA(DMA0_RX_BUFF_BASSE_ADDR, CPU_CACLU_BUFF);
+
+	//dma_1
+//	cpu_caclu(DMA1_TX_BUFF_BASSE_ADDR);
+	dma_descriptor_init(DMA1_TX_DB_BASSE_ADDR, DMA1_TX_BUFF_BASSE_ADDR, DMA1_RX_BUFF_BASSE_ADDR,DB_BUFF_LEN) ;
+	dma_start(DMA1_BASSE_ADDR, DMA1_TX_DB_BASSE_ADDR, DMA1_RX_BUFF_BASSE_ADDR, DB_NUM);
+//	cpu_comp_FPGA(DMA1_RX_BUFF_BASSE_ADDR, CPU_CACLU_BUFF);
+
+//	//dma_2
+//	cpu_caclu(DMA2_TX_BUFF_BASSE_ADDR);
+//	dma_descriptor_init(DMA2_TX_DB_BASSE_ADDR, DMA2_TX_BUFF_BASSE_ADDR, DB_BUFF_LEN);
+//	dma_start(DMA2_BASSE_ADDR, DMA2_TX_DB_BASSE_ADDR, DMA2_RX_BUFF_BASSE_ADDR, DB_NUM);
+//	cpu_comp_FPGA(DMA2_RX_BUFF_BASSE_ADDR, CPU_CACLU_BUFF);
+
+//	//dma_3
+//	cpu_caclu(DMA3_TX_BUFF_BASSE_ADDR);
+//	dma_descriptor_init(DMA3_TX_DB_BASSE_ADDR, DMA3_TX_BUFF_BASSE_ADDR, DB_BUFF_LEN);
+//	dma_start(DMA3_BASSE_ADDR,DMA3_TX_DB_BASSE_ADDR, DMA3_RX_BUFF_BASSE_ADDR, DB_NUM);
+//	cpu_comp_FPGA(DMA3_RX_BUFF_BASSE_ADDR, CPU_CACLU_BUFF);
+
+
+
+
+
+}

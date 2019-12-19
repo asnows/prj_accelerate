@@ -1,0 +1,8 @@
+Vivado Simulator 2018.1
+Copyright 1986-1999, 2001-2017 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2018.1/bin/unwrapped/win64.o/xelab.exe -wto b26d0f51e109470984d9acffbbf2940c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L axi_lite_ipif_v3_0_4 -L v_tc_v6_1_12 -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot top_tb_behav xil_defaultlib.top_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-2063] Module <fifo_generator_v13_2_2> not found while processing module instance <inst> [E:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/ip/maxtri7x7_shift_0/src/fifo_maxtrix/sim/fifo_maxtrix.v:84]
+ERROR: [VRFC 10-2063] Module <img_get_grads_0> not found while processing module instance <img_get_grads_i> [E:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sim_1/new/top_tb.v:445]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.

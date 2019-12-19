@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="img_get_grads_0_synth_1" LaunchDir="E:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.runs/img_get_grads_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="maxtri7x7_shift_0_synth_1" LaunchDir="E:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.runs/maxtri7x7_shift_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="video_caputure_0_synth_1" LaunchDir="E:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.runs/video_caputure_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+</Runs>
+

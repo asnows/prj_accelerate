@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Mon Feb 18 16:14:48 2019
+# Process ID: 17976
+# Current directory: E:/WorkSpace/project/FPGA/prj_sc2238_v2.0_emmc/prj_sc2238/prj_sc2238.runs/fifo_maxtrix_synth_1
+# Command line: vivado.exe -log fifo_maxtrix.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source fifo_maxtrix.tcl
+# Log file: E:/WorkSpace/project/FPGA/prj_sc2238_v2.0_emmc/prj_sc2238/prj_sc2238.runs/fifo_maxtrix_synth_1/fifo_maxtrix.vds
+# Journal file: E:/WorkSpace/project/FPGA/prj_sc2238_v2.0_emmc/prj_sc2238/prj_sc2238.runs/fifo_maxtrix_synth_1\vivado.jou
+#-----------------------------------------------------------
+source fifo_maxtrix.tcl -notrace

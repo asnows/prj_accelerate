@@ -1,0 +1,1369 @@
+
+*** Running vivado
+    with args -log design_1_img_get_grads_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_img_get_grads_0_0.tcl
+
+
+****** Vivado v2018.1 (64-bit)
+  **** SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+  **** IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source design_1_img_get_grads_0_0.tcl -notrace
+Command: synth_design -top design_1_img_get_grads_0_0 -part xc7z020clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 8436 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 465.617 ; gain = 108.156
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_img_get_grads_0_0' [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ip/design_1_img_get_grads_0_0/synth/design_1_img_get_grads_0_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'img_get_grads' [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/img_get_grads.v:12]
+INFO: [Synth 8-6157] synthesizing module 'Block_proc' [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/Block_proc.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 1'b1 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/Block_proc.v:49]
+INFO: [Synth 8-6155] done synthesizing module 'Block_proc' (1#1) [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/Block_proc.v:10]
+INFO: [Synth 8-6157] synthesizing module 'AXIvideo2Mat' [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/AXIvideo2Mat.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 8'b00000001 
+	Parameter ap_ST_fsm_state2 bound to: 8'b00000010 
+	Parameter ap_ST_fsm_state3 bound to: 8'b00000100 
+	Parameter ap_ST_fsm_state4 bound to: 8'b00001000 
+	Parameter ap_ST_fsm_pp1_stage0 bound to: 8'b00010000 
+	Parameter ap_ST_fsm_state7 bound to: 8'b00100000 
+	Parameter ap_ST_fsm_pp2_stage0 bound to: 8'b01000000 
+	Parameter ap_ST_fsm_state10 bound to: 8'b10000000 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/AXIvideo2Mat.v:103]
+INFO: [Synth 8-6155] done synthesizing module 'AXIvideo2Mat' (2#1) [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/AXIvideo2Mat.v:10]
+INFO: [Synth 8-6157] synthesizing module 'get_grads_opr' [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/get_grads_opr.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 4'b0001 
+	Parameter ap_ST_fsm_state2 bound to: 4'b0010 
+	Parameter ap_ST_fsm_pp0_stage0 bound to: 4'b0100 
+	Parameter ap_ST_fsm_state50 bound to: 4'b1000 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/get_grads_opr.v:74]
+INFO: [Synth 8-6157] synthesizing module 'get_grads_opr_bufncg' [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/get_grads_opr_bufncg.v:54]
+	Parameter DataWidth bound to: 8 - type: integer 
+	Parameter AddressRange bound to: 640 - type: integer 
+	Parameter AddressWidth bound to: 10 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'get_grads_opr_bufncg_ram' [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/get_grads_opr_bufncg.v:9]
+	Parameter DWIDTH bound to: 8 - type: integer 
+	Parameter AWIDTH bound to: 10 - type: integer 
+	Parameter MEM_SIZE bound to: 640 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* ram_style = "block" *) [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/get_grads_opr_bufncg.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'get_grads_opr_bufncg_ram' (3#1) [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/get_grads_opr_bufncg.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'get_grads_opr_bufncg' (4#1) [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/get_grads_opr_bufncg.v:54]
+INFO: [Synth 8-6157] synthesizing module 'get_grads_opr_bufpcA' [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/get_grads_opr_bufpcA.v:54]
+	Parameter DataWidth bound to: 8 - type: integer 
+	Parameter AddressRange bound to: 640 - type: integer 
+	Parameter AddressWidth bound to: 10 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'get_grads_opr_bufpcA_ram' [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/get_grads_opr_bufpcA.v:9]
+	Parameter DWIDTH bound to: 8 - type: integer 
+	Parameter AWIDTH bound to: 10 - type: integer 
+	Parameter MEM_SIZE bound to: 640 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* ram_style = "block" *) [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/get_grads_opr_bufpcA.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'get_grads_opr_bufpcA_ram' (5#1) [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/get_grads_opr_bufpcA.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'get_grads_opr_bufpcA' (6#1) [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/get_grads_opr_bufpcA.v:54]
+INFO: [Synth 8-6157] synthesizing module 'pown_generic_float_s' [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/pown_generic_float_s.v:10]
+	Parameter ap_ST_fsm_pp0_stage0 bound to: 1'b1 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/pown_generic_float_s.v:38]
+INFO: [Synth 8-6157] synthesizing module 'pown_generic_floabkb' [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/pown_generic_floabkb.v:43]
+	Parameter DataWidth bound to: 6 - type: integer 
+	Parameter AddressRange bound to: 64 - type: integer 
+	Parameter AddressWidth bound to: 6 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'pown_generic_floabkb_rom' [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/pown_generic_floabkb.v:9]
+	Parameter DWIDTH bound to: 6 - type: integer 
+	Parameter AWIDTH bound to: 6 - type: integer 
+	Parameter MEM_SIZE bound to: 64 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* ram_style = "distributed" *) [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/pown_generic_floabkb.v:21]
+INFO: [Synth 8-3876] $readmem data file './pown_generic_floabkb_rom.dat' is read successfully [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/pown_generic_floabkb.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'pown_generic_floabkb_rom' (7#1) [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/pown_generic_floabkb.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'pown_generic_floabkb' (8#1) [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/pown_generic_floabkb.v:43]
+INFO: [Synth 8-6157] synthesizing module 'pown_generic_floacud' [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/pown_generic_floacud.v:43]
+	Parameter DataWidth bound to: 56 - type: integer 
+	Parameter AddressRange bound to: 64 - type: integer 
+	Parameter AddressWidth bound to: 6 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'pown_generic_floacud_rom' [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/pown_generic_floacud.v:9]
+	Parameter DWIDTH bound to: 56 - type: integer 
+	Parameter AWIDTH bound to: 6 - type: integer 
+	Parameter MEM_SIZE bound to: 64 - type: integer 
+INFO: [Synth 8-3876] $readmem data file './pown_generic_floacud_rom.dat' is read successfully [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/pown_generic_floacud.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'pown_generic_floacud_rom' (9#1) [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/pown_generic_floacud.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'pown_generic_floacud' (10#1) [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/pown_generic_floacud.v:43]
+INFO: [Synth 8-6157] synthesizing module 'pown_generic_floadEe' [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/pown_generic_floadEe.v:43]
+	Parameter DataWidth bound to: 52 - type: integer 
+	Parameter AddressRange bound to: 16 - type: integer 
+	Parameter AddressWidth bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'pown_generic_floadEe_rom' [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/pown_generic_floadEe.v:9]
+	Parameter DWIDTH bound to: 52 - type: integer 
+	Parameter AWIDTH bound to: 4 - type: integer 
+	Parameter MEM_SIZE bound to: 16 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* ram_style = "distributed" *) [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/pown_generic_floadEe.v:21]
+INFO: [Synth 8-3876] $readmem data file './pown_generic_floadEe_rom.dat' is read successfully [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/pown_generic_floadEe.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'pown_generic_floadEe_rom' (11#1) [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/pown_generic_floadEe.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'pown_generic_floadEe' (12#1) [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/pown_generic_floadEe.v:43]
+INFO: [Synth 8-6157] synthesizing module 'pown_generic_floaeOg' [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/pown_generic_floaeOg.v:43]
+	Parameter DataWidth bound to: 49 - type: integer 
+	Parameter AddressRange bound to: 64 - type: integer 
+	Parameter AddressWidth bound to: 6 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'pown_generic_floaeOg_rom' [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/pown_generic_floaeOg.v:9]
+	Parameter DWIDTH bound to: 49 - type: integer 
+	Parameter AWIDTH bound to: 6 - type: integer 
+	Parameter MEM_SIZE bound to: 64 - type: integer 
+INFO: [Synth 8-3876] $readmem data file './pown_generic_floaeOg_rom.dat' is read successfully [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/pown_generic_floaeOg.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'pown_generic_floaeOg_rom' (13#1) [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/pown_generic_floaeOg.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'pown_generic_floaeOg' (14#1) [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/pown_generic_floaeOg.v:43]
+INFO: [Synth 8-6157] synthesizing module 'pown_generic_floafYi' [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/pown_generic_floafYi.v:43]
+	Parameter DataWidth bound to: 44 - type: integer 
+	Parameter AddressRange bound to: 64 - type: integer 
+	Parameter AddressWidth bound to: 6 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'pown_generic_floafYi_rom' [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/pown_generic_floafYi.v:9]
+	Parameter DWIDTH bound to: 44 - type: integer 
+	Parameter AWIDTH bound to: 6 - type: integer 
+	Parameter MEM_SIZE bound to: 64 - type: integer 
+INFO: [Synth 8-3876] $readmem data file './pown_generic_floafYi_rom.dat' is read successfully [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/pown_generic_floafYi.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'pown_generic_floafYi_rom' (15#1) [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/pown_generic_floafYi.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'pown_generic_floafYi' (16#1) [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/pown_generic_floafYi.v:43]
+INFO: [Synth 8-6157] synthesizing module 'pown_generic_floag8j' [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/pown_generic_floag8j.v:43]
+	Parameter DataWidth bound to: 27 - type: integer 
+	Parameter AddressRange bound to: 512 - type: integer 
+	Parameter AddressWidth bound to: 9 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'pown_generic_floag8j_rom' [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/pown_generic_floag8j.v:9]
+	Parameter DWIDTH bound to: 27 - type: integer 
+	Parameter AWIDTH bound to: 9 - type: integer 
+	Parameter MEM_SIZE bound to: 512 - type: integer 
+INFO: [Synth 8-3876] $readmem data file './pown_generic_floag8j_rom.dat' is read successfully [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/pown_generic_floag8j.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'pown_generic_floag8j_rom' (17#1) [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/pown_generic_floag8j.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'pown_generic_floag8j' (18#1) [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/pown_generic_floag8j.v:43]
+INFO: [Synth 8-6157] synthesizing module 'pown_generic_floahbi' [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/pown_generic_floahbi.v:43]
+	Parameter DataWidth bound to: 8 - type: integer 
+	Parameter AddressRange bound to: 32 - type: integer 
+	Parameter AddressWidth bound to: 5 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'pown_generic_floahbi_rom' [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/pown_generic_floahbi.v:9]
+	Parameter DWIDTH bound to: 8 - type: integer 
+	Parameter AWIDTH bound to: 5 - type: integer 
+	Parameter MEM_SIZE bound to: 32 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* ram_style = "distributed" *) [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/pown_generic_floahbi.v:21]
+INFO: [Synth 8-3876] $readmem data file './pown_generic_floahbi_rom.dat' is read successfully [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/pown_generic_floahbi.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'pown_generic_floahbi_rom' (19#1) [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/pown_generic_floahbi.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'pown_generic_floahbi' (20#1) [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/pown_generic_floahbi.v:43]
+INFO: [Synth 8-6157] synthesizing module 'img_get_grads_mulibs' [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/img_get_grads_mulibs.v:29]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 2 - type: integer 
+	Parameter din0_WIDTH bound to: 41 - type: integer 
+	Parameter din1_WIDTH bound to: 6 - type: integer 
+	Parameter dout_WIDTH bound to: 47 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'img_get_grads_mulibs_MulnS_0' [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/img_get_grads_mulibs.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'img_get_grads_mulibs_MulnS_0' (21#1) [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/img_get_grads_mulibs.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'img_get_grads_mulibs' (22#1) [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/img_get_grads_mulibs.v:29]
+INFO: [Synth 8-6157] synthesizing module 'img_get_grads_muljbC' [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/img_get_grads_muljbC.v:35]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 3 - type: integer 
+	Parameter din0_WIDTH bound to: 44 - type: integer 
+	Parameter din1_WIDTH bound to: 6 - type: integer 
+	Parameter dout_WIDTH bound to: 50 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'img_get_grads_muljbC_MulnS_1' [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/img_get_grads_muljbC.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'img_get_grads_muljbC_MulnS_1' (23#1) [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/img_get_grads_muljbC.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'img_get_grads_muljbC' (24#1) [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/img_get_grads_muljbC.v:35]
+INFO: [Synth 8-6157] synthesizing module 'img_get_grads_mulkbM' [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/img_get_grads_mulkbM.v:29]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 2 - type: integer 
+	Parameter din0_WIDTH bound to: 45 - type: integer 
+	Parameter din1_WIDTH bound to: 9 - type: integer 
+	Parameter dout_WIDTH bound to: 52 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'img_get_grads_mulkbM_MulnS_2' [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/img_get_grads_mulkbM.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'img_get_grads_mulkbM_MulnS_2' (25#1) [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/img_get_grads_mulkbM.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'img_get_grads_mulkbM' (26#1) [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/img_get_grads_mulkbM.v:29]
+INFO: [Synth 8-6157] synthesizing module 'img_get_grads_maclbW' [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/img_get_grads_maclbW.v:34]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 13 - type: integer 
+	Parameter din1_WIDTH bound to: 13 - type: integer 
+	Parameter din2_WIDTH bound to: 16 - type: integer 
+	Parameter dout_WIDTH bound to: 25 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'img_get_grads_maclbW_DSP48_0' [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/img_get_grads_maclbW.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'img_get_grads_maclbW_DSP48_0' (27#1) [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/img_get_grads_maclbW.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'img_get_grads_maclbW' (28#1) [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/img_get_grads_maclbW.v:34]
+INFO: [Synth 8-6157] synthesizing module 'img_get_grads_mulmb6' [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/img_get_grads_mulmb6.v:14]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 18 - type: integer 
+	Parameter din1_WIDTH bound to: 18 - type: integer 
+	Parameter dout_WIDTH bound to: 36 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'img_get_grads_mulmb6_DSP48_1' [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/img_get_grads_mulmb6.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'img_get_grads_mulmb6_DSP48_1' (29#1) [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/img_get_grads_mulmb6.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'img_get_grads_mulmb6' (30#1) [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/img_get_grads_mulmb6.v:14]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/pown_generic_float_s.v:1222]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/pown_generic_float_s.v:1246]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/pown_generic_float_s.v:1254]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/pown_generic_float_s.v:1310]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/pown_generic_float_s.v:1354]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/pown_generic_float_s.v:1376]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/pown_generic_float_s.v:1378]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/pown_generic_float_s.v:1460]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/pown_generic_float_s.v:1500]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/pown_generic_float_s.v:1506]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/pown_generic_float_s.v:1508]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/pown_generic_float_s.v:1512]
+INFO: [Synth 8-6155] done synthesizing module 'pown_generic_float_s' (31#1) [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/pown_generic_float_s.v:10]
+INFO: [Synth 8-6157] synthesizing module 'img_get_grads_fadqcK' [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/img_get_grads_fadqcK.v:11]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 5 - type: integer 
+	Parameter din0_WIDTH bound to: 32 - type: integer 
+	Parameter din1_WIDTH bound to: 32 - type: integer 
+	Parameter dout_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'img_get_grads_ap_fadd_3_full_dsp_32' [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/ip/img_get_grads_ap_fadd_3_full_dsp_32.vhd:72]
+	Parameter C_XDEVICEFAMILY bound to: virtex7 - type: string 
+	Parameter C_HAS_ADD bound to: 1 - type: integer 
+	Parameter C_HAS_SUBTRACT bound to: 0 - type: integer 
+	Parameter C_HAS_MULTIPLY bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE bound to: 0 - type: integer 
+	Parameter C_HAS_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_COMPARE bound to: 0 - type: integer 
+	Parameter C_HAS_FIX_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FIX bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_ABSOLUTE bound to: 0 - type: integer 
+	Parameter C_HAS_LOGARITHM bound to: 0 - type: integer 
+	Parameter C_HAS_EXPONENTIAL bound to: 0 - type: integer 
+	Parameter C_HAS_FMA bound to: 0 - type: integer 
+	Parameter C_HAS_FMS bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_A_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_B_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_C_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_RESULT_WIDTH bound to: 32 - type: integer 
+	Parameter C_RESULT_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_COMPARE_OPERATION bound to: 8 - type: integer 
+	Parameter C_LATENCY bound to: 3 - type: integer 
+	Parameter C_OPTIMIZATION bound to: 1 - type: integer 
+	Parameter C_MULT_USAGE bound to: 2 - type: integer 
+	Parameter C_BRAM_USAGE bound to: 0 - type: integer 
+	Parameter C_RATE bound to: 1 - type: integer 
+	Parameter C_ACCUM_INPUT_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_LSB bound to: -31 - type: integer 
+	Parameter C_HAS_UNDERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_INVALID_OP bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE_BY_ZERO bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_INPUT_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACLKEN bound to: 1 - type: integer 
+	Parameter C_HAS_ARESETN bound to: 0 - type: integer 
+	Parameter C_THROTTLE_SCHEME bound to: 3 - type: integer 
+	Parameter C_HAS_A_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_A_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_B bound to: 1 - type: integer 
+	Parameter C_HAS_B_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_B_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_C bound to: 0 - type: integer 
+	Parameter C_HAS_C_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_C_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TLAST bound to: 0 - type: integer 
+	Parameter C_TLAST_RESOLUTION bound to: 0 - type: integer 
+	Parameter C_A_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_B_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_C_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_OPERATION_TDATA_WIDTH bound to: 8 - type: integer 
+	Parameter C_OPERATION_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_RESULT_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_RESULT_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_FIXED_DATA_UNSIGNED bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'floating_point_v7_1_6' declared at 'e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/c4f7/hdl/floating_point_v7_1_vh_rfs.vhd:91604' bound to instance 'U0' of component 'floating_point_v7_1_6' [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/ip/img_get_grads_ap_fadd_3_full_dsp_32.vhd:204]
+INFO: [Synth 8-256] done synthesizing module 'img_get_grads_ap_fadd_3_full_dsp_32' (49#1) [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/ip/img_get_grads_ap_fadd_3_full_dsp_32.vhd:72]
+INFO: [Synth 8-6155] done synthesizing module 'img_get_grads_fadqcK' (50#1) [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/img_get_grads_fadqcK.v:11]
+INFO: [Synth 8-6157] synthesizing module 'img_get_grads_sitrcU' [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/img_get_grads_sitrcU.v:11]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 6 - type: integer 
+	Parameter din0_WIDTH bound to: 32 - type: integer 
+	Parameter dout_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'img_get_grads_ap_sitofp_4_no_dsp_32' [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/ip/img_get_grads_ap_sitofp_4_no_dsp_32.vhd:70]
+	Parameter C_XDEVICEFAMILY bound to: virtex7 - type: string 
+	Parameter C_HAS_ADD bound to: 0 - type: integer 
+	Parameter C_HAS_SUBTRACT bound to: 0 - type: integer 
+	Parameter C_HAS_MULTIPLY bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE bound to: 0 - type: integer 
+	Parameter C_HAS_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_COMPARE bound to: 0 - type: integer 
+	Parameter C_HAS_FIX_TO_FLT bound to: 1 - type: integer 
+	Parameter C_HAS_FLT_TO_FIX bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_ABSOLUTE bound to: 0 - type: integer 
+	Parameter C_HAS_LOGARITHM bound to: 0 - type: integer 
+	Parameter C_HAS_EXPONENTIAL bound to: 0 - type: integer 
+	Parameter C_HAS_FMA bound to: 0 - type: integer 
+	Parameter C_HAS_FMS bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_A_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_FRACTION_WIDTH bound to: 0 - type: integer 
+	Parameter C_B_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_FRACTION_WIDTH bound to: 0 - type: integer 
+	Parameter C_C_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_FRACTION_WIDTH bound to: 0 - type: integer 
+	Parameter C_RESULT_WIDTH bound to: 32 - type: integer 
+	Parameter C_RESULT_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_COMPARE_OPERATION bound to: 8 - type: integer 
+	Parameter C_LATENCY bound to: 4 - type: integer 
+	Parameter C_OPTIMIZATION bound to: 1 - type: integer 
+	Parameter C_MULT_USAGE bound to: 0 - type: integer 
+	Parameter C_BRAM_USAGE bound to: 0 - type: integer 
+	Parameter C_RATE bound to: 1 - type: integer 
+	Parameter C_ACCUM_INPUT_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_LSB bound to: -31 - type: integer 
+	Parameter C_HAS_UNDERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_INVALID_OP bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE_BY_ZERO bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_INPUT_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACLKEN bound to: 1 - type: integer 
+	Parameter C_HAS_ARESETN bound to: 0 - type: integer 
+	Parameter C_THROTTLE_SCHEME bound to: 3 - type: integer 
+	Parameter C_HAS_A_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_A_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_B bound to: 0 - type: integer 
+	Parameter C_HAS_B_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_B_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_C bound to: 0 - type: integer 
+	Parameter C_HAS_C_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_C_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TLAST bound to: 0 - type: integer 
+	Parameter C_TLAST_RESOLUTION bound to: 0 - type: integer 
+	Parameter C_A_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_B_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_C_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_OPERATION_TDATA_WIDTH bound to: 8 - type: integer 
+	Parameter C_OPERATION_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_RESULT_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_RESULT_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_FIXED_DATA_UNSIGNED bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'floating_point_v7_1_6' declared at 'e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/c4f7/hdl/floating_point_v7_1_vh_rfs.vhd:91604' bound to instance 'U0' of component 'floating_point_v7_1_6' [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/ip/img_get_grads_ap_sitofp_4_no_dsp_32.vhd:198]
+INFO: [Synth 8-256] done synthesizing module 'img_get_grads_ap_sitofp_4_no_dsp_32' (59#1) [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/ip/img_get_grads_ap_sitofp_4_no_dsp_32.vhd:70]
+INFO: [Synth 8-6155] done synthesizing module 'img_get_grads_sitrcU' (60#1) [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/img_get_grads_sitrcU.v:11]
+INFO: [Synth 8-6157] synthesizing module 'img_get_grads_fsqsc4' [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/img_get_grads_fsqsc4.v:11]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 12 - type: integer 
+	Parameter din0_WIDTH bound to: 32 - type: integer 
+	Parameter din1_WIDTH bound to: 32 - type: integer 
+	Parameter dout_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'img_get_grads_ap_fsqrt_10_no_dsp_32' [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/ip/img_get_grads_ap_fsqrt_10_no_dsp_32.vhd:70]
+	Parameter C_XDEVICEFAMILY bound to: virtex7 - type: string 
+	Parameter C_HAS_ADD bound to: 0 - type: integer 
+	Parameter C_HAS_SUBTRACT bound to: 0 - type: integer 
+	Parameter C_HAS_MULTIPLY bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE bound to: 0 - type: integer 
+	Parameter C_HAS_SQRT bound to: 1 - type: integer 
+	Parameter C_HAS_COMPARE bound to: 0 - type: integer 
+	Parameter C_HAS_FIX_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FIX bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_ABSOLUTE bound to: 0 - type: integer 
+	Parameter C_HAS_LOGARITHM bound to: 0 - type: integer 
+	Parameter C_HAS_EXPONENTIAL bound to: 0 - type: integer 
+	Parameter C_HAS_FMA bound to: 0 - type: integer 
+	Parameter C_HAS_FMS bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_A_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_B_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_C_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_RESULT_WIDTH bound to: 32 - type: integer 
+	Parameter C_RESULT_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_COMPARE_OPERATION bound to: 8 - type: integer 
+	Parameter C_LATENCY bound to: 10 - type: integer 
+	Parameter C_OPTIMIZATION bound to: 1 - type: integer 
+	Parameter C_MULT_USAGE bound to: 0 - type: integer 
+	Parameter C_BRAM_USAGE bound to: 0 - type: integer 
+	Parameter C_RATE bound to: 1 - type: integer 
+	Parameter C_ACCUM_INPUT_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_LSB bound to: -31 - type: integer 
+	Parameter C_HAS_UNDERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_INVALID_OP bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE_BY_ZERO bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_INPUT_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACLKEN bound to: 1 - type: integer 
+	Parameter C_HAS_ARESETN bound to: 0 - type: integer 
+	Parameter C_THROTTLE_SCHEME bound to: 3 - type: integer 
+	Parameter C_HAS_A_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_A_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_B bound to: 0 - type: integer 
+	Parameter C_HAS_B_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_B_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_C bound to: 0 - type: integer 
+	Parameter C_HAS_C_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_C_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TLAST bound to: 0 - type: integer 
+	Parameter C_TLAST_RESOLUTION bound to: 0 - type: integer 
+	Parameter C_A_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_B_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_C_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_OPERATION_TDATA_WIDTH bound to: 8 - type: integer 
+	Parameter C_OPERATION_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_RESULT_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_RESULT_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_FIXED_DATA_UNSIGNED bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'floating_point_v7_1_6' declared at 'e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/c4f7/hdl/floating_point_v7_1_vh_rfs.vhd:91604' bound to instance 'U0' of component 'floating_point_v7_1_6' [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/ip/img_get_grads_ap_fsqrt_10_no_dsp_32.vhd:199]
+INFO: [Synth 8-256] done synthesizing module 'img_get_grads_ap_fsqrt_10_no_dsp_32' (65#1) [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/ip/img_get_grads_ap_fsqrt_10_no_dsp_32.vhd:70]
+INFO: [Synth 8-6155] done synthesizing module 'img_get_grads_fsqsc4' (66#1) [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/img_get_grads_fsqsc4.v:11]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/get_grads_opr.v:1800]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/get_grads_opr.v:1802]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/get_grads_opr.v:1804]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/get_grads_opr.v:1810]
+INFO: [Synth 8-6155] done synthesizing module 'get_grads_opr' (67#1) [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/get_grads_opr.v:10]
+INFO: [Synth 8-6157] synthesizing module 'Mat2AXIvideo' [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/Mat2AXIvideo.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 4'b0001 
+	Parameter ap_ST_fsm_state2 bound to: 4'b0010 
+	Parameter ap_ST_fsm_pp0_stage0 bound to: 4'b0100 
+	Parameter ap_ST_fsm_state6 bound to: 4'b1000 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/Mat2AXIvideo.v:63]
+WARNING: [Synth 8-6014] Unused sequential element AXI_video_strm_V_dest_V_1_sel_rd_reg was removed.  [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/Mat2AXIvideo.v:240]
+WARNING: [Synth 8-6014] Unused sequential element AXI_video_strm_V_id_V_1_sel_rd_reg was removed.  [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/Mat2AXIvideo.v:266]
+WARNING: [Synth 8-6014] Unused sequential element AXI_video_strm_V_keep_V_1_sel_rd_reg was removed.  [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/Mat2AXIvideo.v:292]
+WARNING: [Synth 8-6014] Unused sequential element AXI_video_strm_V_strb_V_1_sel_rd_reg was removed.  [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/Mat2AXIvideo.v:354]
+INFO: [Synth 8-6155] done synthesizing module 'Mat2AXIvideo' (68#1) [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/Mat2AXIvideo.v:10]
+INFO: [Synth 8-6157] synthesizing module 'fifo_w10_d2_A' [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/fifo_w10_d2_A.v:45]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 10 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'fifo_w10_d2_A_shiftReg' [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/fifo_w10_d2_A.v:11]
+	Parameter DATA_WIDTH bound to: 10 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'fifo_w10_d2_A_shiftReg' (69#1) [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/fifo_w10_d2_A.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_w10_d2_A' (70#1) [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/fifo_w10_d2_A.v:45]
+INFO: [Synth 8-6157] synthesizing module 'fifo_w11_d2_A' [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/fifo_w11_d2_A.v:45]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 11 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'fifo_w11_d2_A_shiftReg' [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/fifo_w11_d2_A.v:11]
+	Parameter DATA_WIDTH bound to: 11 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'fifo_w11_d2_A_shiftReg' (71#1) [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/fifo_w11_d2_A.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_w11_d2_A' (72#1) [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/fifo_w11_d2_A.v:45]
+INFO: [Synth 8-6157] synthesizing module 'fifo_w8_d2_A' [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/fifo_w8_d2_A.v:45]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'fifo_w8_d2_A_shiftReg' [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/fifo_w8_d2_A.v:11]
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'fifo_w8_d2_A_shiftReg' (73#1) [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/fifo_w8_d2_A.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_w8_d2_A' (74#1) [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/fifo_w8_d2_A.v:45]
+INFO: [Synth 8-6157] synthesizing module 'fifo_w32_d2_A' [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/fifo_w32_d2_A.v:45]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'fifo_w32_d2_A_shiftReg' [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/fifo_w32_d2_A.v:11]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'fifo_w32_d2_A_shiftReg' (75#1) [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/fifo_w32_d2_A.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_w32_d2_A' (76#1) [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/fifo_w32_d2_A.v:45]
+INFO: [Synth 8-6157] synthesizing module 'start_for_get_gratde' [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/start_for_get_gratde.v:45]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'start_for_get_gratde_shiftReg' [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/start_for_get_gratde.v:11]
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'start_for_get_gratde_shiftReg' (77#1) [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/start_for_get_gratde.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'start_for_get_gratde' (78#1) [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/start_for_get_gratde.v:45]
+INFO: [Synth 8-6157] synthesizing module 'start_for_Mat2AXIudo' [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/start_for_Mat2AXIudo.v:45]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'start_for_Mat2AXIudo_shiftReg' [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/start_for_Mat2AXIudo.v:11]
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'start_for_Mat2AXIudo_shiftReg' (79#1) [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/start_for_Mat2AXIudo.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'start_for_Mat2AXIudo' (80#1) [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/start_for_Mat2AXIudo.v:45]
+INFO: [Synth 8-6155] done synthesizing module 'img_get_grads' (81#1) [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/img_get_grads.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_img_get_grads_0_0' (82#1) [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ip/design_1_img_get_grads_0_0/synth/design_1_img_get_grads_0_0.v:57]
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized17 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized17 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized17 has unconnected port SINIT
+WARNING: [Synth 8-3331] design flt_dec_op__parameterized0 has unconnected port DEC_OP_STATE[11]
+WARNING: [Synth 8-3331] design flt_dec_op__parameterized0 has unconnected port DEC_OP_STATE[10]
+WARNING: [Synth 8-3331] design flt_dec_op__parameterized0 has unconnected port DEC_OP_STATE[9]
+WARNING: [Synth 8-3331] design flt_dec_op__parameterized0 has unconnected port DEC_OP_STATE[8]
+WARNING: [Synth 8-3331] design flt_dec_op__parameterized0 has unconnected port DIVIDE_BY_ZERO_IN
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized99 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized99 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized99 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized99 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized99 has unconnected port SINIT
+WARNING: [Synth 8-3331] design carry_chain__parameterized36 has unconnected port B[11]
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized43 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized43 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized43 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized43 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized43 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized68 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized68 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized68 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized68 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized68 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized3 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized3 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized3 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized3 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized3 has unconnected port SINIT
+WARNING: [Synth 8-3331] design flt_round_bit__parameterized0 has unconnected port NORMALIZE[1]
+WARNING: [Synth 8-3331] design flt_round_bit__parameterized0 has unconnected port FIXED_POINT
+WARNING: [Synth 8-3331] design flt_round_bit__parameterized0 has unconnected port FIX_MANT_SIGN
+WARNING: [Synth 8-3331] design flt_round_bit__parameterized0 has unconnected port SIGN
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized51 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized51 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized51 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized51 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized51 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized25 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized25 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized25 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized25 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized25 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized157 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized157 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized157 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized157 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized157 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized66 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized66 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized66 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized66 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized66 has unconnected port SINIT
+WARNING: [Synth 8-3331] design renorm_and_round_logic__parameterized0 has unconnected port EXP_OUT[7]
+WARNING: [Synth 8-3331] design renorm_and_round_logic__parameterized0 has unconnected port EXP_OUT[6]
+WARNING: [Synth 8-3331] design renorm_and_round_logic__parameterized0 has unconnected port EXP_OUT[5]
+WARNING: [Synth 8-3331] design renorm_and_round_logic__parameterized0 has unconnected port EXP_OUT[4]
+WARNING: [Synth 8-3331] design renorm_and_round_logic__parameterized0 has unconnected port EXP_OUT[3]
+WARNING: [Synth 8-3331] design renorm_and_round_logic__parameterized0 has unconnected port EXP_OUT[2]
+WARNING: [Synth 8-3331] design renorm_and_round_logic__parameterized0 has unconnected port EXP_OUT[1]
+WARNING: [Synth 8-3331] design renorm_and_round_logic__parameterized0 has unconnected port EXP_OUT[0]
+WARNING: [Synth 8-3331] design renorm_and_round_logic__parameterized0 has unconnected port EXP_INC_IN
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized53 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized53 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized53 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized53 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized53 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized155 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized155 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized155 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized153 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized153 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized153 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized49 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized49 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized49 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized49 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized49 has unconnected port SINIT
+WARNING: [Synth 8-3331] design special_detect__parameterized0 has unconnected port A[31]
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized151 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized151 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized151 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized64 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized64 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized64 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized81 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized81 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized81 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized81 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized81 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized45 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized45 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized45 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized91 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized91 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized91 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized87 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized87 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized87 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized87 has unconnected port SSET
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 625.875 ; gain = 268.414
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 625.875 ; gain = 268.414
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 625.875 ; gain = 268.414
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 1254 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ip/design_1_img_get_grads_0_0/constraints/img_get_grads_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ip/design_1_img_get_grads_0_0/constraints/img_get_grads_ooc.xdc] for cell 'inst'
+Parsing XDC File [E:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.runs/design_1_img_get_grads_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [E:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.runs/design_1_img_get_grads_0_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 35 instances were transformed.
+  FDE => FDRE: 35 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.162 . Memory (MB): peak = 911.891 ; gain = 4.629
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:44 ; elapsed = 00:00:46 . Memory (MB): peak = 911.891 ; gain = 554.430
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:44 ; elapsed = 00:00:46 . Memory (MB): peak = 911.891 ; gain = 554.430
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for inst. (constraint file  E:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.runs/design_1_img_get_grads_0_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:44 ; elapsed = 00:00:46 . Memory (MB): peak = 911.891 ; gain = 554.430
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-5542] Attribute ram_style/rom_style = distributed specified for ROM  "ram". This will be implemented in logic
+WARNING: [Synth 8-6014] Unused sequential element q0_reg was removed.  [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/pown_generic_floacud.v:33]
+INFO: [Synth 8-5542] Attribute ram_style/rom_style = distributed specified for ROM  "ram". This will be implemented in logic
+WARNING: [Synth 8-6014] Unused sequential element q0_reg was removed.  [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/pown_generic_floaeOg.v:33]
+WARNING: [Synth 8-6014] Unused sequential element q0_reg was removed.  [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/pown_generic_floafYi.v:33]
+WARNING: [Synth 8-6014] Unused sequential element q0_reg was removed.  [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/pown_generic_floag8j.v:33]
+INFO: [Synth 8-5542] Attribute ram_style/rom_style = distributed specified for ROM  "ram". This will be implemented in logic
+WARNING: [Synth 8-3936] Found unconnected internal register 'tmp_60_reg_1810_reg' and it is trimmed from '26' to '25' bits. [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/pown_generic_float_s.v:976]
+WARNING: [Synth 8-3936] Found unconnected internal register 'tmp_59_reg_1805_reg' and it is trimmed from '27' to '26' bits. [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/pown_generic_float_s.v:974]
+WARNING: [Synth 8-3936] Found unconnected internal register 'p_Val2_68_reg_1793_reg' and it is trimmed from '28' to '27' bits. [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/pown_generic_float_s.v:914]
+WARNING: [Synth 8-3936] Found unconnected internal register 'p_Val2_62_reg_1758_reg' and it is trimmed from '36' to '27' bits. [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/pown_generic_float_s.v:911]
+WARNING: [Synth 8-3936] Found unconnected internal register 'p_Val2_58_reg_1725_pp0_iter16_reg_reg' and it is trimmed from '36' to '27' bits. [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/pown_generic_float_s.v:909]
+WARNING: [Synth 8-3936] Found unconnected internal register 'p_Val2_58_reg_1725_pp0_iter15_reg_reg' and it is trimmed from '36' to '27' bits. [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/pown_generic_float_s.v:908]
+WARNING: [Synth 8-3936] Found unconnected internal register 'p_Val2_58_reg_1725_reg' and it is trimmed from '36' to '27' bits. [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/pown_generic_float_s.v:907]
+INFO: [Synth 8-5546] ROM "tmp_i_fu_717_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tmp_18_fu_1063_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tmp_4_fu_727_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tmp_i1_fu_391_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/pown_generic_float_s.v:1374]
+WARNING: [Synth 8-6014] Unused sequential element ssdm_int_V_write_ass_3_reg_1699_reg was removed.  [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/pown_generic_float_s.v:934]
+WARNING: [Synth 8-6014] Unused sequential element b_frac_tilde_inverse_reg_1536_reg was removed.  [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/pown_generic_float_s.v:1006]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/pown_generic_float_s.v:1344]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/pown_generic_float_s.v:1374]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/pown_generic_float_s.v:1374]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/pown_generic_float_s.v:1374]
+WARNING: [Synth 8-6014] Unused sequential element  was removed. 
+INFO: [Synth 8-5546] ROM "exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exp_over_int" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ip_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exp_over_int" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ip_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "det_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "chunk_is_zero_ip" won't be mapped to RAM because address size (36) is larger than maximum supported(25)
+INFO: [Synth 8-4471] merging register 'tmp_84_cast_i_cast_reg_645_reg[12:12]' into 'tmp_83_cast_i_cast_reg_639_reg[12:12]' [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/get_grads_opr.v:1878]
+WARNING: [Synth 8-3936] Found unconnected internal register 'tmp_87_i_reg_684_pp0_iter1_reg_reg' and it is trimmed from '13' to '10' bits. [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/get_grads_opr.v:1324]
+WARNING: [Synth 8-3936] Found unconnected internal register 'tmp_87_i_reg_684_reg' and it is trimmed from '13' to '10' bits. [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/get_grads_opr.v:1323]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-5546] ROM "icmp_fu_399_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-5546] ROM "exitcond1_fu_164_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond_fu_176_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "axi_last_V_fu_188_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "internal_empty_n" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "internal_empty_n" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "internal_empty_n" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "internal_empty_n" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "internal_empty_n" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "internal_empty_n" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:48 ; elapsed = 00:00:52 . Memory (MB): peak = 911.891 ; gain = 554.430
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'inst/get_grads_opr_U0/img_get_grads_fadqcK_U33/img_get_grads_ap_fadd_3_full_dsp_32_u/U0/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'inst/get_grads_opr_U0/img_get_grads_fadqcK_U33/img_get_grads_ap_fadd_3_full_dsp_32_u/U0/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/get_grads_opr_U0/img_get_grads_fadqcK_U33/img_get_grads_ap_fadd_3_full_dsp_32_u/U0/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'inst/get_grads_opr_U0/img_get_grads_fadqcK_U33/img_get_grads_ap_fadd_3_full_dsp_32_u/U0/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/get_grads_opr_U0/img_get_grads_fadqcK_U33/img_get_grads_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/SUB_DELAY' (delay__parameterized0) to 'inst/get_grads_opr_U0/img_get_grads_fadqcK_U33/img_get_grads_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/SUB_ADD_IP_DELAY'
+INFO: [Synth 8-223] decloning instance 'img_get_grads_sitrcU:/img_get_grads_ap_sitofp_4_no_dsp_32_u/U0/i_synth/DELAY_INVALID_OP' (delay__parameterized0) to 'img_get_grads_sitrcU:/img_get_grads_ap_sitofp_4_no_dsp_32_u/U0/i_synth/DELAY_DIVIDE_BY_ZERO'
+INFO: [Synth 8-223] decloning instance 'img_get_grads_sitrcU:/img_get_grads_ap_sitofp_4_no_dsp_32_u/U0/i_synth/DELAY_INVALID_OP' (delay__parameterized0) to 'img_get_grads_sitrcU:/img_get_grads_ap_sitofp_4_no_dsp_32_u/U0/i_synth/DELAY_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'img_get_grads_sitrcU:/img_get_grads_ap_sitofp_4_no_dsp_32_u/U0/i_synth/DELAY_INVALID_OP' (delay__parameterized0) to 'img_get_grads_sitrcU:/img_get_grads_ap_sitofp_4_no_dsp_32_u/U0/i_synth/DELAY_UNDERFLOW'
+INFO: [Synth 8-223] decloning instance 'img_get_grads_sitrcU:/img_get_grads_ap_sitofp_4_no_dsp_32_u/U0/i_synth/DELAY_INVALID_OP' (delay__parameterized0) to 'img_get_grads_sitrcU:/img_get_grads_ap_sitofp_4_no_dsp_32_u/U0/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'img_get_grads_sitrcU:/img_get_grads_ap_sitofp_4_no_dsp_32_u/U0/i_synth/DELAY_INVALID_OP' (delay__parameterized0) to 'img_get_grads_sitrcU:/img_get_grads_ap_sitofp_4_no_dsp_32_u/U0/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'img_get_grads_sitrcU:/img_get_grads_ap_sitofp_4_no_dsp_32_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXTRA_LSB_BIT_DEL' (delay__parameterized0) to 'img_get_grads_sitrcU:/img_get_grads_ap_sitofp_4_no_dsp_32_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXTRA_LSB_RND1_DEL'
+INFO: [Synth 8-223] decloning instance 'img_get_grads_sitrcU:/img_get_grads_ap_sitofp_4_no_dsp_32_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_INC_DELAY' (delay__parameterized0) to 'img_get_grads_sitrcU:/img_get_grads_ap_sitofp_4_no_dsp_32_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_INC_RND1_DELAY'
+INFO: [Synth 8-223] decloning instance 'img_get_grads_sitrcU:/img_get_grads_ap_sitofp_4_no_dsp_32_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/NORMALIZE_DEL' (delay__parameterized42) to 'img_get_grads_sitrcU:/img_get_grads_ap_sitofp_4_no_dsp_32_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/NORMALIZE_RND1_DEL'
+INFO: [Synth 8-223] decloning instance 'img_get_grads_sitrcU:/img_get_grads_ap_sitofp_4_no_dsp_32_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_IN_DELAY.EXP_IN_DEL' (delay__parameterized27) to 'img_get_grads_sitrcU:/img_get_grads_ap_sitofp_4_no_dsp_32_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_RND2_DELAY.EXP_RND_DEL'
+INFO: [Synth 8-223] decloning instance 'img_get_grads_sitrcU:/img_get_grads_ap_sitofp_4_no_dsp_32_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_IN_DELAY.EXP_OFF_OP_DEL' (delay__parameterized27) to 'img_get_grads_sitrcU:/img_get_grads_ap_sitofp_4_no_dsp_32_u/U0/i_synth/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_RND2_DELAY.EXP_OFF_RND_DEL'
+INFO: [Synth 8-223] decloning instance 'inst/get_grads_opr_U0/img_get_grads_fsqsc4_U36/img_get_grads_ap_fsqrt_10_no_dsp_32_u/U0/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'inst/get_grads_opr_U0/img_get_grads_fsqsc4_U36/img_get_grads_ap_fsqrt_10_no_dsp_32_u/U0/i_synth/DELAY_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/get_grads_opr_U0/img_get_grads_fsqsc4_U36/img_get_grads_ap_fsqrt_10_no_dsp_32_u/U0/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'inst/get_grads_opr_U0/img_get_grads_fsqsc4_U36/img_get_grads_ap_fsqrt_10_no_dsp_32_u/U0/i_synth/DELAY_UNDERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/get_grads_opr_U0/img_get_grads_fsqsc4_U36/img_get_grads_ap_fsqrt_10_no_dsp_32_u/U0/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'inst/get_grads_opr_U0/img_get_grads_fsqsc4_U36/img_get_grads_ap_fsqrt_10_no_dsp_32_u/U0/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/get_grads_opr_U0/img_get_grads_fsqsc4_U36/img_get_grads_ap_fsqrt_10_no_dsp_32_u/U0/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'inst/get_grads_opr_U0/img_get_grads_fsqsc4_U36/img_get_grads_ap_fsqrt_10_no_dsp_32_u/U0/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/get_grads_opr_U0/img_get_grads_fsqsc4_U36/img_get_grads_ap_fsqrt_10_no_dsp_32_u/U0/i_synth/SQRT_OP.SPD.OP/i_mant_calc.MANT_SQRT/RT[0].ND_DEL' (delay__parameterized0) to 'inst/get_grads_opr_U0/img_get_grads_fsqsc4_U36/img_get_grads_ap_fsqrt_10_no_dsp_32_u/U0/i_synth/SQRT_OP.SPD.OP/i_mant_calc.MANT_SQRT/RT[1].ND_DEL'
+INFO: [Synth 8-223] decloning instance 'inst/get_grads_opr_U0/img_get_grads_fsqsc4_U36/img_get_grads_ap_fsqrt_10_no_dsp_32_u/U0/i_synth/SQRT_OP.SPD.OP/i_mant_calc.MANT_SQRT/RT[3].ND_DEL' (delay__parameterized0) to 'inst/get_grads_opr_U0/img_get_grads_fsqsc4_U36/img_get_grads_ap_fsqrt_10_no_dsp_32_u/U0/i_synth/SQRT_OP.SPD.OP/i_mant_calc.MANT_SQRT/RT[4].ND_DEL'
+INFO: [Synth 8-223] decloning instance 'inst/get_grads_opr_U0/img_get_grads_fsqsc4_U36/img_get_grads_ap_fsqrt_10_no_dsp_32_u/U0/i_synth/SQRT_OP.SPD.OP/i_mant_calc.MANT_SQRT/RT[6].ND_DEL' (delay__parameterized0) to 'inst/get_grads_opr_U0/img_get_grads_fsqsc4_U36/img_get_grads_ap_fsqrt_10_no_dsp_32_u/U0/i_synth/SQRT_OP.SPD.OP/i_mant_calc.MANT_SQRT/RT[7].ND_DEL'
+INFO: [Synth 8-223] decloning instance 'inst/get_grads_opr_U0/img_get_grads_fsqsc4_U36/img_get_grads_ap_fsqrt_10_no_dsp_32_u/U0/i_synth/SQRT_OP.SPD.OP/i_mant_calc.MANT_SQRT/RT[9].ND_DEL' (delay__parameterized0) to 'inst/get_grads_opr_U0/img_get_grads_fsqsc4_U36/img_get_grads_ap_fsqrt_10_no_dsp_32_u/U0/i_synth/SQRT_OP.SPD.OP/i_mant_calc.MANT_SQRT/RT[10].ND_DEL'
+INFO: [Synth 8-223] decloning instance 'inst/get_grads_opr_U0/img_get_grads_fsqsc4_U36/img_get_grads_ap_fsqrt_10_no_dsp_32_u/U0/i_synth/SQRT_OP.SPD.OP/i_mant_calc.MANT_SQRT/RT[12].ND_DEL' (delay__parameterized0) to 'inst/get_grads_opr_U0/img_get_grads_fsqsc4_U36/img_get_grads_ap_fsqrt_10_no_dsp_32_u/U0/i_synth/SQRT_OP.SPD.OP/i_mant_calc.MANT_SQRT/RT[13].ND_DEL'
+INFO: [Synth 8-223] decloning instance 'inst/get_grads_opr_U0/img_get_grads_fsqsc4_U36/img_get_grads_ap_fsqrt_10_no_dsp_32_u/U0/i_synth/SQRT_OP.SPD.OP/i_mant_calc.MANT_SQRT/RT[15].ND_DEL' (delay__parameterized0) to 'inst/get_grads_opr_U0/img_get_grads_fsqsc4_U36/img_get_grads_ap_fsqrt_10_no_dsp_32_u/U0/i_synth/SQRT_OP.SPD.OP/i_mant_calc.MANT_SQRT/RT[16].ND_DEL'
+INFO: [Synth 8-223] decloning instance 'inst/get_grads_opr_U0/img_get_grads_fsqsc4_U36/img_get_grads_ap_fsqrt_10_no_dsp_32_u/U0/i_synth/SQRT_OP.SPD.OP/i_mant_calc.MANT_SQRT/RT[18].ND_DEL' (delay__parameterized0) to 'inst/get_grads_opr_U0/img_get_grads_fsqsc4_U36/img_get_grads_ap_fsqrt_10_no_dsp_32_u/U0/i_synth/SQRT_OP.SPD.OP/i_mant_calc.MANT_SQRT/RT[19].ND_DEL'
+INFO: [Synth 8-223] decloning instance 'inst/get_grads_opr_U0/img_get_grads_fsqsc4_U36/img_get_grads_ap_fsqrt_10_no_dsp_32_u/U0/i_synth/SQRT_OP.SPD.OP/i_mant_calc.MANT_SQRT/RT[21].ND_DEL' (delay__parameterized0) to 'inst/get_grads_opr_U0/img_get_grads_fsqsc4_U36/img_get_grads_ap_fsqrt_10_no_dsp_32_u/U0/i_synth/SQRT_OP.SPD.OP/i_mant_calc.MANT_SQRT/RT[22].ND_DEL'
+INFO: [Synth 8-223] decloning instance 'inst/get_grads_opr_U0/img_get_grads_fsqsc4_U36/img_get_grads_ap_fsqrt_10_no_dsp_32_u/U0/i_synth/SQRT_OP.SPD.OP/i_mant_calc.ROUND/EXTRA_LSB_BIT_DEL' (delay__parameterized0) to 'inst/get_grads_opr_U0/img_get_grads_fsqsc4_U36/img_get_grads_ap_fsqrt_10_no_dsp_32_u/U0/i_synth/SQRT_OP.SPD.OP/i_mant_calc.ROUND/EXTRA_LSB_RND1_DEL'
+INFO: [Synth 8-223] decloning instance 'inst/get_grads_opr_U0/img_get_grads_fsqsc4_U36/img_get_grads_ap_fsqrt_10_no_dsp_32_u/U0/i_synth/SQRT_OP.SPD.OP/i_mant_calc.ROUND/EXP_INC_DELAY' (delay__parameterized0) to 'inst/get_grads_opr_U0/img_get_grads_fsqsc4_U36/img_get_grads_ap_fsqrt_10_no_dsp_32_u/U0/i_synth/SQRT_OP.SPD.OP/i_mant_calc.ROUND/EXP_INC_RND1_DELAY'
+INFO: [Synth 8-223] decloning instance 'inst/get_grads_opr_U0/img_get_grads_fsqsc4_U36/img_get_grads_ap_fsqrt_10_no_dsp_32_u/U0/i_synth/SQRT_OP.SPD.OP/i_mant_calc.ROUND/NORMALIZE_DEL' (delay__parameterized42) to 'inst/get_grads_opr_U0/img_get_grads_fsqsc4_U36/img_get_grads_ap_fsqrt_10_no_dsp_32_u/U0/i_synth/SQRT_OP.SPD.OP/i_mant_calc.ROUND/NORMALIZE_RND1_DEL'
+INFO: [Synth 8-223] decloning instance 'inst/get_grads_opr_U0/img_get_grads_fsqsc4_U36/img_get_grads_ap_fsqrt_10_no_dsp_32_u/U0/i_synth/SQRT_OP.SPD.OP/i_mant_calc.ROUND/EXP_IN_DELAY.EXP_IN_DEL' (delay__parameterized27) to 'inst/get_grads_opr_U0/img_get_grads_fsqsc4_U36/img_get_grads_ap_fsqrt_10_no_dsp_32_u/U0/i_synth/SQRT_OP.SPD.OP/i_mant_calc.ROUND/EXP_RND2_DELAY.EXP_RND_DEL'
+INFO: [Synth 8-223] decloning instance 'inst/get_grads_opr_U0/img_get_grads_fsqsc4_U36/img_get_grads_ap_fsqrt_10_no_dsp_32_u/U0/i_synth/SQRT_OP.SPD.OP/i_mant_calc.ROUND/EXP_IN_DELAY.EXP_OFF_OP_DEL' (delay__parameterized27) to 'inst/get_grads_opr_U0/img_get_grads_fsqsc4_U36/img_get_grads_ap_fsqrt_10_no_dsp_32_u/U0/i_synth/SQRT_OP.SPD.OP/i_mant_calc.ROUND/EXP_RND2_DELAY.EXP_OFF_RND_DEL'
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-6014] Unused sequential element A was removed.  [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/pown_generic_float_s.v:1374]
+INFO: [Synth 8-5542] Attribute ram_style/rom_style = distributed specified for ROM  "p_0_out". This will be implemented in logic
+INFO: [Synth 8-5542] Attribute ram_style/rom_style = distributed specified for ROM  "p_0_out". This will be implemented in logic
+INFO: [Synth 8-5587] ROM size for "p_0_out" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5542] Attribute ram_style/rom_style = distributed specified for ROM  "p_0_out". This will be implemented in logic
+INFO: [Synth 8-5546] ROM "tmp_i1_fu_391_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tmp_i_fu_717_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tmp_4_fu_727_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tmp_18_fu_1063_p2" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element pow_reduce_anonymo_6_U/pown_generic_floacud_rom_U/q0_reg was removed.  [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/pown_generic_floacud.v:33]
+WARNING: [Synth 8-6014] Unused sequential element pow_reduce_anonymo_8_U/pown_generic_floafYi_rom_U/q0_reg was removed.  [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/pown_generic_floafYi.v:33]
+WARNING: [Synth 8-6014] Unused sequential element pow_reduce_anonymo_11_U/pown_generic_floag8j_rom_U/q0_reg was removed.  [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/pown_generic_floag8j.v:33]
+WARNING: [Synth 8-6014] Unused sequential element p_Val2_72_reg_1582_pp0_iter6_reg_reg was removed.  [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/pown_generic_float_s.v:919]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 3 [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/img_get_grads_mulkbM.v:20]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/img_get_grads_mulibs.v:20]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/pown_generic_float_s.v:1298]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 3 [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/img_get_grads_muljbC.v:24]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/pown_generic_float_s.v:1328]
+WARNING: [Synth 8-6014] Unused sequential element img_get_grads_mulibs_U15/img_get_grads_mulibs_MulnS_0_U/p_reg was removed.  [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/img_get_grads_mulibs.v:23]
+WARNING: [Synth 8-6014] Unused sequential element img_get_grads_muljbC_U16/img_get_grads_muljbC_MulnS_1_U/buff0_reg was removed.  [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/img_get_grads_muljbC.v:23]
+WARNING: [Synth 8-6014] Unused sequential element img_get_grads_mulkbM_U17/img_get_grads_mulkbM_MulnS_2_U/p_reg was removed.  [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/img_get_grads_mulkbM.v:23]
+WARNING: [Synth 8-6014] Unused sequential element p_Val2_1_reg_1571_reg was removed.  [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/pown_generic_float_s.v:899]
+WARNING: [Synth 8-6014] Unused sequential element pow_reduce_anonymo_7_U/pown_generic_floabkb_rom_U/q0_reg was removed.  [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/pown_generic_floabkb.v:33]
+WARNING: [Synth 8-6014] Unused sequential element img_get_grads_muljbC_U16/img_get_grads_muljbC_MulnS_1_U/b_reg0_reg was removed.  [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/img_get_grads_muljbC.v:24]
+WARNING: [Synth 8-6014] Unused sequential element img_get_grads_muljbC_U16/img_get_grads_muljbC_MulnS_1_U/a_reg0_reg was removed.  [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/img_get_grads_muljbC.v:24]
+WARNING: [Synth 8-6014] Unused sequential element B was removed.  [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/pown_generic_float_s.v:1344]
+WARNING: [Synth 8-6014] Unused sequential element B was removed.  [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/pown_generic_float_s.v:1374]
+WARNING: [Synth 8-6014] Unused sequential element B was removed. 
+WARNING: [Synth 8-6014] Unused sequential element tmp_16_reg_1730_reg was removed.  [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/pown_generic_float_s.v:619]
+WARNING: [Synth 8-6014] Unused sequential element A was removed.  [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/pown_generic_float_s.v:1374]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/pown_generic_float_s.v:1344]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/pown_generic_float_s.v:1344]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/pown_generic_float_s.v:1298]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/pown_generic_float_s.v:1298]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/pown_generic_float_s.v:899]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/pown_generic_float_s.v:899]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/img_get_grads_muljbC.v:23]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/img_get_grads_muljbC.v:23]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/img_get_grads_muljbC.v:24]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/img_get_grads_muljbC.v:24]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/img_get_grads_muljbC.v:23]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/img_get_grads_muljbC.v:23]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/pown_generic_float_s.v:1374]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/pown_generic_float_s.v:1374]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/pown_generic_float_s.v:1374]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/pown_generic_float_s.v:1374]
+INFO: [Synth 8-4471] merging register 'r_exp_V_3_reg_1751_reg[9:0]' into 'r_exp_V_3_reg_1751_reg[9:0]' [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/pown_generic_float_s.v:928]
+INFO: [Synth 8-4471] merging register 'r_exp_V_3_reg_1751_reg[9:0]' into 'r_exp_V_3_reg_1751_reg[9:0]' [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/pown_generic_float_s.v:928]
+WARNING: [Synth 8-6014] Unused sequential element B was removed.  [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/pown_generic_float_s.v:899]
+WARNING: [Synth 8-6014] Unused sequential element B was removed.  [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/img_get_grads_muljbC.v:24]
+WARNING: [Synth 8-6014] Unused sequential element B was removed.  [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/img_get_grads_muljbC.v:23]
+WARNING: [Synth 8-6014] Unused sequential element A was removed.  [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/pown_generic_float_s.v:1374]
+WARNING: [Synth 8-6014] Unused sequential element r_exp_V_3_reg_1751_reg was removed.  [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/pown_generic_float_s.v:928]
+WARNING: [Synth 8-6014] Unused sequential element r_exp_V_3_reg_1751_reg was removed.  [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/pown_generic_float_s.v:928]
+INFO: [Synth 8-5542] Attribute ram_style/rom_style = distributed specified for ROM  "p_0_out". This will be implemented in logic
+INFO: [Synth 8-5544] ROM "p_0_out" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "tmp_i1_fu_391_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tmp_i_fu_717_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tmp_4_fu_727_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tmp_18_fu_1063_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5542] Attribute ram_style/rom_style = distributed specified for ROM  "p_0_out". This will be implemented in logic
+WARNING: [Synth 8-6014] Unused sequential element pow_reduce_anonymo_6_U/pown_generic_floacud_rom_U/q0_reg was removed.  [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/pown_generic_floacud.v:33]
+WARNING: [Synth 8-6014] Unused sequential element pow_reduce_anonymo_8_U/pown_generic_floafYi_rom_U/q0_reg was removed.  [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/pown_generic_floafYi.v:33]
+WARNING: [Synth 8-6014] Unused sequential element p_Val2_72_reg_1582_pp0_iter6_reg_reg was removed.  [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/pown_generic_float_s.v:919]
+WARNING: [Synth 8-6014] Unused sequential element pow_reduce_anonymo_11_U/pown_generic_floag8j_rom_U/q0_reg was removed.  [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/pown_generic_floag8j.v:33]
+WARNING: [Synth 8-6014] Unused sequential element B was removed.  [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/pown_generic_float_s.v:1344]
+WARNING: [Synth 8-6014] Unused sequential element B was removed.  [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/pown_generic_float_s.v:1344]
+WARNING: [Synth 8-6014] Unused sequential element B was removed.  [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/pown_generic_float_s.v:899]
+WARNING: [Synth 8-6014] Unused sequential element A was removed.  [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/pown_generic_float_s.v:1298]
+WARNING: [Synth 8-6014] Unused sequential element A was removed.  [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/pown_generic_float_s.v:899]
+WARNING: [Synth 8-6014] Unused sequential element B was removed.  [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/img_get_grads_muljbC.v:23]
+WARNING: [Synth 8-6014] Unused sequential element A was removed.  [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/img_get_grads_muljbC.v:23]
+WARNING: [Synth 8-6014] Unused sequential element A was removed.  [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/img_get_grads_muljbC.v:24]
+WARNING: [Synth 8-6014] Unused sequential element A was removed.  [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/img_get_grads_muljbC.v:23]
+WARNING: [Synth 8-6014] Unused sequential element B was removed.  [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/pown_generic_float_s.v:1374]
+WARNING: [Synth 8-6014] Unused sequential element A was removed.  [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/pown_generic_float_s.v:1374]
+WARNING: [Synth 8-6014] Unused sequential element B was removed.  [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/pown_generic_float_s.v:1374]
+WARNING: [Synth 8-6014] Unused sequential element tmp_16_reg_1730_reg was removed.  [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/pown_generic_float_s.v:619]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/pown_generic_float_s.v:1298]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/pown_generic_float_s.v:899]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/pown_generic_float_s.v:899]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/img_get_grads_muljbC.v:23]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/img_get_grads_muljbC.v:23]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/img_get_grads_muljbC.v:24]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/img_get_grads_muljbC.v:24]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/img_get_grads_muljbC.v:23]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/img_get_grads_muljbC.v:23]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/pown_generic_float_s.v:1374]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/pown_generic_float_s.v:1374]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/pown_generic_float_s.v:1374]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/pown_generic_float_s.v:1374]
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/COND_DET_A/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/COND_DET_A/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/COND_DET_B/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/COND_DET_B/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/exp_over_int" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/ip_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "SQRT_OP.SPD.OP/i_mant_calc.EXP/COND_DET_A/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "SQRT_OP.SPD.OP/i_mant_calc.EXP/COND_DET_A/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-4471] merging register 'get_grads_opr_U0/img_get_grads_sitrcU_U34/ce_r_reg' into 'get_grads_opr_U0/img_get_grads_fadqcK_U33/ce_r_reg' [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/img_get_grads_sitrcU.v:46]
+INFO: [Synth 8-4471] merging register 'get_grads_opr_U0/img_get_grads_sitrcU_U35/ce_r_reg' into 'get_grads_opr_U0/img_get_grads_fadqcK_U33/ce_r_reg' [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/img_get_grads_sitrcU.v:46]
+INFO: [Synth 8-4471] merging register 'get_grads_opr_U0/img_get_grads_fsqsc4_U36/ce_r_reg' into 'get_grads_opr_U0/img_get_grads_fadqcK_U33/ce_r_reg' [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/img_get_grads_fsqsc4.v:48]
+WARNING: [Synth 8-6014] Unused sequential element get_grads_opr_U0/img_get_grads_sitrcU_U34/ce_r_reg was removed.  [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/img_get_grads_sitrcU.v:46]
+WARNING: [Synth 8-6014] Unused sequential element get_grads_opr_U0/img_get_grads_sitrcU_U35/ce_r_reg was removed.  [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/img_get_grads_sitrcU.v:46]
+WARNING: [Synth 8-6014] Unused sequential element get_grads_opr_U0/img_get_grads_fsqsc4_U36/ce_r_reg was removed.  [e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ipshared/332c/hdl/verilog/img_get_grads_fsqsc4.v:48]
+INFO: [Synth 8-5544] ROM "AXIvideo2Mat_U0/" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "get_grads_opr_U0/icmp_fu_399_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Mat2AXIvideo_U0/exitcond_fu_176_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Mat2AXIvideo_U0/exitcond1_fu_164_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Mat2AXIvideo_U0/axi_last_V_fu_188_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-3886] merging instance 'pown_generic_float_s:/loc_V_1_reg_1512_reg[22]' (FDE) to 'pown_generic_float_s:/tmp_32_reg_1520_reg[0]'
+INFO: [Synth 8-3886] merging instance 'pown_generic_float_s:/loc_V_1_reg_1512_pp0_iter1_reg_reg[22]' (FDE) to 'pown_generic_float_s:/tmp_32_reg_1520_pp0_iter1_reg_reg[0]'
+INFO: [Synth 8-3886] merging instance 'pown_generic_float_s:/p_Val2_48_reg_1576_reg[0]' (FDE) to 'pown_generic_float_s:/tmp_14_reg_1588_reg[0]'
+INFO: [Synth 8-3886] merging instance 'pown_generic_float_s:/p_Val2_6_reg_1556_reg[21]' (FDE) to 'pown_generic_float_s:/p_Val2_s_reg_1565_reg[0]'
+INFO: [Synth 8-3886] merging instance 'pown_generic_float_s:/p_Val2_6_reg_1556_reg[22]' (FDE) to 'pown_generic_float_s:/p_Val2_s_reg_1565_reg[1]'
+INFO: [Synth 8-3886] merging instance 'pown_generic_float_s:/p_Val2_6_reg_1556_reg[23]' (FDE) to 'pown_generic_float_s:/p_Val2_s_reg_1565_reg[2]'
+INFO: [Synth 8-3886] merging instance 'pown_generic_float_s:/p_Val2_6_reg_1556_reg[24]' (FDE) to 'pown_generic_float_s:/p_Val2_s_reg_1565_reg[3]'
+INFO: [Synth 8-3886] merging instance 'pown_generic_float_s:/p_Val2_48_reg_1576_reg[13]' (FDE) to 'pown_generic_float_s:/tmp_14_reg_1588_reg[13]'
+INFO: [Synth 8-3886] merging instance 'pown_generic_float_s:/p_Val2_6_reg_1556_pp0_iter3_reg_reg[21]' (FDE) to 'pown_generic_float_s:/p_Val2_s_reg_1565_pp0_iter3_reg_reg[0]'
+INFO: [Synth 8-3886] merging instance 'pown_generic_float_s:/p_Val2_6_reg_1556_pp0_iter3_reg_reg[22]' (FDE) to 'pown_generic_float_s:/p_Val2_s_reg_1565_pp0_iter3_reg_reg[1]'
+INFO: [Synth 8-3886] merging instance 'pown_generic_float_s:/p_Val2_6_reg_1556_pp0_iter3_reg_reg[23]' (FDE) to 'pown_generic_float_s:/p_Val2_s_reg_1565_pp0_iter3_reg_reg[2]'
+INFO: [Synth 8-3886] merging instance 'pown_generic_float_s:/p_Val2_6_reg_1556_pp0_iter3_reg_reg[24]' (FDE) to 'pown_generic_float_s:/p_Val2_s_reg_1565_pp0_iter3_reg_reg[3]'
+INFO: [Synth 8-3886] merging instance 'pown_generic_float_s:/p_Val2_48_reg_1576_reg[1]' (FDE) to 'pown_generic_float_s:/tmp_14_reg_1588_reg[1]'
+INFO: [Synth 8-3886] merging instance 'pown_generic_float_s:/p_Val2_48_reg_1576_reg[2]' (FDE) to 'pown_generic_float_s:/tmp_14_reg_1588_reg[2]'
+INFO: [Synth 8-3886] merging instance 'pown_generic_float_s:/p_Val2_48_reg_1576_reg[3]' (FDE) to 'pown_generic_float_s:/tmp_14_reg_1588_reg[3]'
+INFO: [Synth 8-3886] merging instance 'pown_generic_float_s:/p_Val2_48_reg_1576_reg[4]' (FDE) to 'pown_generic_float_s:/tmp_14_reg_1588_reg[4]'
+INFO: [Synth 8-3886] merging instance 'pown_generic_float_s:/p_Val2_48_reg_1576_reg[5]' (FDE) to 'pown_generic_float_s:/tmp_14_reg_1588_reg[5]'
+INFO: [Synth 8-3886] merging instance 'pown_generic_float_s:/p_Val2_48_reg_1576_reg[6]' (FDE) to 'pown_generic_float_s:/tmp_14_reg_1588_reg[6]'
+INFO: [Synth 8-3886] merging instance 'pown_generic_float_s:/p_Val2_48_reg_1576_reg[7]' (FDE) to 'pown_generic_float_s:/tmp_14_reg_1588_reg[7]'
+INFO: [Synth 8-3886] merging instance 'pown_generic_float_s:/p_Val2_48_reg_1576_reg[8]' (FDE) to 'pown_generic_float_s:/tmp_14_reg_1588_reg[8]'
+INFO: [Synth 8-3886] merging instance 'pown_generic_float_s:/p_Val2_48_reg_1576_reg[9]' (FDE) to 'pown_generic_float_s:/tmp_14_reg_1588_reg[9]'
+INFO: [Synth 8-3886] merging instance 'pown_generic_float_s:/p_Val2_48_reg_1576_reg[10]' (FDE) to 'pown_generic_float_s:/tmp_14_reg_1588_reg[10]'
+INFO: [Synth 8-3886] merging instance 'pown_generic_float_s:/p_Val2_48_reg_1576_reg[11]' (FDE) to 'pown_generic_float_s:/tmp_14_reg_1588_reg[11]'
+INFO: [Synth 8-3886] merging instance 'pown_generic_float_s:/p_Val2_48_reg_1576_reg[12]' (FDE) to 'pown_generic_float_s:/tmp_14_reg_1588_reg[12]'
+INFO: [Synth 8-3886] merging instance 'pown_generic_float_s:/p_Val2_48_reg_1576_reg[14]' (FDE) to 'pown_generic_float_s:/tmp_14_reg_1588_reg[14]'
+INFO: [Synth 8-3886] merging instance 'pown_generic_float_s:/p_Val2_48_reg_1576_reg[15]' (FDE) to 'pown_generic_float_s:/tmp_14_reg_1588_reg[15]'
+INFO: [Synth 8-3886] merging instance 'pown_generic_float_s:/p_Val2_48_reg_1576_reg[16]' (FDE) to 'pown_generic_float_s:/tmp_14_reg_1588_reg[16]'
+INFO: [Synth 8-3886] merging instance 'pown_generic_float_s:/p_Val2_48_reg_1576_reg[17]' (FDE) to 'pown_generic_float_s:/tmp_14_reg_1588_reg[17]'
+INFO: [Synth 8-3886] merging instance 'pown_generic_float_s:/p_Val2_48_reg_1576_reg[18]' (FDE) to 'pown_generic_float_s:/tmp_14_reg_1588_reg[18]'
+INFO: [Synth 8-3886] merging instance 'pown_generic_float_s:/p_Val2_48_reg_1576_reg[19]' (FDE) to 'pown_generic_float_s:/tmp_14_reg_1588_reg[19]'
+INFO: [Synth 8-3886] merging instance 'pown_generic_float_s:/p_Val2_48_reg_1576_reg[20]' (FDE) to 'pown_generic_float_s:/tmp_14_reg_1588_reg[20]'
+INFO: [Synth 8-3886] merging instance 'pown_generic_float_s:/p_Val2_48_reg_1576_reg[21]' (FDE) to 'pown_generic_float_s:/tmp_14_reg_1588_reg[21]'
+INFO: [Synth 8-3886] merging instance 'pown_generic_float_s:/p_Val2_48_reg_1576_reg[22]' (FDE) to 'pown_generic_float_s:/tmp_14_reg_1588_reg[22]'
+INFO: [Synth 8-3886] merging instance 'pown_generic_float_s:/p_Val2_48_reg_1576_reg[23]' (FDE) to 'pown_generic_float_s:/tmp_14_reg_1588_reg[23]'
+INFO: [Synth 8-3886] merging instance 'pown_generic_float_s:/p_Val2_48_reg_1576_reg[24]' (FDE) to 'pown_generic_float_s:/tmp_14_reg_1588_reg[24]'
+INFO: [Synth 8-3886] merging instance 'pown_generic_float_s:/p_Val2_48_reg_1576_reg[25]' (FDE) to 'pown_generic_float_s:/tmp_14_reg_1588_reg[25]'
+INFO: [Synth 8-3886] merging instance 'pown_generic_float_s:/p_Val2_48_reg_1576_reg[26]' (FDE) to 'pown_generic_float_s:/tmp_14_reg_1588_reg[26]'
+INFO: [Synth 8-3886] merging instance 'pown_generic_float_s:/p_Val2_48_reg_1576_reg[27]' (FDE) to 'pown_generic_float_s:/tmp_14_reg_1588_reg[27]'
+INFO: [Synth 8-3886] merging instance 'pown_generic_float_s:/p_Val2_48_reg_1576_reg[28]' (FDE) to 'pown_generic_float_s:/tmp_14_reg_1588_reg[28]'
+INFO: [Synth 8-3886] merging instance 'pown_generic_float_s:/p_Val2_48_reg_1576_reg[29]' (FDE) to 'pown_generic_float_s:/tmp_14_reg_1588_reg[29]'
+INFO: [Synth 8-3886] merging instance 'pown_generic_float_s:/p_Val2_48_reg_1576_reg[30]' (FDE) to 'pown_generic_float_s:/tmp_14_reg_1588_reg[30]'
+INFO: [Synth 8-3886] merging instance 'pown_generic_float_s:/p_Val2_48_reg_1576_reg[31]' (FDE) to 'pown_generic_float_s:/tmp_14_reg_1588_reg[31]'
+INFO: [Synth 8-3886] merging instance 'pown_generic_float_s:/p_Val2_48_reg_1576_reg[32]' (FDE) to 'pown_generic_float_s:/tmp_14_reg_1588_reg[32]'
+INFO: [Synth 8-3886] merging instance 'pown_generic_float_s:/p_Val2_48_reg_1576_reg[33]' (FDE) to 'pown_generic_float_s:/tmp_14_reg_1588_reg[33]'
+INFO: [Synth 8-3886] merging instance 'pown_generic_float_s:/p_Val2_48_reg_1576_reg[34]' (FDE) to 'pown_generic_float_s:/tmp_14_reg_1588_reg[34]'
+INFO: [Synth 8-3886] merging instance 'pown_generic_float_s:/p_Val2_48_reg_1576_reg[35]' (FDE) to 'pown_generic_float_s:/p_Val2_72_reg_1582_reg[0]'
+INFO: [Synth 8-3886] merging instance 'pown_generic_float_s:/p_Val2_48_reg_1576_reg[36]' (FDE) to 'pown_generic_float_s:/p_Val2_72_reg_1582_reg[1]'
+INFO: [Synth 8-3886] merging instance 'pown_generic_float_s:/p_Val2_48_reg_1576_reg[37]' (FDE) to 'pown_generic_float_s:/p_Val2_72_reg_1582_reg[2]'
+INFO: [Synth 8-3886] merging instance 'pown_generic_float_s:/p_Val2_48_reg_1576_reg[38]' (FDE) to 'pown_generic_float_s:/p_Val2_72_reg_1582_reg[3]'
+INFO: [Synth 8-3886] merging instance 'pown_generic_float_s:/p_Val2_48_reg_1576_reg[39]' (FDE) to 'pown_generic_float_s:/p_Val2_72_reg_1582_reg[4]'
+INFO: [Synth 8-3886] merging instance 'pown_generic_float_s:/p_Val2_48_reg_1576_reg[40]' (FDE) to 'pown_generic_float_s:/p_Val2_72_reg_1582_reg[5]'
+INFO: [Synth 8-3886] merging instance 'pown_generic_float_s:/p_Val2_51_reg_1613_reg[0]' (FDE) to 'pown_generic_float_s:/tmp_19_reg_1629_reg[0]'
+INFO: [Synth 8-3886] merging instance 'pown_generic_float_s:/p_Val2_51_reg_1613_reg[1]' (FDE) to 'pown_generic_float_s:/tmp_19_reg_1629_reg[1]'
+INFO: [Synth 8-3886] merging instance 'pown_generic_float_s:/p_Val2_51_reg_1613_reg[2]' (FDE) to 'pown_generic_float_s:/tmp_19_reg_1629_reg[2]'
+INFO: [Synth 8-3886] merging instance 'pown_generic_float_s:/p_Val2_51_reg_1613_reg[3]' (FDE) to 'pown_generic_float_s:/tmp_19_reg_1629_reg[3]'
+INFO: [Synth 8-3886] merging instance 'pown_generic_float_s:/p_Val2_51_reg_1613_reg[4]' (FDE) to 'pown_generic_float_s:/tmp_19_reg_1629_reg[4]'
+INFO: [Synth 8-3886] merging instance 'pown_generic_float_s:/p_Val2_51_reg_1613_reg[5]' (FDE) to 'pown_generic_float_s:/tmp_19_reg_1629_reg[5]'
+INFO: [Synth 8-3886] merging instance 'pown_generic_float_s:/p_Val2_73_reg_1624_reg[0]' (FDE) to 'pown_generic_float_s:/p_Val2_51_reg_1613_reg[38]'
+INFO: [Synth 8-3886] merging instance 'pown_generic_float_s:/p_Val2_73_reg_1624_reg[1]' (FDE) to 'pown_generic_float_s:/p_Val2_51_reg_1613_reg[39]'
+INFO: [Synth 8-3886] merging instance 'pown_generic_float_s:/p_Val2_73_reg_1624_reg[2]' (FDE) to 'pown_generic_float_s:/p_Val2_51_reg_1613_reg[40]'
+INFO: [Synth 8-3886] merging instance 'pown_generic_float_s:/p_Val2_73_reg_1624_reg[3]' (FDE) to 'pown_generic_float_s:/p_Val2_51_reg_1613_reg[41]'
+INFO: [Synth 8-3886] merging instance 'pown_generic_float_s:/p_Val2_73_reg_1624_reg[4]' (FDE) to 'pown_generic_float_s:/p_Val2_51_reg_1613_reg[42]'
+INFO: [Synth 8-3886] merging instance 'pown_generic_float_s:/p_Val2_73_reg_1624_reg[5]' (FDE) to 'pown_generic_float_s:/p_Val2_51_reg_1613_reg[43]'
+INFO: [Synth 8-3886] merging instance 'pown_generic_float_s:/p_Val2_51_reg_1613_reg[6]' (FDE) to 'pown_generic_float_s:/tmp_19_reg_1629_reg[6]'
+INFO: [Synth 8-3886] merging instance 'pown_generic_float_s:/p_Val2_51_reg_1613_reg[7]' (FDE) to 'pown_generic_float_s:/tmp_19_reg_1629_reg[7]'
+INFO: [Synth 8-3886] merging instance 'pown_generic_float_s:/p_Val2_51_reg_1613_reg[8]' (FDE) to 'pown_generic_float_s:/tmp_19_reg_1629_reg[8]'
+INFO: [Synth 8-3886] merging instance 'pown_generic_float_s:/p_Val2_51_reg_1613_reg[9]' (FDE) to 'pown_generic_float_s:/tmp_19_reg_1629_reg[9]'
+INFO: [Synth 8-3886] merging instance 'pown_generic_float_s:/p_Val2_51_reg_1613_reg[10]' (FDE) to 'pown_generic_float_s:/tmp_19_reg_1629_reg[10]'
+INFO: [Synth 8-3886] merging instance 'pown_generic_float_s:/p_Val2_51_reg_1613_reg[11]' (FDE) to 'pown_generic_float_s:/tmp_19_reg_1629_reg[11]'
+INFO: [Synth 8-3886] merging instance 'pown_generic_float_s:/p_Val2_51_reg_1613_reg[12]' (FDE) to 'pown_generic_float_s:/tmp_19_reg_1629_reg[12]'
+INFO: [Synth 8-3886] merging instance 'pown_generic_float_s:/p_Val2_51_reg_1613_reg[13]' (FDE) to 'pown_generic_float_s:/tmp_19_reg_1629_reg[13]'
+INFO: [Synth 8-3886] merging instance 'pown_generic_float_s:/p_Val2_51_reg_1613_reg[14]' (FDE) to 'pown_generic_float_s:/tmp_19_reg_1629_reg[14]'
+INFO: [Synth 8-3886] merging instance 'pown_generic_float_s:/p_Val2_51_reg_1613_reg[15]' (FDE) to 'pown_generic_float_s:/tmp_19_reg_1629_reg[15]'
+INFO: [Synth 8-3886] merging instance 'pown_generic_float_s:/p_Val2_51_reg_1613_reg[16]' (FDE) to 'pown_generic_float_s:/tmp_19_reg_1629_reg[16]'
+INFO: [Synth 8-3886] merging instance 'pown_generic_float_s:/p_Val2_51_reg_1613_reg[17]' (FDE) to 'pown_generic_float_s:/tmp_19_reg_1629_reg[17]'
+INFO: [Synth 8-3886] merging instance 'pown_generic_float_s:/p_Val2_51_reg_1613_reg[18]' (FDE) to 'pown_generic_float_s:/tmp_19_reg_1629_reg[18]'
+INFO: [Synth 8-3886] merging instance 'pown_generic_float_s:/p_Val2_51_reg_1613_reg[19]' (FDE) to 'pown_generic_float_s:/tmp_19_reg_1629_reg[19]'
+INFO: [Synth 8-3886] merging instance 'pown_generic_float_s:/p_Val2_51_reg_1613_reg[20]' (FDE) to 'pown_generic_float_s:/tmp_19_reg_1629_reg[20]'
+INFO: [Synth 8-3886] merging instance 'pown_generic_float_s:/p_Val2_51_reg_1613_reg[21]' (FDE) to 'pown_generic_float_s:/tmp_19_reg_1629_reg[21]'
+INFO: [Synth 8-3886] merging instance 'pown_generic_float_s:/p_Val2_51_reg_1613_reg[22]' (FDE) to 'pown_generic_float_s:/tmp_19_reg_1629_reg[22]'
+INFO: [Synth 8-3886] merging instance 'pown_generic_float_s:/p_Val2_51_reg_1613_reg[23]' (FDE) to 'pown_generic_float_s:/tmp_19_reg_1629_reg[23]'
+INFO: [Synth 8-3886] merging instance 'pown_generic_float_s:/p_Val2_51_reg_1613_reg[24]' (FDE) to 'pown_generic_float_s:/tmp_19_reg_1629_reg[24]'
+INFO: [Synth 8-3886] merging instance 'pown_generic_float_s:/p_Val2_51_reg_1613_reg[25]' (FDE) to 'pown_generic_float_s:/tmp_19_reg_1629_reg[25]'
+INFO: [Synth 8-3886] merging instance 'pown_generic_float_s:/p_Val2_51_reg_1613_reg[26]' (FDE) to 'pown_generic_float_s:/tmp_19_reg_1629_reg[26]'
+INFO: [Synth 8-3886] merging instance 'pown_generic_float_s:/p_Val2_51_reg_1613_reg[27]' (FDE) to 'pown_generic_float_s:/tmp_19_reg_1629_reg[27]'
+INFO: [Synth 8-3886] merging instance 'pown_generic_float_s:/p_Val2_51_reg_1613_reg[28]' (FDE) to 'pown_generic_float_s:/tmp_19_reg_1629_reg[28]'
+INFO: [Synth 8-3886] merging instance 'pown_generic_float_s:/p_Val2_51_reg_1613_reg[29]' (FDE) to 'pown_generic_float_s:/tmp_19_reg_1629_reg[29]'
+INFO: [Synth 8-3886] merging instance 'pown_generic_float_s:/p_Val2_51_reg_1613_reg[30]' (FDE) to 'pown_generic_float_s:/tmp_19_reg_1629_reg[30]'
+INFO: [Synth 8-3886] merging instance 'pown_generic_float_s:/p_Val2_51_reg_1613_reg[31]' (FDE) to 'pown_generic_float_s:/tmp_19_reg_1629_reg[31]'
+INFO: [Synth 8-3886] merging instance 'pown_generic_float_s:/p_Val2_51_reg_1613_reg[32]' (FDE) to 'pown_generic_float_s:/tmp_19_reg_1629_reg[32]'
+INFO: [Synth 8-3886] merging instance 'pown_generic_float_s:/p_Val2_51_reg_1613_reg[33]' (FDE) to 'pown_generic_float_s:/tmp_19_reg_1629_reg[33]'
+INFO: [Synth 8-3886] merging instance 'pown_generic_float_s:/p_Val2_51_reg_1613_reg[34]' (FDE) to 'pown_generic_float_s:/tmp_19_reg_1629_reg[34]'
+INFO: [Synth 8-3886] merging instance 'pown_generic_float_s:/p_Val2_51_reg_1613_reg[35]' (FDE) to 'pown_generic_float_s:/tmp_19_reg_1629_reg[35]'
+INFO: [Synth 8-3886] merging instance 'pown_generic_float_s:/p_Val2_51_reg_1613_reg[36]' (FDE) to 'pown_generic_float_s:/tmp_19_reg_1629_reg[36]'
+INFO: [Synth 8-3886] merging instance 'pown_generic_float_s:/p_Val2_51_reg_1613_reg[37]' (FDE) to 'pown_generic_float_s:/tmp_19_reg_1629_reg[37]'
+INFO: [Synth 8-3886] merging instance 'pown_generic_float_s:/p_Val2_51_reg_1613_pp0_iter8_reg_reg[6]' (FDE) to 'pown_generic_float_s:/tmp_19_reg_1629_pp0_iter8_reg_reg[6]'
+INFO: [Synth 8-3886] merging instance 'pown_generic_float_s:/p_Val2_51_reg_1613_pp0_iter8_reg_reg[7]' (FDE) to 'pown_generic_float_s:/tmp_19_reg_1629_pp0_iter8_reg_reg[7]'
+INFO: [Synth 8-3886] merging instance 'pown_generic_float_s:/p_Val2_51_reg_1613_pp0_iter8_reg_reg[8]' (FDE) to 'pown_generic_float_s:/tmp_19_reg_1629_pp0_iter8_reg_reg[8]'
+INFO: [Synth 8-3886] merging instance 'pown_generic_float_s:/p_Val2_51_reg_1613_pp0_iter8_reg_reg[9]' (FDE) to 'pown_generic_float_s:/tmp_19_reg_1629_pp0_iter8_reg_reg[9]'
+INFO: [Synth 8-3886] merging instance 'pown_generic_float_s:/p_Val2_51_reg_1613_pp0_iter8_reg_reg[10]' (FDE) to 'pown_generic_float_s:/tmp_19_reg_1629_pp0_iter8_reg_reg[10]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (pown_generic_float_s:/\tmp_50_reg_1820_reg[31] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (pown_generic_float_s:/\ap_CS_fsm_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\get_grads_opr_U0/img_get_grads_fsqsc4_U36/img_get_grads_ap_fsqrt_10_no_dsp_32_u/U0 /i_synth/\SQRT_OP.SPD.OP/i_mant_calc.MANT_SQRT/RT[5].Q_DEL/i_pipe/opt_has_pipe.first_q_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\get_grads_opr_U0/tmp_83_cast_i_cast_reg_639_reg[12] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\srcImg_cols_V_c_U/U_fifo_w11_d2_A_ram/SRL_SIG_reg[0][9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\srcImg_cols_V_c_U/U_fifo_w11_d2_A_ram/SRL_SIG_reg[0][10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\Block_proc_U0/ap_done_reg_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\get_grads_opr_U0/ap_done_reg_reg )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\srcImg_rows_V_c_U/U_fifo_w10_d2_A_ram/SRL_SIG_reg[0][8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\srcImg_rows_V_c_U/U_fifo_w10_d2_A_ram/SRL_SIG_reg[0][9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\AXIvideo2Mat_U0/ap_done_reg_reg )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\Block_proc_U0/ap_CS_fsm_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\Mat2AXIvideo_U0/ap_done_reg_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\get_grads_opr_U0/img_get_grads_fadqcK_U33/din0_buf1_reg[31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\get_grads_opr_U0/img_get_grads_fsqsc4_U36/img_get_grads_ap_fsqrt_10_no_dsp_32_u/U0 /i_synth/\SQRT_OP.SPD.OP/i_mant_calc.MANT_SQRT/RT[5].Q_DEL/i_pipe/opt_has_pipe.first_q_reg[6] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\srcImg_cols_V_c_U/U_fifo_w11_d2_A_ram/SRL_SIG_reg[1][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\srcImg_cols_V_c_U/U_fifo_w11_d2_A_ram/SRL_SIG_reg[1][0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\srcImg_rows_V_c_U/U_fifo_w10_d2_A_ram/SRL_SIG_reg[1][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\srcImg_rows_V_c_U/U_fifo_w10_d2_A_ram/SRL_SIG_reg[1][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\get_grads_opr_U0/img_get_grads_fadqcK_U33/img_get_grads_ap_fadd_3_full_dsp_32_u/U0 /i_synth/\ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/A_SIGN_DELAY/i_pipe/opt_has_pipe.first_q_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\get_grads_opr_U0/img_get_grads_fadqcK_U33/din1_buf1_reg[31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\get_grads_opr_U0/img_get_grads_fsqsc4_U36/img_get_grads_ap_fsqrt_10_no_dsp_32_u/U0 /i_synth/\SQRT_OP.SPD.OP/i_mant_calc.MANT_SQRT/RT[5].Q_DEL/i_pipe/opt_has_pipe.first_q_reg[6] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\srcImg_cols_V_c7_U/U_fifo_w11_d2_A_ram/SRL_SIG_reg[0][9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\srcImg_cols_V_c7_U/U_fifo_w11_d2_A_ram/SRL_SIG_reg[0][10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\get_grads_opr_U0/tmp_7_reg_655_reg[1] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\srcImg_rows_V_c6_U/U_fifo_w10_d2_A_ram/SRL_SIG_reg[0][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\srcImg_rows_V_c6_U/U_fifo_w10_d2_A_ram/SRL_SIG_reg[0][9] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\AXIvideo2Mat_U0/rows_V_reg_405_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\AXIvideo2Mat_U0/rows_V_reg_405_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\get_grads_opr_U0/img_get_grads_fadqcK_U33/img_get_grads_ap_fadd_3_full_dsp_32_u/U0 /i_synth/\ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/SUB_DELAY/i_pipe/opt_has_pipe.first_q_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\get_grads_opr_U0/img_get_grads_fsqsc4_U36/img_get_grads_ap_fsqrt_10_no_dsp_32_u/U0 /i_synth/\SQRT_OP.SPD.OP/i_mant_calc.MANT_SQRT/RT[5].Q_DEL/i_pipe/opt_has_pipe.first_q_reg[6] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\srcImg_cols_V_c7_U/U_fifo_w11_d2_A_ram/SRL_SIG_reg[1][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\srcImg_cols_V_c7_U/U_fifo_w11_d2_A_ram/SRL_SIG_reg[1][0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\srcImg_rows_V_c6_U/U_fifo_w10_d2_A_ram/SRL_SIG_reg[1][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\srcImg_rows_V_c6_U/U_fifo_w10_d2_A_ram/SRL_SIG_reg[1][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\get_grads_opr_U0/tmp_7_reg_655_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\get_grads_opr_U0/img_get_grads_fsqsc4_U36/img_get_grads_ap_fsqrt_10_no_dsp_32_u/U0 /i_synth/\SQRT_OP.SPD.OP/i_mant_calc.MANT_SQRT/RT[5].Q_DEL/i_pipe/opt_has_pipe.first_q_reg[6] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\get_grads_opr_U0/tmp_7_reg_655_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\get_grads_opr_U0/tmp_7_reg_655_reg[12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\get_grads_opr_U0/img_get_grads_fsqsc4_U36/img_get_grads_ap_fsqrt_10_no_dsp_32_u/U0 /i_synth/\SQRT_OP.SPD.OP/i_mant_calc.MANT_SQRT/RT[5].Q_DEL/i_pipe/opt_has_pipe.first_q_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\get_grads_opr_U0/img_get_grads_fsqsc4_U36/img_get_grads_ap_fsqrt_10_no_dsp_32_u/U0 /i_synth/\SQRT_OP.SPD.OP/i_mant_calc.MANT_SQRT/RT[5].Q_DEL/i_pipe/opt_has_pipe.first_q_reg[6] )
+WARNING: [Synth 8-3332] Sequential element (p_Val2_1_reg_1571_reg[47]) is unused and will be removed from module pown_generic_float_s.
+WARNING: [Synth 8-3332] Sequential element (p_Val2_1_reg_1571_reg[46]) is unused and will be removed from module pown_generic_float_s.
+WARNING: [Synth 8-3332] Sequential element (p_Val2_1_reg_1571_reg[45]) is unused and will be removed from module pown_generic_float_s.
+WARNING: [Synth 8-3332] Sequential element (p_Val2_1_reg_1571_reg[44]) is unused and will be removed from module pown_generic_float_s.
+WARNING: [Synth 8-3332] Sequential element (p_Val2_1_reg_1571_reg[43]) is unused and will be removed from module pown_generic_float_s.
+WARNING: [Synth 8-3332] Sequential element (p_Val2_1_reg_1571_reg[42]) is unused and will be removed from module pown_generic_float_s.
+WARNING: [Synth 8-3332] Sequential element (p_Val2_1_reg_1571_reg[41]) is unused and will be removed from module pown_generic_float_s.
+WARNING: [Synth 8-3332] Sequential element (p_Val2_1_reg_1571_reg[40]) is unused and will be removed from module pown_generic_float_s.
+WARNING: [Synth 8-3332] Sequential element (p_Val2_1_reg_1571_reg[39]) is unused and will be removed from module pown_generic_float_s.
+WARNING: [Synth 8-3332] Sequential element (p_Val2_1_reg_1571_reg[38]) is unused and will be removed from module pown_generic_float_s.
+WARNING: [Synth 8-3332] Sequential element (p_Val2_1_reg_1571_reg[37]) is unused and will be removed from module pown_generic_float_s.
+WARNING: [Synth 8-3332] Sequential element (p_Val2_1_reg_1571_reg[36]) is unused and will be removed from module pown_generic_float_s.
+WARNING: [Synth 8-3332] Sequential element (p_Val2_1_reg_1571_reg[35]) is unused and will be removed from module pown_generic_float_s.
+WARNING: [Synth 8-3332] Sequential element (p_Val2_1_reg_1571_reg[34]) is unused and will be removed from module pown_generic_float_s.
+WARNING: [Synth 8-3332] Sequential element (p_Val2_1_reg_1571_reg[33]) is unused and will be removed from module pown_generic_float_s.
+WARNING: [Synth 8-3332] Sequential element (p_Val2_1_reg_1571_reg[32]) is unused and will be removed from module pown_generic_float_s.
+WARNING: [Synth 8-3332] Sequential element (p_Val2_1_reg_1571_reg[31]) is unused and will be removed from module pown_generic_float_s.
+WARNING: [Synth 8-3332] Sequential element (p_Val2_1_reg_1571_reg[30]) is unused and will be removed from module pown_generic_float_s.
+WARNING: [Synth 8-3332] Sequential element (p_Val2_1_reg_1571_reg[29]) is unused and will be removed from module pown_generic_float_s.
+WARNING: [Synth 8-3332] Sequential element (p_Val2_1_reg_1571_reg[28]) is unused and will be removed from module pown_generic_float_s.
+WARNING: [Synth 8-3332] Sequential element (p_Val2_1_reg_1571_reg[27]) is unused and will be removed from module pown_generic_float_s.
+WARNING: [Synth 8-3332] Sequential element (p_Val2_1_reg_1571_reg[26]) is unused and will be removed from module pown_generic_float_s.
+WARNING: [Synth 8-3332] Sequential element (p_Val2_1_reg_1571_reg[25]) is unused and will be removed from module pown_generic_float_s.
+WARNING: [Synth 8-3332] Sequential element (p_Val2_1_reg_1571_reg[24]) is unused and will be removed from module pown_generic_float_s.
+WARNING: [Synth 8-3332] Sequential element (p_Val2_1_reg_1571_reg[23]) is unused and will be removed from module pown_generic_float_s.
+WARNING: [Synth 8-3332] Sequential element (p_Val2_1_reg_1571_reg[22]) is unused and will be removed from module pown_generic_float_s.
+WARNING: [Synth 8-3332] Sequential element (p_Val2_1_reg_1571_reg[21]) is unused and will be removed from module pown_generic_float_s.
+WARNING: [Synth 8-3332] Sequential element (p_Val2_1_reg_1571_reg[20]) is unused and will be removed from module pown_generic_float_s.
+WARNING: [Synth 8-3332] Sequential element (p_Val2_1_reg_1571_reg[19]) is unused and will be removed from module pown_generic_float_s.
+WARNING: [Synth 8-3332] Sequential element (p_Val2_1_reg_1571_reg[18]) is unused and will be removed from module pown_generic_float_s.
+WARNING: [Synth 8-3332] Sequential element (p_Val2_1_reg_1571_reg[17]) is unused and will be removed from module pown_generic_float_s.
+WARNING: [Synth 8-3332] Sequential element (img_get_grads_mulibs_U15/img_get_grads_mulibs_MulnS_0_U/p_reg[47]) is unused and will be removed from module pown_generic_float_s.
+WARNING: [Synth 8-3332] Sequential element (img_get_grads_mulibs_U15/img_get_grads_mulibs_MulnS_0_U/p_reg[46]) is unused and will be removed from module pown_generic_float_s.
+WARNING: [Synth 8-3332] Sequential element (img_get_grads_mulibs_U15/img_get_grads_mulibs_MulnS_0_U/p_reg[45]) is unused and will be removed from module pown_generic_float_s.
+WARNING: [Synth 8-3332] Sequential element (img_get_grads_mulibs_U15/img_get_grads_mulibs_MulnS_0_U/p_reg[44]) is unused and will be removed from module pown_generic_float_s.
+WARNING: [Synth 8-3332] Sequential element (img_get_grads_mulibs_U15/img_get_grads_mulibs_MulnS_0_U/p_reg[43]) is unused and will be removed from module pown_generic_float_s.
+WARNING: [Synth 8-3332] Sequential element (img_get_grads_mulibs_U15/img_get_grads_mulibs_MulnS_0_U/p_reg[42]) is unused and will be removed from module pown_generic_float_s.
+WARNING: [Synth 8-3332] Sequential element (img_get_grads_mulibs_U15/img_get_grads_mulibs_MulnS_0_U/p_reg[41]) is unused and will be removed from module pown_generic_float_s.
+WARNING: [Synth 8-3332] Sequential element (img_get_grads_mulibs_U15/img_get_grads_mulibs_MulnS_0_U/p_reg[40]) is unused and will be removed from module pown_generic_float_s.
+WARNING: [Synth 8-3332] Sequential element (img_get_grads_mulibs_U15/img_get_grads_mulibs_MulnS_0_U/p_reg[39]) is unused and will be removed from module pown_generic_float_s.
+WARNING: [Synth 8-3332] Sequential element (img_get_grads_mulibs_U15/img_get_grads_mulibs_MulnS_0_U/p_reg[38]) is unused and will be removed from module pown_generic_float_s.
+WARNING: [Synth 8-3332] Sequential element (img_get_grads_mulibs_U15/img_get_grads_mulibs_MulnS_0_U/p_reg[37]) is unused and will be removed from module pown_generic_float_s.
+WARNING: [Synth 8-3332] Sequential element (img_get_grads_mulibs_U15/img_get_grads_mulibs_MulnS_0_U/p_reg[36]) is unused and will be removed from module pown_generic_float_s.
+WARNING: [Synth 8-3332] Sequential element (img_get_grads_mulibs_U15/img_get_grads_mulibs_MulnS_0_U/p_reg[35]) is unused and will be removed from module pown_generic_float_s.
+WARNING: [Synth 8-3332] Sequential element (img_get_grads_mulibs_U15/img_get_grads_mulibs_MulnS_0_U/p_reg[34]) is unused and will be removed from module pown_generic_float_s.
+WARNING: [Synth 8-3332] Sequential element (img_get_grads_mulibs_U15/img_get_grads_mulibs_MulnS_0_U/p_reg[33]) is unused and will be removed from module pown_generic_float_s.
+WARNING: [Synth 8-3332] Sequential element (img_get_grads_mulibs_U15/img_get_grads_mulibs_MulnS_0_U/p_reg[32]) is unused and will be removed from module pown_generic_float_s.
+WARNING: [Synth 8-3332] Sequential element (img_get_grads_mulibs_U15/img_get_grads_mulibs_MulnS_0_U/p_reg[31]) is unused and will be removed from module pown_generic_float_s.
+WARNING: [Synth 8-3332] Sequential element (img_get_grads_mulibs_U15/img_get_grads_mulibs_MulnS_0_U/p_reg[30]) is unused and will be removed from module pown_generic_float_s.
+WARNING: [Synth 8-3332] Sequential element (img_get_grads_mulibs_U15/img_get_grads_mulibs_MulnS_0_U/p_reg[29]) is unused and will be removed from module pown_generic_float_s.
+WARNING: [Synth 8-3332] Sequential element (img_get_grads_mulibs_U15/img_get_grads_mulibs_MulnS_0_U/p_reg[28]) is unused and will be removed from module pown_generic_float_s.
+WARNING: [Synth 8-3332] Sequential element (img_get_grads_mulibs_U15/img_get_grads_mulibs_MulnS_0_U/p_reg[27]) is unused and will be removed from module pown_generic_float_s.
+WARNING: [Synth 8-3332] Sequential element (img_get_grads_mulibs_U15/img_get_grads_mulibs_MulnS_0_U/p_reg[26]) is unused and will be removed from module pown_generic_float_s.
+WARNING: [Synth 8-3332] Sequential element (img_get_grads_mulibs_U15/img_get_grads_mulibs_MulnS_0_U/p_reg[25]) is unused and will be removed from module pown_generic_float_s.
+WARNING: [Synth 8-3332] Sequential element (img_get_grads_mulibs_U15/img_get_grads_mulibs_MulnS_0_U/p_reg[24]) is unused and will be removed from module pown_generic_float_s.
+WARNING: [Synth 8-3332] Sequential element (img_get_grads_mulibs_U15/img_get_grads_mulibs_MulnS_0_U/p_reg[23]) is unused and will be removed from module pown_generic_float_s.
+WARNING: [Synth 8-3332] Sequential element (img_get_grads_mulibs_U15/img_get_grads_mulibs_MulnS_0_U/p_reg[22]) is unused and will be removed from module pown_generic_float_s.
+WARNING: [Synth 8-3332] Sequential element (img_get_grads_mulibs_U15/img_get_grads_mulibs_MulnS_0_U/p_reg[21]) is unused and will be removed from module pown_generic_float_s.
+WARNING: [Synth 8-3332] Sequential element (img_get_grads_mulibs_U15/img_get_grads_mulibs_MulnS_0_U/p_reg[20]) is unused and will be removed from module pown_generic_float_s.
+WARNING: [Synth 8-3332] Sequential element (img_get_grads_mulibs_U15/img_get_grads_mulibs_MulnS_0_U/p_reg[19]) is unused and will be removed from module pown_generic_float_s.
+WARNING: [Synth 8-3332] Sequential element (img_get_grads_mulibs_U15/img_get_grads_mulibs_MulnS_0_U/p_reg[18]) is unused and will be removed from module pown_generic_float_s.
+WARNING: [Synth 8-3332] Sequential element (img_get_grads_mulibs_U15/img_get_grads_mulibs_MulnS_0_U/p_reg[17]) is unused and will be removed from module pown_generic_float_s.
+WARNING: [Synth 8-3332] Sequential element (p_Val2_3_reg_1593_reg[0]) is unused and will be removed from module pown_generic_float_s.
+WARNING: [Synth 8-3332] Sequential element (p_Val2_3_reg_1593_pp0_iter6_reg_reg[0]) is unused and will be removed from module pown_generic_float_s.
+WARNING: [Synth 8-3332] Sequential element (img_get_grads_mulkbM_U17/img_get_grads_mulkbM_MulnS_2_U/p_reg[47]) is unused and will be removed from module pown_generic_float_s.
+WARNING: [Synth 8-3332] Sequential element (img_get_grads_mulkbM_U17/img_get_grads_mulkbM_MulnS_2_U/p_reg[46]) is unused and will be removed from module pown_generic_float_s.
+WARNING: [Synth 8-3332] Sequential element (img_get_grads_mulkbM_U17/img_get_grads_mulkbM_MulnS_2_U/p_reg[45]) is unused and will be removed from module pown_generic_float_s.
+WARNING: [Synth 8-3332] Sequential element (img_get_grads_mulkbM_U17/img_get_grads_mulkbM_MulnS_2_U/p_reg[44]) is unused and will be removed from module pown_generic_float_s.
+WARNING: [Synth 8-3332] Sequential element (img_get_grads_mulkbM_U17/img_get_grads_mulkbM_MulnS_2_U/p_reg[43]) is unused and will be removed from module pown_generic_float_s.
+WARNING: [Synth 8-3332] Sequential element (img_get_grads_mulkbM_U17/img_get_grads_mulkbM_MulnS_2_U/p_reg[42]) is unused and will be removed from module pown_generic_float_s.
+WARNING: [Synth 8-3332] Sequential element (img_get_grads_mulkbM_U17/img_get_grads_mulkbM_MulnS_2_U/p_reg[41]) is unused and will be removed from module pown_generic_float_s.
+WARNING: [Synth 8-3332] Sequential element (img_get_grads_mulkbM_U17/img_get_grads_mulkbM_MulnS_2_U/p_reg[40]) is unused and will be removed from module pown_generic_float_s.
+WARNING: [Synth 8-3332] Sequential element (img_get_grads_mulkbM_U17/img_get_grads_mulkbM_MulnS_2_U/p_reg[39]) is unused and will be removed from module pown_generic_float_s.
+WARNING: [Synth 8-3332] Sequential element (img_get_grads_mulkbM_U17/img_get_grads_mulkbM_MulnS_2_U/p_reg[38]) is unused and will be removed from module pown_generic_float_s.
+WARNING: [Synth 8-3332] Sequential element (img_get_grads_mulkbM_U17/img_get_grads_mulkbM_MulnS_2_U/p_reg[37]) is unused and will be removed from module pown_generic_float_s.
+WARNING: [Synth 8-3332] Sequential element (img_get_grads_mulkbM_U17/img_get_grads_mulkbM_MulnS_2_U/p_reg[36]) is unused and will be removed from module pown_generic_float_s.
+WARNING: [Synth 8-3332] Sequential element (img_get_grads_mulkbM_U17/img_get_grads_mulkbM_MulnS_2_U/p_reg[35]) is unused and will be removed from module pown_generic_float_s.
+WARNING: [Synth 8-3332] Sequential element (img_get_grads_mulkbM_U17/img_get_grads_mulkbM_MulnS_2_U/p_reg[34]) is unused and will be removed from module pown_generic_float_s.
+WARNING: [Synth 8-3332] Sequential element (img_get_grads_mulkbM_U17/img_get_grads_mulkbM_MulnS_2_U/p_reg[33]) is unused and will be removed from module pown_generic_float_s.
+WARNING: [Synth 8-3332] Sequential element (img_get_grads_mulkbM_U17/img_get_grads_mulkbM_MulnS_2_U/p_reg[32]) is unused and will be removed from module pown_generic_float_s.
+WARNING: [Synth 8-3332] Sequential element (img_get_grads_mulkbM_U17/img_get_grads_mulkbM_MulnS_2_U/p_reg[31]) is unused and will be removed from module pown_generic_float_s.
+WARNING: [Synth 8-3332] Sequential element (img_get_grads_mulkbM_U17/img_get_grads_mulkbM_MulnS_2_U/p_reg[30]) is unused and will be removed from module pown_generic_float_s.
+WARNING: [Synth 8-3332] Sequential element (img_get_grads_mulkbM_U17/img_get_grads_mulkbM_MulnS_2_U/p_reg[29]) is unused and will be removed from module pown_generic_float_s.
+WARNING: [Synth 8-3332] Sequential element (img_get_grads_mulkbM_U17/img_get_grads_mulkbM_MulnS_2_U/p_reg[28]) is unused and will be removed from module pown_generic_float_s.
+WARNING: [Synth 8-3332] Sequential element (img_get_grads_mulkbM_U17/img_get_grads_mulkbM_MulnS_2_U/p_reg[27]) is unused and will be removed from module pown_generic_float_s.
+WARNING: [Synth 8-3332] Sequential element (img_get_grads_mulkbM_U17/img_get_grads_mulkbM_MulnS_2_U/p_reg[26]) is unused and will be removed from module pown_generic_float_s.
+WARNING: [Synth 8-3332] Sequential element (img_get_grads_mulkbM_U17/img_get_grads_mulkbM_MulnS_2_U/p_reg[25]) is unused and will be removed from module pown_generic_float_s.
+WARNING: [Synth 8-3332] Sequential element (img_get_grads_mulkbM_U17/img_get_grads_mulkbM_MulnS_2_U/p_reg[24]) is unused and will be removed from module pown_generic_float_s.
+WARNING: [Synth 8-3332] Sequential element (img_get_grads_mulkbM_U17/img_get_grads_mulkbM_MulnS_2_U/p_reg[23]) is unused and will be removed from module pown_generic_float_s.
+WARNING: [Synth 8-3332] Sequential element (img_get_grads_mulkbM_U17/img_get_grads_mulkbM_MulnS_2_U/p_reg[22]) is unused and will be removed from module pown_generic_float_s.
+WARNING: [Synth 8-3332] Sequential element (img_get_grads_mulkbM_U17/img_get_grads_mulkbM_MulnS_2_U/p_reg[21]) is unused and will be removed from module pown_generic_float_s.
+WARNING: [Synth 8-3332] Sequential element (img_get_grads_mulkbM_U17/img_get_grads_mulkbM_MulnS_2_U/p_reg[20]) is unused and will be removed from module pown_generic_float_s.
+WARNING: [Synth 8-3332] Sequential element (img_get_grads_mulkbM_U17/img_get_grads_mulkbM_MulnS_2_U/p_reg[19]) is unused and will be removed from module pown_generic_float_s.
+WARNING: [Synth 8-3332] Sequential element (img_get_grads_mulkbM_U17/img_get_grads_mulkbM_MulnS_2_U/p_reg[18]) is unused and will be removed from module pown_generic_float_s.
+WARNING: [Synth 8-3332] Sequential element (img_get_grads_mulkbM_U17/img_get_grads_mulkbM_MulnS_2_U/p_reg[17]) is unused and will be removed from module pown_generic_float_s.
+WARNING: [Synth 8-3332] Sequential element (img_get_grads_muljbC_U16/img_get_grads_muljbC_MulnS_1_U/buff0_reg[47]) is unused and will be removed from module pown_generic_float_s.
+WARNING: [Synth 8-3332] Sequential element (img_get_grads_muljbC_U16/img_get_grads_muljbC_MulnS_1_U/buff0_reg[46]) is unused and will be removed from module pown_generic_float_s.
+WARNING: [Synth 8-3332] Sequential element (img_get_grads_muljbC_U16/img_get_grads_muljbC_MulnS_1_U/buff0_reg[45]) is unused and will be removed from module pown_generic_float_s.
+WARNING: [Synth 8-3332] Sequential element (img_get_grads_muljbC_U16/img_get_grads_muljbC_MulnS_1_U/buff0_reg[44]) is unused and will be removed from module pown_generic_float_s.
+WARNING: [Synth 8-3332] Sequential element (img_get_grads_muljbC_U16/img_get_grads_muljbC_MulnS_1_U/buff0_reg[43]) is unused and will be removed from module pown_generic_float_s.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:59 ; elapsed = 00:01:03 . Memory (MB): peak = 911.891 ; gain = 554.430
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4480] The timing for the instance inst/i_0/get_grads_opr_U0/buff_A_val_0_U/get_grads_opr_bufncg_ram_U/ram_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/i_1/get_grads_opr_U0/buff_A_val_1_U/get_grads_opr_bufncg_ram_U/ram_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_276/i_0/pow_reduce_anonymo_6_U/pown_generic_floacud_rom_U/q0_reg_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_276/i_0/pow_reduce_anonymo_6_U/pown_generic_floacud_rom_U/q0_reg_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_276/i_0/pow_reduce_anonymo_6_U/pown_generic_floacud_rom_U/q0_reg_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_276/i_0/pow_reduce_anonymo_6_U/pown_generic_floacud_rom_U/q0_reg_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_276/i_1/pow_reduce_anonymo_8_U/pown_generic_floafYi_rom_U/q0_reg_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_276/i_1/pow_reduce_anonymo_8_U/pown_generic_floafYi_rom_U/q0_reg_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_276/i_1/pow_reduce_anonymo_8_U/pown_generic_floafYi_rom_U/q0_reg_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_276/i_2/p_Val2_72_reg_1582_pp0_iter6_reg_reg_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_276/i_2/p_Val2_72_reg_1582_pp0_iter6_reg_reg_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_276/i_2/p_Val2_72_reg_1582_pp0_iter6_reg_reg_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_276/i_5/pow_reduce_anonymo_11_U/pown_generic_floag8j_rom_U/q0_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_276/i_5/pow_reduce_anonymo_11_U/pown_generic_floag8j_rom_U/q0_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_295/i_0/pow_reduce_anonymo_6_U/pown_generic_floacud_rom_U/q0_reg_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_295/i_0/pow_reduce_anonymo_6_U/pown_generic_floacud_rom_U/q0_reg_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_295/i_0/pow_reduce_anonymo_6_U/pown_generic_floacud_rom_U/q0_reg_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_295/i_0/pow_reduce_anonymo_6_U/pown_generic_floacud_rom_U/q0_reg_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_295/i_1/pow_reduce_anonymo_8_U/pown_generic_floafYi_rom_U/q0_reg_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_295/i_1/pow_reduce_anonymo_8_U/pown_generic_floafYi_rom_U/q0_reg_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_295/i_1/pow_reduce_anonymo_8_U/pown_generic_floafYi_rom_U/q0_reg_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_295/i_2/p_Val2_72_reg_1582_pp0_iter6_reg_reg_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_295/i_2/p_Val2_72_reg_1582_pp0_iter6_reg_reg_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_295/i_2/p_Val2_72_reg_1582_pp0_iter6_reg_reg_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_295/i_5/pow_reduce_anonymo_11_U/pown_generic_floag8j_rom_U/q0_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_295/i_5/pow_reduce_anonymo_11_U/pown_generic_floag8j_rom_U/q0_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:13 ; elapsed = 00:01:17 . Memory (MB): peak = 1040.742 ; gain = 683.281
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:15 ; elapsed = 00:01:20 . Memory (MB): peak = 1069.965 ; gain = 712.504
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4480] The timing for the instance inst/get_grads_opr_U0/buff_A_val_0_U/get_grads_opr_bufncg_ram_U/ram_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/get_grads_opr_U0/buff_A_val_1_U/get_grads_opr_bufncg_ram_U/ram_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_276/pow_reduce_anonymo_8_U/pown_generic_floafYi_rom_U/q0_reg_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_276/pow_reduce_anonymo_8_U/pown_generic_floafYi_rom_U/q0_reg_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_276/pow_reduce_anonymo_8_U/pown_generic_floafYi_rom_U/q0_reg_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_295/pow_reduce_anonymo_8_U/pown_generic_floafYi_rom_U/q0_reg_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_295/pow_reduce_anonymo_8_U/pown_generic_floafYi_rom_U/q0_reg_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/get_grads_opr_U0/grp_pown_generic_float_s_fu_295/pow_reduce_anonymo_8_U/pown_generic_floafYi_rom_U/q0_reg_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:20 ; elapsed = 00:01:25 . Memory (MB): peak = 1101.430 ; gain = 743.969
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:21 ; elapsed = 00:01:26 . Memory (MB): peak = 1101.430 ; gain = 743.969
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:21 ; elapsed = 00:01:26 . Memory (MB): peak = 1101.430 ; gain = 743.969
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:23 ; elapsed = 00:01:27 . Memory (MB): peak = 1101.430 ; gain = 743.969
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:23 ; elapsed = 00:01:27 . Memory (MB): peak = 1101.430 ; gain = 743.969
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:23 ; elapsed = 00:01:28 . Memory (MB): peak = 1101.430 ; gain = 743.969
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:23 ; elapsed = 00:01:28 . Memory (MB): peak = 1101.430 ; gain = 743.969
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+------------+------+
+|      |Cell        |Count |
++------+------------+------+
+|1     |CARRY4      |   429|
+|2     |DSP48E1     |     2|
+|3     |DSP48E1_1   |     6|
+|4     |DSP48E1_10  |     1|
+|5     |DSP48E1_11  |     1|
+|6     |DSP48E1_12  |     2|
+|7     |DSP48E1_2   |     6|
+|8     |DSP48E1_3   |     4|
+|9     |DSP48E1_4   |     4|
+|10    |DSP48E1_5   |     2|
+|11    |DSP48E1_6   |     2|
+|12    |DSP48E1_7   |     2|
+|13    |DSP48E1_8   |     2|
+|14    |DSP48E1_9   |     2|
+|15    |LUT1        |   266|
+|16    |LUT2        |   969|
+|17    |LUT3        |  1185|
+|18    |LUT4        |   800|
+|19    |LUT5        |   248|
+|20    |LUT6        |   418|
+|21    |MUXCY       |   635|
+|22    |MUXF7       |     6|
+|23    |RAMB18E1    |     2|
+|24    |RAMB18E1_10 |     2|
+|25    |RAMB18E1_11 |     2|
+|26    |RAMB18E1_12 |     2|
+|27    |RAMB18E1_13 |     2|
+|28    |RAMB18E1_3  |     2|
+|29    |RAMB18E1_4  |     2|
+|30    |RAMB18E1_8  |     1|
+|31    |RAMB18E1_9  |     2|
+|32    |SRL16E      |   401|
+|33    |SRLC32E     |     8|
+|34    |XORCY       |   533|
+|35    |FDE         |    35|
+|36    |FDRE        |  4006|
+|37    |FDSE        |    35|
++------+------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:23 ; elapsed = 00:01:28 . Memory (MB): peak = 1101.430 ; gain = 743.969
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 575 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:45 ; elapsed = 00:01:11 . Memory (MB): peak = 1101.430 ; gain = 457.953
+Synthesis Optimization Complete : Time (s): cpu = 00:01:23 ; elapsed = 00:01:28 . Memory (MB): peak = 1101.430 ; gain = 743.969
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 1691 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 213 instances were transformed.
+  (MUXCY,XORCY) => CARRY4: 178 instances
+  FDE => FDRE: 35 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+419 Infos, 312 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:28 ; elapsed = 00:01:33 . Memory (MB): peak = 1101.430 ; gain = 755.902
+INFO: [Common 17-1381] The checkpoint 'E:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.runs/design_1_img_get_grads_0_0_synth_1/design_1_img_get_grads_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1482] Added synthesis output to IP cache for IP e:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.srcs/sources_1/bd/design_1/ip/design_1_img_get_grads_0_0/design_1_img_get_grads_0_0.xci
+INFO: [Coretcl 2-1174] Renamed 323 cell refs.
+INFO: [Common 17-1381] The checkpoint 'E:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.runs/design_1_img_get_grads_0_0_synth_1/design_1_img_get_grads_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_img_get_grads_0_0_utilization_synth.rpt -pb design_1_img_get_grads_0_0_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.079 . Memory (MB): peak = 1101.430 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Fri Aug  9 08:29:57 2019...

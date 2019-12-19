@@ -1,0 +1,432 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Thu Oct 24 14:05:44 2019
+| Host         : VT2OB6D7ZB52FZ0 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_xlconstant_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_xlconstant_0_0 (xilinx.com:ip:xlconstant:1.1) from (Rev. 4) to (Rev. 5)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Thu Oct 24 14:05:44 2019
+| Host         : VT2OB6D7ZB52FZ0 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_ps7_0_axi_periph_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_ps7_0_axi_periph_0 (xilinx.com:ip:axi_interconnect:2.1) from (Rev. 17) to (Rev. 18)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Thu Oct 24 14:05:44 2019
+| Host         : VT2OB6D7ZB52FZ0 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_clk_wiz_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_clk_wiz_0_0 (xilinx.com:ip:clk_wiz:6.0) to (Rev. 1)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Thu Oct 24 14:05:44 2019
+| Host         : VT2OB6D7ZB52FZ0 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_axis_dwidth_converter_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_axis_dwidth_converter_0_1 (xilinx.com:ip:axis_dwidth_converter:1.1) from (Rev. 15) to (Rev. 16)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Thu Oct 24 14:05:44 2019
+| Host         : VT2OB6D7ZB52FZ0 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_axis_dwidth_converter_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_axis_dwidth_converter_0_0 (xilinx.com:ip:axis_dwidth_converter:1.1) from (Rev. 15) to (Rev. 16)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Thu Oct 24 14:05:44 2019
+| Host         : VT2OB6D7ZB52FZ0 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_axi_vdma_imgCapture1_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_axi_vdma_imgCapture1_0 (xilinx.com:ip:axi_vdma:6.3) from (Rev. 4) to (Rev. 5)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Thu Oct 24 14:05:44 2019
+| Host         : VT2OB6D7ZB52FZ0 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_axi_vdma_1_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_axi_vdma_1_0 (xilinx.com:ip:axi_vdma:6.3) from (Rev. 4) to (Rev. 5)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Thu Oct 24 14:05:44 2019
+| Host         : VT2OB6D7ZB52FZ0 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_axi_vdma_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_axi_vdma_0_1 (xilinx.com:ip:axi_vdma:6.3) from (Rev. 4) to (Rev. 5)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Thu Oct 24 14:05:44 2019
+| Host         : VT2OB6D7ZB52FZ0 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_axi_vdma_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_axi_vdma_0_0 (xilinx.com:ip:axi_vdma:6.3) from (Rev. 4) to (Rev. 5)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Thu Oct 24 14:05:44 2019
+| Host         : VT2OB6D7ZB52FZ0 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_axi_smc_4_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_axi_smc_4_0 (xilinx.com:ip:smartconnect:1.0) from (Rev. 8) to (Rev. 9)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Interface Information
+------------------------
+
+Detected external interface differences while upgrading 'design_1_axi_smc_4_0'.
+
+
+
+3. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'design_1_axi_smc_4_0'. These changes may impact your design.
+
+
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Thu Oct 24 14:05:44 2019
+| Host         : VT2OB6D7ZB52FZ0 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_axi_smc_3_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_axi_smc_3_0 (xilinx.com:ip:smartconnect:1.0) from (Rev. 8) to (Rev. 9)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Interface Information
+------------------------
+
+Detected external interface differences while upgrading 'design_1_axi_smc_3_0'.
+
+
+
+3. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'design_1_axi_smc_3_0'. These changes may impact your design.
+
+
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Thu Oct 24 14:05:44 2019
+| Host         : VT2OB6D7ZB52FZ0 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_axi_smc_2_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_axi_smc_2_0 (xilinx.com:ip:smartconnect:1.0) from (Rev. 8) to (Rev. 9)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Interface Information
+------------------------
+
+Detected external interface differences while upgrading 'design_1_axi_smc_2_0'.
+
+
+
+3. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'design_1_axi_smc_2_0'. These changes may impact your design.
+
+
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Thu Oct 24 14:05:44 2019
+| Host         : VT2OB6D7ZB52FZ0 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_axi_smc_1_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_axi_smc_1_0 (xilinx.com:ip:smartconnect:1.0) from (Rev. 8) to (Rev. 9)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Interface Information
+------------------------
+
+Detected external interface differences while upgrading 'design_1_axi_smc_1_0'.
+
+
+
+3. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'design_1_axi_smc_1_0'. These changes may impact your design.
+
+
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Thu Oct 24 14:05:44 2019
+| Host         : VT2OB6D7ZB52FZ0 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_axi_smc_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_axi_smc_1 (xilinx.com:ip:smartconnect:1.0) from (Rev. 8) to (Rev. 9)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Interface Information
+------------------------
+
+Detected external interface differences while upgrading 'design_1_axi_smc_1'.
+
+
+
+3. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'design_1_axi_smc_1'. These changes may impact your design.
+
+
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Thu Oct 24 14:05:44 2019
+| Host         : VT2OB6D7ZB52FZ0 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_axi_gpio_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_axi_gpio_0_1 (xilinx.com:ip:axi_gpio:2.0) from (Rev. 18) to (Rev. 19)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Thu Oct 24 14:05:44 2019
+| Host         : VT2OB6D7ZB52FZ0 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_axi_dma_0_2'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_axi_dma_0_2 (xilinx.com:ip:axi_dma:7.1) from (Rev. 17) to (Rev. 18)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Thu Oct 24 14:05:19 2019
+| Host         : VT2OB6D7ZB52FZ0 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'axis_dwidth_converter_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of axis_dwidth_converter_0 (xilinx.com:ip:axis_dwidth_converter:1.1) from (Rev. 15) to (Rev. 16)
+

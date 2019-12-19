@@ -1,0 +1,98 @@
+16:43:46 **** Auto Build of configuration Debug for project prj_ps ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/dma.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/dma.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../prj_ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/dma.d" -MT"src/dma.o" -o "src/dma.o" "../src/dma.c"
+In file included from ../src/include.h:15:0,
+                 from ../src/dma.c:9:
+../../prj_ps_bsp/ps7_cortexa9_0/include/xtime_l.h:89:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+../src/dma.c:18:19: warning: ISO C99 requires whitespace after the macro name
+ #define CANNY_TEST;
+                   ^
+../src/dma.c: In function 'dma_descriptor_init':
+../src/dma.c:66:19: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+  SG_TX_Descriptor = tx_DB_BaseAddr;
+                   ^
+../src/dma.c:67:19: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+  SG_RX_Descriptor = rx_DB_BaseAddr;
+                   ^
+../src/dma.c:110:21: warning: format '%x' expects argument of type 'unsigned int', but argument 3 has type 'struct SG_Desc_def *' [-Wformat=]
+   printf("TX_ %d = %x \r\n",i,SG_TX_Descriptor);
+                    ~^
+../src/dma.c:142:21: warning: format '%x' expects argument of type 'unsigned int', but argument 3 has type 'struct SG_Desc_def *' [-Wformat=]
+   printf("RX_ %d = %x \r\n",i,SG_RX_Descriptor);
+                    ~^
+../src/dma.c:145:2: warning: implicit declaration of function 'Xil_DCacheFlushRange' [-Wimplicit-function-declaration]
+  Xil_DCacheFlushRange((UINTPTR)(u32)tx_DB_BaseAddr, (DB_NUM_AB + DB_NUM_C) * DB_desc_Size);
+  ^~~~~~~~~~~~~~~~~~~~
+../src/dma.c: In function 'dma_start':
+../src/dma.c:152:14: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+  SG_Register = dma_baseAddr;
+              ^
+../src/dma.c:195:26: warning: format '%d' expects argument of type 'int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+  printf("time elapsed = %d us\r\n",tUsed);
+                         ~^
+                         %ld
+../src/dma.c: In function 'cpu_caclu':
+../src/dma.c:238:10: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+  p_Addr0 = tx_buffer_BaseAddr;
+          ^
+../src/dma.c:239:10: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+  p_Bddr0 = tx_buffer_BaseAddr + DB_BUFF_LEN;
+          ^
+../src/dma.c:243:28: warning: format '%x' expects argument of type 'unsigned int', but argument 3 has type 'float *' [-Wformat=]
+   printf("i=%d ,p_Addr0 = %x \r\n",i,p_Addr0);
+                           ~^
+../src/dma.c:244:28: warning: format '%x' expects argument of type 'unsigned int', but argument 3 has type 'float *' [-Wformat=]
+   printf("i=%d ,p_Bddr0 = %x \r\n",i,p_Bddr0);
+                           ~^
+../src/dma.c:271:10: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+  p_Addr0 = tx_buffer_BaseAddr;
+          ^
+../src/dma.c:284:10: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+  p_Bddr0 = tx_buffer_BaseAddr + DB_BUFF_LEN;
+          ^
+../src/dma.c: In function 'cpu_comp_FPGA':
+../src/dma.c:310:8: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+  p_ddr = ddr_baseAddr;
+        ^
+../src/dma.c:311:9: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+  p_buff = buff_baseAddr;
+         ^
+'Finished building: ../src/dma.c'
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../prj_ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/include.h:15:0,
+                 from ../src/helloworld.c:49:
+../../prj_ps_bsp/ps7_cortexa9_0/include/xtime_l.h:89:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:64:5: warning: implicit declaration of function 'init_platform' [-Wimplicit-function-declaration]
+     init_platform();
+     ^~~~~~~~~~~~~
+../src/helloworld.c:77:5: warning: implicit declaration of function 'cleanup_platform' [-Wimplicit-function-declaration]
+     cleanup_platform();
+     ^~~~~~~~~~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../prj_ps_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: prj_ps.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../prj_ps_bsp/ps7_cortexa9_0/lib -o "prj_ps.elf"  ./src/algorithm_ARM.o ./src/arm_comp_fpga.o ./src/dma.o ./src/helloworld.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+d:/xilinx/sdk/2018.1/gnu/aarch32/nt/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/bin/ld.exe: cannot find -lxil
+collect2.exe: error: ld returned 1 exit status
+make: *** [prj_ps.elf] ´íÎó 1
+
+16:43:52 Build Finished (took 5s.822ms)
+

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Sat Aug  3 08:43:09 2019
+# Process ID: 10224
+# Current directory: E:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.runs/img_cpy_0_synth_1
+# Command line: vivado.exe -log img_cpy_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source img_cpy_0.tcl
+# Log file: E:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.runs/img_cpy_0_synth_1/img_cpy_0.vds
+# Journal file: E:/WorkSpace/project/FPGA/prj_accelerate/prj_accelerate/prj_accelerate.runs/img_cpy_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source img_cpy_0.tcl -notrace

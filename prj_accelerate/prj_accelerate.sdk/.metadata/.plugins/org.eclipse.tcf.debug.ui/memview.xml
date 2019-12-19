@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Memory>
+<Block Addr="0x40410000" Context="JTAG-jsn-JTAG-HS1-210512180081-4ba00477-0.0" Size="-1">
+<Rendering ID="org.eclipse.debug.ui.rendering.hexint" Pane="org.eclipse.debug.ui.MemoryView.RenderingViewPane.1"/>
+</Block>
+<Block Addr="0x11000000" Context="JTAG-jsn-JTAG-HS1-210512180081-4ba00477-0.0" Size="-1"/>
+<Block Addr="0x16000000" Context="JTAG-jsn-JTAG-HS1-210512180081-4ba00477-0.0" Size="-1">
+<Rendering ID="org.eclipse.debug.ui.rendering.hexint" Pane="org.eclipse.debug.ui.MemoryView.RenderingViewPane.1"/>
+</Block>
+<Block Addr="0x18000000" Context="JTAG-jsn-JTAG-HS1-210512180081-4ba00477-0.0" Size="-1"/>
+<Block Addr="0x19000000" Context="JTAG-jsn-JTAG-HS1-210512180081-4ba00477-0.0" Size="-1"/>
+</Memory>

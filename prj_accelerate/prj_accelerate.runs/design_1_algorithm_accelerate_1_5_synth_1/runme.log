@@ -1,0 +1,20 @@
+
+*** Running vivado
+    with args -log design_1_algorithm_accelerate_1_5.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_algorithm_accelerate_1_5.tcl
+
+
+****** Vivado v2018.1 (64-bit)
+  **** SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+  **** IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source design_1_algorithm_accelerate_1_5.tcl -notrace
+Command: synth_design -top design_1_algorithm_accelerate_1_5 -part xc7z020clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 436 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 451.547 ; gain = 104.840
+---------------------------------------------------------------------------------

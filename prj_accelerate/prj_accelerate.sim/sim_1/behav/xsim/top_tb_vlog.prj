@@ -1,0 +1,27 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../prj_accelerate.srcs/sources_1/bd/design_1/ipshared/ec67/hdl" --include "../../../../prj_accelerate.srcs/sources_1/bd/design_1/ipshared/02c8/hdl/verilog" --include "../../../../prj_accelerate.srcs/sources_1/bd/design_1/ipshared/b193/hdl" --include "../../../../prj_accelerate.srcs/sources_1/bd/design_1/ipshared/4903" --include "../../../../prj_accelerate.srcs/sources_1/bd/design_1/ipshared/a10f/hdl" --include "../../../../prj_accelerate.srcs/sources_1/bd/design_1/ipshared/cf48/hdl/verilog" --include "../../../../prj_accelerate.srcs/sources_1/bd/design_1/ipshared/0ab1/hdl" --include "D:/Xilinx/Vivado/2018.1/data/xilinx_vip/include" \
+"../../../../prj_accelerate.ip_user_files/ipstatic/hdl/verilog/AXIvideo2Mat.v" \
+"../../../../prj_accelerate.ip_user_files/ipstatic/hdl/verilog/Block_proc.v" \
+"../../../../prj_accelerate.ip_user_files/ipstatic/hdl/verilog/fifo_w8_d2_A.v" \
+"../../../../prj_accelerate.ip_user_files/ipstatic/hdl/verilog/fifo_w10_d2_A.v" \
+"../../../../prj_accelerate.ip_user_files/ipstatic/hdl/verilog/fifo_w11_d2_A.v" \
+"../../../../prj_accelerate.ip_user_files/ipstatic/hdl/verilog/get_grads_opr.v" \
+"../../../../prj_accelerate.ip_user_files/ipstatic/hdl/verilog/get_grads_opr_linbkb.v" \
+"../../../../prj_accelerate.ip_user_files/ipstatic/hdl/verilog/get_grads_opr_lincud.v" \
+"../../../../prj_accelerate.ip_user_files/ipstatic/hdl/verilog/img_get_grads_am_eOg.v" \
+"../../../../prj_accelerate.ip_user_files/ipstatic/hdl/verilog/Mat2AXIvideo.v" \
+"../../../../prj_accelerate.ip_user_files/ipstatic/hdl/verilog/start_for_get_grafYi.v" \
+"../../../../prj_accelerate.ip_user_files/ipstatic/hdl/verilog/start_for_Mat2AXIg8j.v" \
+"../../../../prj_accelerate.ip_user_files/ipstatic/hdl/verilog/img_get_grads.v" \
+"../../../../prj_accelerate.srcs/sources_1/ip/img_get_grads_0/sim/img_get_grads_0.v" \
+"../../../../prj_accelerate.srcs/sources_1/ip/maxtri7x7_shift_0/maxtri7x7_shift.v" \
+"../../../../prj_accelerate.srcs/sources_1/ip/maxtri7x7_shift_0/sim/maxtri7x7_shift_0.v" \
+"../../../../prj_accelerate.srcs/sources_1/ip/video_caputure_0/video_caputure.v" \
+"../../../../prj_accelerate.srcs/sources_1/ip/video_caputure_0/sim/video_caputure_0.v" \
+"../../../../prj_accelerate.srcs/sim_1/new/top_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,475 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.1 (win64) Build 2188600 Wed Apr  4 18:40:38 MDT 2018
+| Date         : Mon Aug 26 16:14:41 2019
+| Host         : VT2OB6D7ZB52FZ0 running 64-bit major release  (build 9200)
+| Command      : report_bus_skew -warn_on_violation -file route_report_bus_skew_0.rpt -rpx route_report_bus_skew_0.rpx
+| Design       : top
+| Device       : 7z020-clg400
+| Speed File   : -1  PRODUCTION 1.11 2014-09-11
+-----------------------------------------------------------------------------------------------------------------------
+
+Bus Skew Report
+
+Table of Contents
+-----------------
+1. Bus Skew Report Summary
+2. Bus Skew Report Per Constraint
+
+1. Bus Skew Report Summary
+--------------------------
+
+Id  Position  From                            To                              Corner  Requirement(ns)  Actual(ns)  Slack(ns)
+--  --------  ------------------------------  ------------------------------  ------  ---------------  ----------  ---------
+1   40        [get_cells [list {data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.gaxis_pkt_fifo_ic.pkt_rd_stg_inst/src_gray_ff_reg[0]} \
+          {data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.gaxis_pkt_fifo_ic.pkt_rd_stg_inst/src_gray_ff_reg[10]} \
+          {data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.gaxis_pkt_fifo_ic.pkt_rd_stg_inst/src_gray_ff_reg[11]} \
+          {data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.gaxis_pkt_fifo_ic.pkt_rd_stg_inst/src_gray_ff_reg[12]} \
+          {data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.gaxis_pkt_fifo_ic.pkt_rd_stg_inst/src_gray_ff_reg[1]} \
+          {data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.gaxis_pkt_fifo_ic.pkt_rd_stg_inst/src_gray_ff_reg[2]} \
+          {data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.gaxis_pkt_fifo_ic.pkt_rd_stg_inst/src_gray_ff_reg[3]} \
+          {data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.gaxis_pkt_fifo_ic.pkt_rd_stg_inst/src_gray_ff_reg[4]} \
+          {data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.gaxis_pkt_fifo_ic.pkt_rd_stg_inst/src_gray_ff_reg[5]} \
+          {data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.gaxis_pkt_fifo_ic.pkt_rd_stg_inst/src_gray_ff_reg[6]} \
+          {data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.gaxis_pkt_fifo_ic.pkt_rd_stg_inst/src_gray_ff_reg[7]} \
+          {data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.gaxis_pkt_fifo_ic.pkt_rd_stg_inst/src_gray_ff_reg[8]} \
+          {data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.gaxis_pkt_fifo_ic.pkt_rd_stg_inst/src_gray_ff_reg[9]}]]
+                                              [get_cells [list {data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.gaxis_pkt_fifo_ic.pkt_rd_stg_inst/dest_graysync_ff_reg[0][0]} \
+          {data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.gaxis_pkt_fifo_ic.pkt_rd_stg_inst/dest_graysync_ff_reg[0][10]} \
+          {data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.gaxis_pkt_fifo_ic.pkt_rd_stg_inst/dest_graysync_ff_reg[0][11]} \
+          {data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.gaxis_pkt_fifo_ic.pkt_rd_stg_inst/dest_graysync_ff_reg[0][12]} \
+          {data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.gaxis_pkt_fifo_ic.pkt_rd_stg_inst/dest_graysync_ff_reg[0][1]} \
+          {data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.gaxis_pkt_fifo_ic.pkt_rd_stg_inst/dest_graysync_ff_reg[0][2]} \
+          {data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.gaxis_pkt_fifo_ic.pkt_rd_stg_inst/dest_graysync_ff_reg[0][3]} \
+          {data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.gaxis_pkt_fifo_ic.pkt_rd_stg_inst/dest_graysync_ff_reg[0][4]} \
+          {data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.gaxis_pkt_fifo_ic.pkt_rd_stg_inst/dest_graysync_ff_reg[0][5]} \
+          {data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.gaxis_pkt_fifo_ic.pkt_rd_stg_inst/dest_graysync_ff_reg[0][6]} \
+          {data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.gaxis_pkt_fifo_ic.pkt_rd_stg_inst/dest_graysync_ff_reg[0][7]} \
+          {data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.gaxis_pkt_fifo_ic.pkt_rd_stg_inst/dest_graysync_ff_reg[0][8]} \
+          {data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.gaxis_pkt_fifo_ic.pkt_rd_stg_inst/dest_graysync_ff_reg[0][9]}]]
+                                                                              Slow             10.000       1.243      8.757
+2   42        [get_cells [list {data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[0]} \
+          {data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[10]} \
+          {data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[11]} \
+          {data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[12]} \
+          {data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[1]} \
+          {data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[2]} \
+          {data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[3]} \
+          {data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[4]} \
+          {data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[5]} \
+          {data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[6]} \
+          {data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[7]} \
+          {data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[8]} \
+          {data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[9]}]]
+                                              [get_cells [list {data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][0]} \
+          {data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][10]} \
+          {data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][11]} \
+          {data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][12]} \
+          {data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][1]} \
+          {data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][2]} \
+          {data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][3]} \
+          {data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][4]} \
+          {data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][5]} \
+          {data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][6]} \
+          {data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][7]} \
+          {data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][8]} \
+          {data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][9]}]]
+                                                                              Slow             10.000       1.552      8.448
+3   44        [get_cells [list {data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[0]} \
+          {data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[10]} \
+          {data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[11]} \
+          {data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[12]} \
+          {data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[1]} \
+          {data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[2]} \
+          {data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[3]} \
+          {data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[4]} \
+          {data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[5]} \
+          {data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[6]} \
+          {data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[7]} \
+          {data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[8]} \
+          {data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[9]}]]
+                                              [get_cells [list {data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][0]} \
+          {data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][10]} \
+          {data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][11]} \
+          {data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][12]} \
+          {data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][1]} \
+          {data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][2]} \
+          {data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][3]} \
+          {data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][4]} \
+          {data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][5]} \
+          {data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][6]} \
+          {data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][7]} \
+          {data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][8]} \
+          {data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][9]}]]
+                                                                              Slow             10.000       1.911      8.089
+
+
+2. Bus Skew Report Per Constraint
+---------------------------------
+
+Id: 1
+set_bus_skew -from [get_cells [list {data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.gaxis_pkt_fifo_ic.pkt_rd_stg_inst/src_gray_ff_reg[0]} \
+          {data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.gaxis_pkt_fifo_ic.pkt_rd_stg_inst/src_gray_ff_reg[10]} \
+          {data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.gaxis_pkt_fifo_ic.pkt_rd_stg_inst/src_gray_ff_reg[11]} \
+          {data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.gaxis_pkt_fifo_ic.pkt_rd_stg_inst/src_gray_ff_reg[12]} \
+          {data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.gaxis_pkt_fifo_ic.pkt_rd_stg_inst/src_gray_ff_reg[1]} \
+          {data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.gaxis_pkt_fifo_ic.pkt_rd_stg_inst/src_gray_ff_reg[2]} \
+          {data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.gaxis_pkt_fifo_ic.pkt_rd_stg_inst/src_gray_ff_reg[3]} \
+          {data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.gaxis_pkt_fifo_ic.pkt_rd_stg_inst/src_gray_ff_reg[4]} \
+          {data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.gaxis_pkt_fifo_ic.pkt_rd_stg_inst/src_gray_ff_reg[5]} \
+          {data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.gaxis_pkt_fifo_ic.pkt_rd_stg_inst/src_gray_ff_reg[6]} \
+          {data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.gaxis_pkt_fifo_ic.pkt_rd_stg_inst/src_gray_ff_reg[7]} \
+          {data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.gaxis_pkt_fifo_ic.pkt_rd_stg_inst/src_gray_ff_reg[8]} \
+          {data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.gaxis_pkt_fifo_ic.pkt_rd_stg_inst/src_gray_ff_reg[9]}]] -to [get_cells [list {data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.gaxis_pkt_fifo_ic.pkt_rd_stg_inst/dest_graysync_ff_reg[0][0]} \
+          {data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.gaxis_pkt_fifo_ic.pkt_rd_stg_inst/dest_graysync_ff_reg[0][10]} \
+          {data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.gaxis_pkt_fifo_ic.pkt_rd_stg_inst/dest_graysync_ff_reg[0][11]} \
+          {data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.gaxis_pkt_fifo_ic.pkt_rd_stg_inst/dest_graysync_ff_reg[0][12]} \
+          {data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.gaxis_pkt_fifo_ic.pkt_rd_stg_inst/dest_graysync_ff_reg[0][1]} \
+          {data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.gaxis_pkt_fifo_ic.pkt_rd_stg_inst/dest_graysync_ff_reg[0][2]} \
+          {data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.gaxis_pkt_fifo_ic.pkt_rd_stg_inst/dest_graysync_ff_reg[0][3]} \
+          {data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.gaxis_pkt_fifo_ic.pkt_rd_stg_inst/dest_graysync_ff_reg[0][4]} \
+          {data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.gaxis_pkt_fifo_ic.pkt_rd_stg_inst/dest_graysync_ff_reg[0][5]} \
+          {data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.gaxis_pkt_fifo_ic.pkt_rd_stg_inst/dest_graysync_ff_reg[0][6]} \
+          {data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.gaxis_pkt_fifo_ic.pkt_rd_stg_inst/dest_graysync_ff_reg[0][7]} \
+          {data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.gaxis_pkt_fifo_ic.pkt_rd_stg_inst/dest_graysync_ff_reg[0][8]} \
+          {data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.gaxis_pkt_fifo_ic.pkt_rd_stg_inst/dest_graysync_ff_reg[0][9]}]] 10.000
+Requirement: 10.000ns
+Endpoints: 7
+
+From Clock            To Clock              Endpoint Pin                    Reference Pin                   Corner  Actual(ns)  Slack(ns)
+--------------------  --------------------  ------------------------------  ------------------------------  ------  ----------  ---------
+CMOS_PIXCLK           clk_fpga_0            data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.gaxis_pkt_fifo_ic.pkt_rd_stg_inst/dest_graysync_ff_reg[0][11]/D
+                                                                            data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.gaxis_pkt_fifo_ic.pkt_rd_stg_inst/dest_graysync_ff_reg[0][0]/D
+                                                                                                            Slow         1.243      8.757
+
+
+Slack (MET) :             8.757ns  (requirement - actual skew)
+  Endpoint Source:        data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.gaxis_pkt_fifo_ic.pkt_rd_stg_inst/src_gray_ff_reg[11]/C
+                            (rising edge-triggered cell FDRE clocked by CMOS_PIXCLK)
+  Endpoint Destination:   data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.gaxis_pkt_fifo_ic.pkt_rd_stg_inst/dest_graysync_ff_reg[0][11]/D
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0)
+  Reference Source:       data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.gaxis_pkt_fifo_ic.pkt_rd_stg_inst/src_gray_ff_reg[0]/C
+                            (rising edge-triggered cell FDRE clocked by CMOS_PIXCLK)
+  Reference Destination:  data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.gaxis_pkt_fifo_ic.pkt_rd_stg_inst/dest_graysync_ff_reg[0][0]/D
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0)
+  Path Type:              Bus Skew (Max at Slow Process Corner)
+  Requirement:            10.000ns
+  Endpoint Relative Delay:    5.414ns
+  Reference Relative Delay:   3.123ns
+  Relative CRPR:              1.048ns
+  Actual Bus Skew:            1.243ns  (Endpoint Relative Delay - Reference Relative Delay - Relative CRPR)
+
+Endpoint path:
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock CMOS_PIXCLK rise edge)
+                                                      0.000     0.000 r  
+    G20                                               0.000     0.000 r  CMOS_PIXCLK (IN)
+                         net (fo=0)                   0.000     0.000    CMOS_PIXCLK
+    G20                  IBUF (Prop_ibuf_I_O)         0.937     0.937 r  CMOS_PIXCLK_IBUF_inst/O
+                         net (fo=1, routed)           3.785     4.722    CMOS_PIXCLK_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.101     4.823 r  CMOS_PIXCLK_IBUF_BUFG_inst/O
+                         net (fo=3407, routed)        1.782     6.605    data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.gaxis_pkt_fifo_ic.pkt_rd_stg_inst/src_clk
+    SLICE_X105Y26        FDRE                                         r  data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.gaxis_pkt_fifo_ic.pkt_rd_stg_inst/src_gray_ff_reg[11]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X105Y26        FDRE (Prop_fdre_C_Q)         0.419     7.024 r  data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.gaxis_pkt_fifo_ic.pkt_rd_stg_inst/src_gray_ff_reg[11]/Q
+                         net (fo=1, routed)           0.757     7.781    data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.gaxis_pkt_fifo_ic.pkt_rd_stg_inst/async_path[11]
+    SLICE_X101Y26        FDRE                                         r  data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.gaxis_pkt_fifo_ic.pkt_rd_stg_inst/dest_graysync_ff_reg[0][11]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  design_1_wrapper_i/design_1_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.088     1.088    design_1_wrapper_i/design_1_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091     1.179 r  design_1_wrapper_i/design_1_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=30304, routed)       1.610     2.789    data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.gaxis_pkt_fifo_ic.pkt_rd_stg_inst/dest_clk
+    SLICE_X101Y26        FDRE                                         r  data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.gaxis_pkt_fifo_ic.pkt_rd_stg_inst/dest_graysync_ff_reg[0][11]/C
+                         clock pessimism              0.000     2.789    
+                         clock uncertainty           -0.154     2.635    
+    SLICE_X101Y26        FDRE (Setup_fdre_C_D)       -0.268     2.367    data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.gaxis_pkt_fifo_ic.pkt_rd_stg_inst/dest_graysync_ff_reg[0][11]
+  -------------------------------------------------------------------
+                         data arrival                           7.781    
+                         clock arrival                          2.367    
+  -------------------------------------------------------------------
+                         relative delay                         5.414    
+
+Reference path:
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock CMOS_PIXCLK rise edge)
+                                                      0.000     0.000 r  
+    G20                                               0.000     0.000 r  CMOS_PIXCLK (IN)
+                         net (fo=0)                   0.000     0.000    CMOS_PIXCLK
+    G20                  IBUF (Prop_ibuf_I_O)         0.804     0.804 r  CMOS_PIXCLK_IBUF_inst/O
+                         net (fo=1, routed)           3.224     4.028    CMOS_PIXCLK_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091     4.119 r  CMOS_PIXCLK_IBUF_BUFG_inst/O
+                         net (fo=3407, routed)        1.609     5.728    data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.gaxis_pkt_fifo_ic.pkt_rd_stg_inst/src_clk
+    SLICE_X104Y22        FDRE                                         r  data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.gaxis_pkt_fifo_ic.pkt_rd_stg_inst/src_gray_ff_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X104Y22        FDRE (Prop_fdre_C_Q)         0.418     6.146 r  data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.gaxis_pkt_fifo_ic.pkt_rd_stg_inst/src_gray_ff_reg[0]/Q
+                         net (fo=1, routed)           0.377     6.523    data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.gaxis_pkt_fifo_ic.pkt_rd_stg_inst/async_path[0]
+    SLICE_X103Y24        FDRE                                         r  data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.gaxis_pkt_fifo_ic.pkt_rd_stg_inst/dest_graysync_ff_reg[0][0]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  design_1_wrapper_i/design_1_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.193     1.193    design_1_wrapper_i/design_1_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.101     1.294 r  design_1_wrapper_i/design_1_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=30304, routed)       1.783     3.077    data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.gaxis_pkt_fifo_ic.pkt_rd_stg_inst/dest_clk
+    SLICE_X103Y24        FDRE                                         r  data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.gaxis_pkt_fifo_ic.pkt_rd_stg_inst/dest_graysync_ff_reg[0][0]/C
+                         clock pessimism              0.000     3.077    
+                         clock uncertainty            0.154     3.231    
+    SLICE_X103Y24        FDRE (Hold_fdre_C_D)         0.169     3.400    data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.gaxis_pkt_fifo_ic.pkt_rd_stg_inst/dest_graysync_ff_reg[0][0]
+  -------------------------------------------------------------------
+                         data arrival                           6.523    
+                         clock arrival                          3.400    
+  -------------------------------------------------------------------
+                         relative delay                         3.123    
+
+
+
+Id: 2
+set_bus_skew -from [get_cells [list {data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[0]} \
+          {data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[10]} \
+          {data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[11]} \
+          {data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[12]} \
+          {data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[1]} \
+          {data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[2]} \
+          {data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[3]} \
+          {data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[4]} \
+          {data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[5]} \
+          {data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[6]} \
+          {data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[7]} \
+          {data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[8]} \
+          {data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[9]}]] -to [get_cells [list {data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][0]} \
+          {data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][10]} \
+          {data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][11]} \
+          {data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][12]} \
+          {data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][1]} \
+          {data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][2]} \
+          {data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][3]} \
+          {data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][4]} \
+          {data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][5]} \
+          {data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][6]} \
+          {data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][7]} \
+          {data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][8]} \
+          {data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][9]}]] 10.000
+Requirement: 10.000ns
+Endpoints: 6
+
+From Clock            To Clock              Endpoint Pin                    Reference Pin                   Corner  Actual(ns)  Slack(ns)
+--------------------  --------------------  ------------------------------  ------------------------------  ------  ----------  ---------
+CMOS_PIXCLK           clk_fpga_0            data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][6]/D
+                                                                            data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][12]/D
+                                                                                                            Slow         1.552      8.448
+
+
+Slack (MET) :             8.448ns  (requirement - actual skew)
+  Endpoint Source:        data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[6]/C
+                            (rising edge-triggered cell FDRE clocked by CMOS_PIXCLK)
+  Endpoint Destination:   data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][6]/D
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0)
+  Reference Source:       data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[12]/C
+                            (rising edge-triggered cell FDRE clocked by CMOS_PIXCLK)
+  Reference Destination:  data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][12]/D
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0)
+  Path Type:              Bus Skew (Max at Slow Process Corner)
+  Requirement:            10.000ns
+  Endpoint Relative Delay:    5.611ns
+  Reference Relative Delay:   3.011ns
+  Relative CRPR:              1.048ns
+  Actual Bus Skew:            1.552ns  (Endpoint Relative Delay - Reference Relative Delay - Relative CRPR)
+
+Endpoint path:
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock CMOS_PIXCLK rise edge)
+                                                      0.000     0.000 r  
+    G20                                               0.000     0.000 r  CMOS_PIXCLK (IN)
+                         net (fo=0)                   0.000     0.000    CMOS_PIXCLK
+    G20                  IBUF (Prop_ibuf_I_O)         0.937     0.937 r  CMOS_PIXCLK_IBUF_inst/O
+                         net (fo=1, routed)           3.785     4.722    CMOS_PIXCLK_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.101     4.823 r  CMOS_PIXCLK_IBUF_BUFG_inst/O
+                         net (fo=3407, routed)        1.719     6.542    data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_clk
+    SLICE_X88Y22         FDRE                                         r  data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[6]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X88Y22         FDRE (Prop_fdre_C_Q)         0.456     6.998 r  data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[6]/Q
+                         net (fo=1, routed)           1.083     8.081    data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/async_path[6]
+    SLICE_X89Y22         FDRE                                         r  data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][6]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  design_1_wrapper_i/design_1_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.088     1.088    design_1_wrapper_i/design_1_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091     1.179 r  design_1_wrapper_i/design_1_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=30304, routed)       1.549     2.728    data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_clk
+    SLICE_X89Y22         FDRE                                         r  data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][6]/C
+                         clock pessimism              0.000     2.728    
+                         clock uncertainty           -0.154     2.574    
+    SLICE_X89Y22         FDRE (Setup_fdre_C_D)       -0.105     2.469    data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][6]
+  -------------------------------------------------------------------
+                         data arrival                           8.081    
+                         clock arrival                          2.469    
+  -------------------------------------------------------------------
+                         relative delay                         5.611    
+
+Reference path:
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock CMOS_PIXCLK rise edge)
+                                                      0.000     0.000 r  
+    G20                                               0.000     0.000 r  CMOS_PIXCLK (IN)
+                         net (fo=0)                   0.000     0.000    CMOS_PIXCLK
+    G20                  IBUF (Prop_ibuf_I_O)         0.804     0.804 r  CMOS_PIXCLK_IBUF_inst/O
+                         net (fo=1, routed)           3.224     4.028    CMOS_PIXCLK_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091     4.119 r  CMOS_PIXCLK_IBUF_BUFG_inst/O
+                         net (fo=3407, routed)        1.542     5.661    data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_clk
+    SLICE_X84Y25         FDRE                                         r  data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[12]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X84Y25         FDRE (Prop_fdre_C_Q)         0.367     6.028 r  data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/src_gray_ff_reg[12]/Q
+                         net (fo=1, routed)           0.381     6.409    data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/async_path[12]
+    SLICE_X86Y25         FDRE                                         r  data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][12]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  design_1_wrapper_i/design_1_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.193     1.193    design_1_wrapper_i/design_1_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.101     1.294 r  design_1_wrapper_i/design_1_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=30304, routed)       1.719     3.013    data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_clk
+    SLICE_X86Y25         FDRE                                         r  data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][12]/C
+                         clock pessimism              0.000     3.013    
+                         clock uncertainty            0.154     3.167    
+    SLICE_X86Y25         FDRE (Hold_fdre_C_D)         0.231     3.398    data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst/dest_graysync_ff_reg[0][12]
+  -------------------------------------------------------------------
+                         data arrival                           6.409    
+                         clock arrival                          3.398    
+  -------------------------------------------------------------------
+                         relative delay                         3.011    
+
+
+
+Id: 3
+set_bus_skew -from [get_cells [list {data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[0]} \
+          {data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[10]} \
+          {data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[11]} \
+          {data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[12]} \
+          {data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[1]} \
+          {data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[2]} \
+          {data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[3]} \
+          {data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[4]} \
+          {data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[5]} \
+          {data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[6]} \
+          {data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[7]} \
+          {data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[8]} \
+          {data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[9]}]] -to [get_cells [list {data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][0]} \
+          {data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][10]} \
+          {data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][11]} \
+          {data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][12]} \
+          {data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][1]} \
+          {data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][2]} \
+          {data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][3]} \
+          {data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][4]} \
+          {data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][5]} \
+          {data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][6]} \
+          {data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][7]} \
+          {data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][8]} \
+          {data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][9]}]] 10.000
+Requirement: 10.000ns
+Endpoints: 12
+
+From Clock            To Clock              Endpoint Pin                    Reference Pin                   Corner  Actual(ns)  Slack(ns)
+--------------------  --------------------  ------------------------------  ------------------------------  ------  ----------  ---------
+clk_fpga_0            CMOS_PIXCLK           data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][2]/D
+                                                                            data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][8]/D
+                                                                                                            Slow         1.911      8.089
+
+
+Slack (MET) :             8.089ns  (requirement - actual skew)
+  Endpoint Source:        data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[2]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0)
+  Endpoint Destination:   data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][2]/D
+                            (rising edge-triggered cell FDRE clocked by CMOS_PIXCLK)
+  Reference Source:       data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[8]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0)
+  Reference Destination:  data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][8]/D
+                            (rising edge-triggered cell FDRE clocked by CMOS_PIXCLK)
+  Path Type:              Bus Skew (Max at Slow Process Corner)
+  Requirement:            10.000ns
+  Endpoint Relative Delay:   -0.442ns
+  Reference Relative Delay:  -3.402ns
+  Relative CRPR:              1.048ns
+  Actual Bus Skew:            1.911ns  (Endpoint Relative Delay - Reference Relative Delay - Relative CRPR)
+
+Endpoint path:
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  design_1_wrapper_i/design_1_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.193     1.193    design_1_wrapper_i/design_1_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.101     1.294 r  design_1_wrapper_i/design_1_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=30304, routed)       1.780     3.074    data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_clk
+    SLICE_X92Y24         FDRE                                         r  data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[2]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X92Y24         FDRE (Prop_fdre_C_Q)         0.518     3.592 r  data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[2]/Q
+                         net (fo=1, routed)           1.477     5.069    data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/async_path[2]
+    SLICE_X94Y24         FDRE                                         r  data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][2]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock CMOS_PIXCLK rise edge)
+                                                      0.000     0.000 r  
+    G20                                               0.000     0.000 r  CMOS_PIXCLK (IN)
+                         net (fo=0)                   0.000     0.000    CMOS_PIXCLK
+    G20                  IBUF (Prop_ibuf_I_O)         0.804     0.804 r  CMOS_PIXCLK_IBUF_inst/O
+                         net (fo=1, routed)           3.224     4.028    CMOS_PIXCLK_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091     4.119 r  CMOS_PIXCLK_IBUF_BUFG_inst/O
+                         net (fo=3407, routed)        1.604     5.723    data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_clk
+    SLICE_X94Y24         FDRE                                         r  data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][2]/C
+                         clock pessimism              0.000     5.723    
+                         clock uncertainty           -0.154     5.569    
+    SLICE_X94Y24         FDRE (Setup_fdre_C_D)       -0.058     5.511    data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][2]
+  -------------------------------------------------------------------
+                         data arrival                           5.069    
+                         clock arrival                          5.511    
+  -------------------------------------------------------------------
+                         relative delay                        -0.442    
+
+Reference path:
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  design_1_wrapper_i/design_1_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.088     1.088    design_1_wrapper_i/design_1_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091     1.179 r  design_1_wrapper_i/design_1_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=30304, routed)       1.607     2.786    data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_clk
+    SLICE_X90Y26         FDRE                                         r  data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[8]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X90Y26         FDRE (Prop_fdre_C_Q)         0.418     3.204 r  data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/src_gray_ff_reg[8]/Q
+                         net (fo=1, routed)           0.383     3.587    data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/async_path[8]
+    SLICE_X92Y26         FDRE                                         r  data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][8]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock CMOS_PIXCLK rise edge)
+                                                      0.000     0.000 r  
+    G20                                               0.000     0.000 r  CMOS_PIXCLK (IN)
+                         net (fo=0)                   0.000     0.000    CMOS_PIXCLK
+    G20                  IBUF (Prop_ibuf_I_O)         0.937     0.937 r  CMOS_PIXCLK_IBUF_inst/O
+                         net (fo=1, routed)           3.785     4.722    CMOS_PIXCLK_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.101     4.823 r  CMOS_PIXCLK_IBUF_BUFG_inst/O
+                         net (fo=3407, routed)        1.779     6.602    data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_clk
+    SLICE_X92Y26         FDRE                                         r  data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][8]/C
+                         clock pessimism              0.000     6.602    
+                         clock uncertainty            0.154     6.756    
+    SLICE_X92Y26         FDRE (Hold_fdre_C_D)         0.233     6.989    data_conv_model_i/fifo_0_i/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst/dest_graysync_ff_reg[0][8]
+  -------------------------------------------------------------------
+                         data arrival                           3.587    
+                         clock arrival                          6.989    
+  -------------------------------------------------------------------
+                         relative delay                        -3.402    
+
+
+

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="cmos10bit_2_8bit_BROM_synth_1" LaunchPart="xc7z020clg400-1" LaunchTime="1539236964">
+  <File Type="PA-TCL" Name="cmos10bit_2_8bit_BROM.tcl"/>
+  <File Type="REPORTS-TCL" Name="cmos10bit_2_8bit_BROM_reports.tcl"/>
+  <File Type="RDS-RDS" Name="cmos10bit_2_8bit_BROM.vds"/>
+  <File Type="RDS-UTIL" Name="cmos10bit_2_8bit_BROM_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="cmos10bit_2_8bit_BROM_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="cmos10bit_2_8bit_BROM.dcp"/>
+  <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/cmos10bit_2_8bit_BROM">
+    <File Path="$PSRCDIR/sources_1/ip/cmos10bit_2_8bit_BROM/cmos10bit_2_8bit_BROM.xci">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../prj_sc030/prj_ocr/prj_ocr.srcs/sources_1/ip/cmos10bit_2_8bit_BROM/cmos10bit_2_8bit_BROM.xci"/>
+        <Attr Name="ImportTime" Val="1544497745"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="cmos10bit_2_8bit_BROM"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="BlockSrcs" RelSrcDir="$PSRCDIR/cmos10bit_2_8bit_BROM">
+    <File Path="$PSRCDIR/sources_1/ip/cmos10bit_2_8bit_BROM/cmos10bit_2_8bit_BROM.xci">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../prj_sc030/prj_ocr/prj_ocr.srcs/sources_1/ip/cmos10bit_2_8bit_BROM/cmos10bit_2_8bit_BROM.xci"/>
+        <Attr Name="ImportTime" Val="1544497745"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="cmos10bit_2_8bit_BROM"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>
